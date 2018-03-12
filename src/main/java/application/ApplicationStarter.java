@@ -4,6 +4,11 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
 import javafx.application.Application;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.Scene;
@@ -27,10 +32,10 @@ public class ApplicationStarter extends Application{
 		BorderPane root = new BorderPane();
 		Button save = new Button("speichern");
 		root.setBottom(save);
-		save.addEventHandler(MouseEvent.MOUSE_ENTERED, (MouseEvent event) -> {
+		save.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent event) -> {
 			WritableImage image = webView.snapshot(new SnapshotParameters(), null);
 			File file = new File("chart.png");
-			
+			save();
 		    try {
 		        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", file);
 		    } catch (IOException error) {
@@ -47,4 +52,15 @@ public class ApplicationStarter extends Application{
 		primaryStage.show();
 	}
 
+	private void save(){
+		Document doc = webView.getEngine().getDocument();
+		Element adminLink = doc.getElementById("map-drawing-links");
+		NodeList inputs = adminLink.getElementsByTagName("input");
+		
+		if(inputs.getLength()>1){
+			Node item = inputs.item(1);
+			System.out.println(item.getAttributes().getNamedItem("value").getNodeValue());
+		}
+	}
+	
 }
