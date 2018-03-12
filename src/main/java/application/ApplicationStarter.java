@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 public class ApplicationStarter extends Application{
 	private final WebView webView = new WebView();
 	public static void main(String[] args)  {
+		//Test für Commit
 		launch(args);
 	}
 
