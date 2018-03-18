@@ -16,7 +16,7 @@ public class PDFCreator {
 			PDPage page = new PDPage(new PDRectangle(PDRectangle.A4.getHeight(), PDRectangle.A4.getWidth()));
 			PDImageXObject pdImage = PDImageXObject.createFromFile("image_"+planNumber+".png", document);
 			PDPageContentStream contentStream = new PDPageContentStream(document, page);
-			contentStream.drawImage(pdImage, 0, -30);
+			contentStream.drawImage(pdImage, 0, 0);
 			contentStream.beginText(); 
 			contentStream.newLineAtOffset(25, PDRectangle.A4.getWidth()-25);
 			contentStream.setFont(PDType1Font.TIMES_ROMAN, 20);
