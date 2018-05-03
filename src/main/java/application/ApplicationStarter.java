@@ -6,6 +6,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import screens.MapScreen;
+import screens.PlanListScreen;
 
 public class ApplicationStarter extends Application {
 
@@ -15,7 +16,7 @@ public class ApplicationStarter extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Pane root = MapScreen.getScreen("001");
+		Pane root = PlanListScreen.getScreen("001");
 		double x = Screen.getPrimary().getBounds().getMaxX();
 		double y = Screen.getPrimary().getBounds().getMaxY();
 		Scene scene = new Scene(root, x, y);

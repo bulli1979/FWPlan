@@ -1,6 +1,5 @@
 package screens;
 
-import java.awt.ScrollPane;
 import java.io.File;
 import java.io.IOException;
 
@@ -15,7 +14,6 @@ import javafx.scene.image.PixelReader;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -59,7 +57,6 @@ public class MapScreen {
 		topRed.setFill(Color.RED);
 		Rectangle topGreen = new Rectangle(0, 0, PDRectangle.A3.getHeight(), 10);
 		topGreen.setFill(Color.GREEN);
-		ScrollPane sp = new ScrollPane();
 		VBox centerBox = new VBox( WEBVIEW, save);
 		root.setCenter(centerBox);
 		return root;
