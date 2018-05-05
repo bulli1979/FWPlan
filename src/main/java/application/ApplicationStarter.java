@@ -13,14 +13,11 @@ import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import screens.CreateNewPlanScreen;
-import screens.MapScreen;
 import screens.PlanListScreen;
 
 public class ApplicationStarter extends Application {
 
 	private Stage primaryStage;
-	private Pane createForm = CreateNewPlanScreen.getScreen(primaryStage);
-	private Scene createPlanScene = new Scene(createForm);
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -51,6 +48,8 @@ public class ApplicationStarter extends Application {
 			@Override
 			public void handle(ActionEvent event) {
 				Stage dialog = new Stage();
+				Pane createForm = CreateNewPlanScreen.getScreen(dialog);
+				Scene createPlanScene = new Scene(createForm);
 				dialog.setScene(createPlanScene);
 				dialog.initOwner(primaryStage);
 				dialog.initModality(Modality.APPLICATION_MODAL);
