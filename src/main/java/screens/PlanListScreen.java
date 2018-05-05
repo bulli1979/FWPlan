@@ -15,8 +15,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 
 public class PlanListScreen {
-	//TODO Simon bitte aufräumen und schick machen buttons rein usw. 
-	//2ten Screen für Formular bauen
+	//TODO Simon bitte aufrï¿½umen und schick machen buttons rein usw. 
+	//2ten Screen fï¿½r Formular bauen
 	private static TableView<Plan> table = new TableView<>();
 	private static ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getAllPlans());
 	private static BorderPane root = new BorderPane();
