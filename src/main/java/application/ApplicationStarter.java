@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import screens.CreateNewPlanScreen;
+import screens.CreateOrEditPlan;
 import screens.PlanListScreen;
 
 public class ApplicationStarter extends Application {
@@ -48,7 +48,7 @@ public class ApplicationStarter extends Application {
 			@Override
 			public void handle(ActionEvent event) {
 				Stage dialog = new Stage();
-				Pane createForm = CreateNewPlanScreen.getScreen(dialog);
+				Pane createForm = CreateOrEditPlan.getScreen(dialog);
 				Scene createPlanScene = new Scene(createForm);
 				dialog.setScene(createPlanScene);
 				dialog.initOwner(primaryStage);

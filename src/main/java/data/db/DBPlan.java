@@ -23,11 +23,10 @@ public class DBPlan extends DBConnector {
 
 	public List<Plan> getAllPlans() {
 		List<Plan> list = new ArrayList<>();
-		try {
-			String query = "Select * from plan ORDER BY plannumber";
-			Connection connection = this.connect();
-			PreparedStatement ps = connection.prepareStatement(query);
-			ResultSet resultSet = ps.executeQuery();
+		String sql = "Select * from plan ORDER BY plannumber";
+		try (Connection conn = this.connect();
+                PreparedStatement pstmt = conn.prepareStatement(sql)){
+			ResultSet resultSet = pstmt.executeQuery();
 
 			while (resultSet.next()) {
 				list.add(new Plan.Builder().setId(resultSet.getString("id"))
@@ -36,8 +35,7 @@ public class DBPlan extends DBConnector {
 						.build());
 			}
 			resultSet.close();
-			ps.close();
-			connection.close();
+			
 		} catch (Exception e) {
 			System.out.println("Error in DB");
 		}
@@ -45,36 +43,30 @@ public class DBPlan extends DBConnector {
 	}
 	
 	public Plan insertPlan(Plan plan){
-		try{
-			Connection connection = this.connect();
-			String query = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`,) VALUES(?,?,?,?)";
-			PreparedStatement ps = connection.prepareStatement(query);
-			ps.setString(1,plan.getId());
-			ps.setString(2,plan.getTitle());
-			ps.setString(3,plan.getDescription());
-			ps.setString(4,plan.getPlanNumber());
-			ps.executeQuery();
-			ps.close();
-			connection.close();
+		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`) VALUES(?,?,?,?);";
+		try(Connection conn = this.connect();
+	                PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1,plan.getId());
+			pstmt.setString(2,plan.getTitle());
+			pstmt.setString(3,plan.getDescription());
+			pstmt.setString(4,plan.getPlanNumber());
+			pstmt.executeUpdate();
 		}catch(Exception e){
-			System.out.println("error in insert");
-		}	
+			System.out.println("error in insert" + e);
+		}
 		return plan;
 	}
 
 	
 	public Plan updatePlan(Plan plan){
-		try{
-			Connection connection = this.connect();
-			String query = "UPDATE plan SET `title`=? , `description`=? , `plannumber`=? WHERE id=?";
-			PreparedStatement ps = connection.prepareStatement(query);
-			ps.setString(1,plan.getTitle());
-			ps.setString(2,plan.getDescription());
-			ps.setString(3,plan.getPlanNumber());
-			ps.setString(4,plan.getId());
-			ps.executeQuery();
-			ps.close();
-			connection.close();
+		String sql = "UPDATE plan SET `title`=? , `description`=? , `plannumber`=? WHERE id=?";
+		try(Connection conn = this.connect();
+                PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1,plan.getTitle());
+			pstmt.setString(2,plan.getDescription());
+			pstmt.setString(3,plan.getPlanNumber());
+			pstmt.setString(4,plan.getId());
+			pstmt.executeUpdate();
 		}catch(Exception e){
 			System.out.println("error in update");
 		}	
@@ -82,17 +74,14 @@ public class DBPlan extends DBConnector {
 	}
 	
 	public boolean deletePlan(Plan plan){
-		try{
-			Connection connection = this.connect();
-			String query = "delete plan WHERE id=?";
-			PreparedStatement ps = connection.prepareStatement(query);
-			ps.setString(1,plan.getId());
-			ps.executeQuery();
-			ps.close();
-			connection.close();
+		String sql = "DELETE FROM plan WHERE id=?";
+		try(Connection conn = this.connect();
+                PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1,plan.getId());
+			pstmt.executeUpdate();
 			return true;
 		}catch(Exception e){
-			System.out.println("error in delete");
+			System.out.println("error in delete" + e.getMessage());
 		}	
 		return false;
 	}

@@ -32,10 +32,7 @@ public class Plan {
 		private String id;
 		private String title;
 		private String description;
-		private String planNumber;
-		public Builder(){
-		}
-		
+		private String planNumber;		
 		public Builder setId(String id){
 			this.id = id;
 			return this;

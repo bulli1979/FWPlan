@@ -4,6 +4,10 @@
 	<groupId>me.fw.FwPlan</groupId>
 	<artifactId>FWPlan</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		
+		<junitVersion>4.12</junitVersion>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
@@ -35,6 +39,11 @@
 			<artifactId>sqlite-jdbc</artifactId>
 			<version>3.8.11.2</version>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+			<version>${junitVersion}</version>
+		</dependency>
 	</dependencies>
-
 </project>
