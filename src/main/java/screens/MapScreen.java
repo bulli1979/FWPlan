@@ -53,6 +53,8 @@ public class MapScreen implements ApplicationScreen{
 		WEBVIEW.setMinHeight(PDRectangle.A3.getWidth() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE);
 		WEBVIEW.setMinWidth(PDRectangle.A3.getHeight() + WIDTH_DIFFERENCE);
 
+		
+		
 		WebEngine webEngine = WEBVIEW.getEngine();
 		webEngine.load(DEFAULTURL);
 		Rectangle topRed = new Rectangle(0, 0, WIDTH_DIFFERENCE, 10);
