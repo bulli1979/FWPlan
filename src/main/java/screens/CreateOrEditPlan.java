@@ -21,18 +21,16 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 
-public class CreateOrEditPlan {
+public class CreateOrEditPlan implements ApplicationScreen{
 	
-	private static Stage callerStages;
-	private static Plan editPlan = null;
+	private Plan editPlan = null;
 	public CreateOrEditPlan() {
 	}
 	
-	public static Pane getScreen(Stage callerStage) {
+	@Override
+	public Pane get() {
 		BorderPane root = new BorderPane();
-		callerStages = callerStage;
 		GridPane grid = new GridPane();
 		grid.setAlignment(Pos.CENTER);
 		grid.setHgap(10);

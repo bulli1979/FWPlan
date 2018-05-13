@@ -14,36 +14,32 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 
-public class PlanListScreen {
-	//TODO Simon bitte aufr�umen und schick machen buttons rein usw. 
-	//2ten Screen f�r Formular bauen
-	private static TableView<Plan> table = new TableView<>();
-	private static ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getAllPlans());
-	private static BorderPane root = new BorderPane();
-	
-	public PlanListScreen() {
-		
-	}
-	
-	public static Pane getScreen(String planNumber) {
+public class PlanListScreen implements ApplicationScreen {
+
+	@SuppressWarnings("unchecked")
+	public Pane get() {
+		BorderPane root = new BorderPane();
+		ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getAllPlans());
+		TableView<Plan> table = new TableView<>(data);
+
 		Label label = new Label("Planliste");
 		label.setFont(new Font("Arial", 20));
-
+		System.out.println("size: " + data.size());
 		table.setEditable(true);
 
-		TableColumn<Plan, String> numberCol = new TableColumn<Plan, String>("Plannummer");
+		TableColumn<Plan, String> numberCol = new TableColumn<>("Plannummer");
 		numberCol.setMinWidth(100);
 		numberCol.setCellValueFactory(new PropertyValueFactory<>("planNumber"));
 
-		TableColumn<Plan, String> titleCol = new TableColumn<Plan, String>("Titel");
+		TableColumn<Plan, String> titleCol = new TableColumn<>("Titel");
 		titleCol.setMinWidth(100);
 		titleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
 
-		TableColumn<Plan, String> descriptionCol = new TableColumn<Plan, String>("Description");
+		TableColumn<Plan, String> descriptionCol = new TableColumn<>("Description");
 		descriptionCol.setMinWidth(200);
 		descriptionCol.setCellValueFactory(new PropertyValueFactory<>("description"));
+		table.getColumns().setAll(numberCol, titleCol, descriptionCol);
 		table.setUserData(data);
-		
 
 		final VBox vbox = new VBox();
 		vbox.setSpacing(5);

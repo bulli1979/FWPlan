@@ -23,7 +23,7 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
-public class MapScreen {
+public class MapScreen implements ApplicationScreen{
 	private static final WebView WEBVIEW = new WebView();
 
 	private static final String IMAGEENDING = "png";
@@ -34,12 +34,16 @@ public class MapScreen {
 	private static final String IMAGE_PREFIX = "image_";
 	private static String imagePath = null;
 	private static Stage openerDialog;
-
+	private String planNumber;
 	private MapScreen() {
 	}
 
-	public static Pane getScreen(String planNumber, Stage dialog) {
-		openerDialog = dialog;
+	public Pane get(String planNumber){
+		this.planNumber = planNumber;
+		return get();
+	}
+	
+	public Pane get() {
 		BorderPane root = new BorderPane();
 		Button save = new Button("speichern");
 		save.setOnAction(new EventHandler<ActionEvent>() {
