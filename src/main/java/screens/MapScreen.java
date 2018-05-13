@@ -35,13 +35,6 @@ public class MapScreen implements ApplicationScreen{
 	private static String imagePath = null;
 	private static Stage openerDialog;
 	private String planNumber;
-	private MapScreen() {
-	}
-
-	public Pane get(String planNumber){
-		this.planNumber = planNumber;
-		return get();
-	}
 	
 	public Pane get() {
 		BorderPane root = new BorderPane();

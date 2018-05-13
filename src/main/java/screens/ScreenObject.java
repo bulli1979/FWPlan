@@ -2,7 +2,8 @@ package screens;
 
 public enum ScreenObject {
 	PLANEDITSCREEN(new CreateOrEditPlan()),
-	PLANLISTSCREEN(new PlanListScreen());
+	PLANLISTSCREEN(new PlanListScreen()), 
+	MAPSCREEN(new MapScreen());
 	
 	public ApplicationScreen screen;
 	
