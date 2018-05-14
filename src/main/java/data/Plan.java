@@ -5,6 +5,7 @@ public class Plan {
 	private String title;
 	private String description;
 	private String planNumber;
+	
 	public Plan(Builder builder) {
 		this.id = builder.id;
 		this.title = builder.title;

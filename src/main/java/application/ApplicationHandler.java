@@ -3,7 +3,6 @@ package application;
 import helper.MenuBarBuilder;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import screens.ScreenObject;
 
@@ -12,6 +11,7 @@ public class ApplicationHandler {
 	private static final String APPTITLE = "Einsatzplaner FW Ehrendingen Freienwil";
 	private static VBox vbox = new VBox();
 	private Scene scene;
+	private final int INITIAL_WIDTH_HEIGHT = 100;
 	public ApplicationHandler(Stage stage){
 		
 		this.stage = stage;
@@ -25,10 +25,8 @@ public class ApplicationHandler {
 	}
 
 	public void start(ScreenObject startObject) {
-		double x = Screen.getPrimary().getBounds().getMaxX();
-		double y = Screen.getPrimary().getBounds().getMaxY();
 		vbox.getChildren().addAll(MenuBarBuilder.build(stage), startObject.screen.get());
-		this.scene = new Scene(vbox, x, y);
+		this.scene = new Scene(vbox, INITIAL_WIDTH_HEIGHT, INITIAL_WIDTH_HEIGHT);
 		stage.setScene(scene);
 		stage.setMaximized(true);
 		stage.show();

@@ -1,15 +1,18 @@
 package application;
 
+import data.Plan;
+
 public enum Constant {
 	INSTANCE;
-	private String planId;
+	
+	private Plan plan;
 
-	public String getPlanId() {
-		return planId;
+	public Plan getPlan() {
+		return plan;
 	}
 
-	public void setPlanId(String planId) {
-		this.planId = planId;
+	public void setPlan(Plan plan) {
+		this.plan = plan;
 	}
 	
 	

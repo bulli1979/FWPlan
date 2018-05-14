@@ -1,13 +1,12 @@
 package helper;
 
+import application.ApplicationHandler;
+import application.Constant;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Scene;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import javafx.scene.layout.Pane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import screens.ScreenObject;
 
@@ -22,13 +21,8 @@ public class MenuBarBuilder {
 
 			@Override
 			public void handle(ActionEvent event) {
-				Stage dialog = new Stage();
-				Pane createForm = ScreenObject.PLANEDITSCREEN.screen.get();
-				Scene createPlanScene = new Scene(createForm);
-				dialog.setScene(createPlanScene);
-				dialog.initOwner(primaryStage);
-				dialog.initModality(Modality.APPLICATION_MODAL);
-				dialog.showAndWait();
+				Constant.INSTANCE.setPlan(null);
+				ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
 			}
 		});
 		menuEinsatzplan.getItems().addAll(neuerEinsatzplan);

@@ -63,7 +63,7 @@ public class PlanListScreen implements ApplicationScreen {
 								} else {
 									btn.setOnAction(event -> {
 										Plan plan = getTableView().getItems().get(getIndex());
-										Constant.INSTANCE.setPlanId(plan.getId());
+										Constant.INSTANCE.setPlan(plan);
 										ApplicationHandler.setScreen(ScreenObject.MAPSCREEN);
 									});
 									setGraphic(btn);
