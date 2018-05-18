@@ -1,6 +1,8 @@
 package screens;
 
 public enum ScreenObject {
+	
+	
 	PLANEDITSCREEN(new CreateOrEditPlan()),
 	PLANLISTSCREEN(new PlanListScreen()), 
 	MAPSCREEN(new MapScreen()),
@@ -11,7 +13,4 @@ public enum ScreenObject {
 	private ScreenObject(ApplicationScreen screen){
 		this.screen = screen;
 	}
-	
-	
-	
 }

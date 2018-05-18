@@ -16,6 +16,15 @@ public class MenuBarBuilder {
 	public static MenuBar build(Stage primaryStage) {
 		MenuBar menuBar = new MenuBar();
 		Menu menuEinsatzplan = new Menu("Einsatzplan");
+		MenuItem overview = new MenuItem("Übersicht");
+		overview.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				Constant.INSTANCE.setPlan(null);
+				ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
+			}
+		});
 		MenuItem neuerEinsatzplan = new MenuItem("Neuer Einsatzplan");
 		neuerEinsatzplan.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -25,7 +34,7 @@ public class MenuBarBuilder {
 				ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
 			}
 		});
-		menuEinsatzplan.getItems().addAll(neuerEinsatzplan);
+		menuEinsatzplan.getItems().addAll(overview, neuerEinsatzplan);
 		Menu menuHelp = new Menu("Hilfe");
 		MenuItem about = new MenuItem("About");
 		about.setOnAction(new EventHandler<ActionEvent>() {

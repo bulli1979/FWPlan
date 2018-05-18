@@ -78,7 +78,43 @@ public class PlanListScreen implements ApplicationScreen {
 
 		mapColumn.setCellFactory(cellFactory);
 		
-		table.getColumns().setAll(numberCol, titleCol, descriptionCol,mapColumn);
+		TableColumn editColumn = new TableColumn("Bearbeiten");
+		editColumn.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+		
+		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> cellFactoryEditColumn
+        = //
+        new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
+
+				public TableCell call(final TableColumn<Plan, String> param) {
+						final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
+
+							final Button btn = new Button("Plan Bearbeiten");
+
+							@Override
+							public void updateItem(String item, boolean empty) {
+								super.updateItem(item, empty);
+								if (empty) {
+									setGraphic(null);
+									setText(null);
+								} else {
+									btn.setOnAction(event -> {
+										Plan plan = getTableView().getItems().get(getIndex());
+										Constant.INSTANCE.setPlan(plan);
+										ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
+									});
+									setGraphic(btn);
+		                    setText(null);
+		                }
+		            }
+		        };
+		        return cell;
+		    }
+	
+		};
+
+		editColumn.setCellFactory(cellFactoryEditColumn);
+		
+		table.getColumns().setAll(numberCol, titleCol, descriptionCol,mapColumn,editColumn);
 		table.setUserData(data);
 
 		final VBox vbox = new VBox();

@@ -1,19 +1,19 @@
 package screens;
 
 import java.util.UUID;
-
+import application.ApplicationHandler;
 import data.Plan;
 import data.db.DBPlan;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -25,6 +25,7 @@ import javafx.scene.text.Text;
 public class CreateOrEditPlan implements ApplicationScreen{
 	
 	private Plan editPlan = null;
+	
 	public CreateOrEditPlan() {
 	}
 	
@@ -45,7 +46,7 @@ public class CreateOrEditPlan implements ApplicationScreen{
 		grid.add(planNumber, 0, 2);
 		TextField planNumberTextField = new TextField();
 		grid.add(planNumberTextField, 1, 2);
-
+		
 		Label title = new Label("Titel:");
 		grid.add(title, 0, 3);
 		TextField titleTextField = new TextField();
@@ -56,7 +57,27 @@ public class CreateOrEditPlan implements ApplicationScreen{
 		TextArea descriptionTextField = new TextArea();
 		grid.add(descriptionTextField, 1, 4);
 		
-		Label map = new Label("Karte:");
+		Label adresse = new Label("Adresse:");
+		grid.add(adresse, 0, 5);
+		TextArea adresseTextField = new TextArea();
+		grid.add(adresseTextField, 1, 5);
+		
+		Label sofortmassnahmen = new Label("Sofortmassnahmen:");
+		grid.add(sofortmassnahmen, 0, 6);
+		TextArea sofortmassnahmenTextField = new TextArea();
+		grid.add(sofortmassnahmenTextField, 1, 6);
+		
+		Label wassertransport = new Label("Wassertransport:");
+		grid.add(wassertransport, 0, 7);
+		TextArea wassertransportTextField = new TextArea();
+		grid.add(wassertransportTextField, 1, 7);
+		
+		Label wichtigeKontakte = new Label("Wichtige Kontakte:");
+		grid.add(wichtigeKontakte, 0, 8);
+		TextArea wichtigeKontakteTextField = new TextArea();
+		grid.add(wichtigeKontakteTextField, 1, 8);
+		
+		/*Label map = new Label("Karte:");
 		grid.add(map, 0, 5);
 		
 		ImageView mapImage = new ImageView();
@@ -64,7 +85,7 @@ public class CreateOrEditPlan implements ApplicationScreen{
 		mapImage.setImage(image);
 		grid.add(mapImage, 1, 5);
 		
-		/* 
+		
 		Button modifyMap = new Button("Neue Karte erstellen");
 		modifyMap.setOnAction(new EventHandler<ActionEvent>() {
 			
@@ -104,9 +125,11 @@ public class CreateOrEditPlan implements ApplicationScreen{
 				
 				Plan savePlan = new Plan.Builder().
 					setId(editPlan!=null?editPlan.getId():UUID.randomUUID().toString()).
-					withTitle(titleTextField.getText()).
 					withPlanNumber(planNumberTextField.getText()).
-					withDescription(descriptionTextField.getText()).build();	
+					withAdresse(adresseTextField.getText()).
+					withSofortmassnahmen(sofortmassnahmenTextField.getText()).
+					withWassertransport(wassertransportTextField.getText()).
+					withWichtigeKontakte(wichtigeKontakteTextField.getText()).build();	
 					
 				if(editPlan == null){
 					System.out.println("insert");
@@ -116,13 +139,26 @@ public class CreateOrEditPlan implements ApplicationScreen{
 					DBPlan.getInstance().updatePlan(savePlan);
 				}
 				editPlan = savePlan;
+				
+				Alert alert = new Alert(AlertType.INFORMATION);
+				alert.setTitle("Einsatzplan Speicherung");
+				alert.setHeaderText(null);
+				alert.setContentText("Der Einsatzplan " + planNumberTextField.getText() + " wurde erfolgreich gespeichert.");
+				alert.showAndWait();
+				
+				ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
 			}
 		});
+	
 		HBox hbBtn = new HBox(10);
 		hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
 		hbBtn.getChildren().add(btnSave);
-		grid.add(hbBtn, 1, 7);
+		grid.add(hbBtn, 1, 9);
 		root.setCenter(grid);
 		return root;
+	}
+	
+	public void setFieldValues() {
+		
 	}
 }
