@@ -2,6 +2,7 @@ package screens;
 
 import java.util.UUID;
 import application.ApplicationHandler;
+import application.Constant;
 import data.Plan;
 import data.db.DBPlan;
 import javafx.event.ActionEvent;
@@ -31,6 +32,8 @@ public class CreateOrEditPlan implements ApplicationScreen{
 	
 	@Override
 	public Pane get() {
+		editPlan = Constant.INSTANCE.getPlan();
+		System.out.println(editPlan);
 		BorderPane root = new BorderPane();
 		GridPane grid = new GridPane();
 		grid.setAlignment(Pos.CENTER);
@@ -76,6 +79,16 @@ public class CreateOrEditPlan implements ApplicationScreen{
 		grid.add(wichtigeKontakte, 0, 8);
 		TextArea wichtigeKontakteTextField = new TextArea();
 		grid.add(wichtigeKontakteTextField, 1, 8);
+		
+		if(editPlan != null) {
+			planNumberTextField.setText(editPlan.getPlanNumber());
+			titleTextField.setText(editPlan.getTitle());
+			descriptionTextField.setText(editPlan.getDescription());
+			adresseTextField.setText(editPlan.getAdresse());
+			sofortmassnahmenTextField.setText(editPlan.getSofortmassnahmen());
+			wassertransportTextField.setText(editPlan.getWassertransport());
+			wichtigeKontakteTextField.setText(editPlan.getWichtigeKontakte());
+		}
 		
 		/*Label map = new Label("Karte:");
 		grid.add(map, 0, 5);
@@ -126,6 +139,8 @@ public class CreateOrEditPlan implements ApplicationScreen{
 				Plan savePlan = new Plan.Builder().
 					setId(editPlan!=null?editPlan.getId():UUID.randomUUID().toString()).
 					withPlanNumber(planNumberTextField.getText()).
+					withTitle(titleTextField.getText()).
+					withDescription(descriptionTextField.getText()).
 					withAdresse(adresseTextField.getText()).
 					withSofortmassnahmen(sofortmassnahmenTextField.getText()).
 					withWassertransport(wassertransportTextField.getText()).

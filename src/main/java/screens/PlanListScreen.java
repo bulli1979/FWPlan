@@ -114,7 +114,7 @@ public class PlanListScreen implements ApplicationScreen {
 
 		editColumn.setCellFactory(cellFactoryEditColumn);
 		
-		table.getColumns().setAll(numberCol, titleCol, descriptionCol,mapColumn,editColumn);
+		table.getColumns().setAll(numberCol, titleCol, descriptionCol, mapColumn, editColumn);
 		table.setUserData(data);
 
 		final VBox vbox = new VBox();
