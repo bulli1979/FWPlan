@@ -31,41 +31,60 @@ public class DBPlan extends DBConnector {
 			while (resultSet.next()) {
 				list.add(new Plan.Builder().setId(resultSet.getString("id"))
 						.withDescription(resultSet.getString("description"))
-						.withPlanNumber(resultSet.getString("plannumber")).withTitle(resultSet.getString("title"))
+						.withPlanNumber(resultSet.getString("plannumber"))
+						.withTitle(resultSet.getString("title"))
+						.withAdress(resultSet.getString("adress"))
+						.withInstantAction(resultSet.getString("instantaction"))
+						.wuithWatherTransport(resultSet.getString("wathertransport"))
+						.withImportantContact(resultSet.getString("importantcontacts"))
+						.withMap(resultSet.getString("map"))
 						.build());
 			}
 			resultSet.close();
 			
 		} catch (Exception e) {
 			System.out.println("Error in DB");
+			e.printStackTrace();
 		}
 		return list;
 	}
 	
 	public Plan insertPlan(Plan plan){
-		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`) VALUES(?,?,?,?);";
+		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`,`adress`,`instantaction`,`wathertransport`,`importantcontacts`,`map`) VALUES(?,?,?,?,?,?,?,?,?);";
 		try(Connection conn = this.connect();
-	                PreparedStatement pstmt = conn.prepareStatement(sql)){
+	        PreparedStatement pstmt = conn.prepareStatement(sql)){
 			pstmt.setString(1,plan.getId());
 			pstmt.setString(2,plan.getTitle());
 			pstmt.setString(3,plan.getDescription());
 			pstmt.setString(4,plan.getPlanNumber());
+			pstmt.setString(5,plan.getAdress());
+			pstmt.setString(6,plan.getInstantAction());
+			pstmt.setString(7,plan.getWatherTransport());
+			pstmt.setString(8,plan.getImportantContacts());
+			pstmt.setString(9,plan.getMap());
+			
 			pstmt.executeUpdate();
 		}catch(Exception e){
 			System.out.println("error in insert" + e);
+			e.printStackTrace();
 		}
 		return plan;
 	}
 
 	
 	public Plan updatePlan(Plan plan){
-		String sql = "UPDATE plan SET `title`=? , `description`=? , `plannumber`=? WHERE id=?";
+		String sql = "UPDATE plan SET `title`=? ,`description`=?, `plannumber`=?,`adress`=?.`instantaction`=?.`wathertransport`=?,`importantcontacts=?,`map=?  WHERE id=?";
 		try(Connection conn = this.connect();
                 PreparedStatement pstmt = conn.prepareStatement(sql)){
 			pstmt.setString(1,plan.getTitle());
 			pstmt.setString(2,plan.getDescription());
 			pstmt.setString(3,plan.getPlanNumber());
 			pstmt.setString(4,plan.getId());
+			pstmt.setString(5,plan.getAdress());
+			pstmt.setString(6,plan.getInstantAction());
+			pstmt.setString(7,plan.getWatherTransport());
+			pstmt.setString(8,plan.getImportantContacts());
+			pstmt.setString(9,plan.getMap());
 			pstmt.executeUpdate();
 		}catch(Exception e){
 			System.out.println("error in update");

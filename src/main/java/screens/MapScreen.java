@@ -7,6 +7,8 @@ import javax.imageio.ImageIO;
 
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
+import application.Constant;
+import data.db.DBPlan;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -21,7 +23,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
-import javafx.stage.Stage;
 
 public class MapScreen implements ApplicationScreen{
 	private static final WebView WEBVIEW = new WebView();
@@ -31,10 +32,8 @@ public class MapScreen implements ApplicationScreen{
 	private static final int HEIGHT_TOP_DIFFERENCE = 220;
 	private static final int HEIGHT_BOTTOM_DIFFERENCE = 100;
 	private static final int WIDTH_DIFFERENCE = 340;
-	private static final String IMAGE_PREFIX = "image_";
+	private static final String IMAGE_PREFIX = System.getProperty("user.dir") + File.separator + "maps"+File.separator+"image_";
 	private static String imagePath = null;
-	private static Stage openerDialog;
-	private String planNumber;
 	
 	public Pane get() {
 		BorderPane root = new BorderPane();
@@ -44,7 +43,7 @@ public class MapScreen implements ApplicationScreen{
 			@Override
 			public void handle(ActionEvent event) {
 				WritableImage image = WEBVIEW.snapshot(new SnapshotParameters(), null);
-				cutAndWriteImage(image, planNumber);
+				cutAndWriteImage(image);
 			}
 		});
 		
@@ -67,20 +66,21 @@ public class MapScreen implements ApplicationScreen{
 		return root;
 	}
 
-	private static void cutAndWriteImage(WritableImage image, String planNumber) {
+	private static void cutAndWriteImage(WritableImage image) {
 		PixelReader reader = image.getPixelReader();
 		int width = (int) image.getWidth() - WIDTH_DIFFERENCE;
 		int height = (int) image.getHeight() - HEIGHT_TOP_DIFFERENCE;
 		WritableImage newImage = new WritableImage(reader, WIDTH_DIFFERENCE, HEIGHT_TOP_DIFFERENCE, width, height);
-		File file = new File(IMAGE_PREFIX + planNumber + "." + IMAGEENDING);
+		File file = new File(IMAGE_PREFIX + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
 		try {
 			ImageIO.write(SwingFXUtils.fromFXImage(newImage, null), IMAGEENDING, file);
 		} catch (IOException error) {
 
 		}
+		
 		setImagePath(file.getAbsolutePath());
-		openerDialog.close();
-		//PDFCreator.writePDF(planNumber);
+		Constant.INSTANCE.getPlan().setMap(file.getName());
+		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
 	}
 
 	public static String getImagePath() {

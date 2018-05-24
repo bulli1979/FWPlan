@@ -10,8 +10,7 @@ public class ApplicationHandler {
 	private Stage stage;
 	private static final String APPTITLE = "Einsatzplaner FW Ehrendingen Freienwil";
 	private static VBox vbox = new VBox();
-	private Scene scene;
-	private final int INITIAL_WIDTH_HEIGHT = 100;
+	private static final int INITIAL_WIDTH_HEIGHT = 100;
 	public ApplicationHandler(Stage stage){
 		
 		this.stage = stage;
@@ -26,7 +25,7 @@ public class ApplicationHandler {
 
 	public void start(ScreenObject startObject) {
 		vbox.getChildren().addAll(MenuBarBuilder.build(stage), startObject.screen.get());
-		this.scene = new Scene(vbox, INITIAL_WIDTH_HEIGHT, INITIAL_WIDTH_HEIGHT);
+		Scene scene = new Scene(vbox, INITIAL_WIDTH_HEIGHT, INITIAL_WIDTH_HEIGHT);
 		stage.setScene(scene);
 		stage.setMaximized(true);
 		stage.show();

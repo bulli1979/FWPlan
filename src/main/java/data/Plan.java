@@ -5,16 +5,24 @@ public class Plan {
 	private String title;
 	private String description;
 	private String planNumber;
-	private String adresse;
-	private String sofortmassnahmen;
-	private String wassertransport;
-	private String wichtigeKontakte;
+	private String adress;
+	private String instantaction;
+	private String wathertransport;
+	private String importantcontacts;
+	private String map;
+	private String imageLink;
 	
 	public Plan(Builder builder) {
 		this.id = builder.id;
 		this.title = builder.title;
 		this.description = builder.description;
 		this.planNumber = builder.planNumber;
+		this.adress = builder.adress;
+		this.instantaction = builder.instantAction;
+		this.wathertransport = builder.watherTransport;
+		this.importantcontacts = builder.importantContacts;
+		this.map = builder.map;
+		this.imageLink = builder.imageLink;
 	}
 
 	public String getId() {
@@ -32,48 +40,51 @@ public class Plan {
 	public String getPlanNumber() {
 		return planNumber;
 	}
-
-	public String getAdresse() {
-		return adresse;
+	public String getMap() {
+		return map;
 	}
 
-	public void setAdresse(String adresse) {
-		this.adresse = adresse;
+	public void setMap(String map) {
+		this.map = map;
 	}
 
-	public String getSofortmassnahmen() {
-		return sofortmassnahmen;
+	public String getAdress() {
+		return adress;
 	}
 
-	public void setSofortmassnahmen(String sofortmassnahmen) {
-		this.sofortmassnahmen = sofortmassnahmen;
+	public String getInstantAction() {
+		return instantaction;
 	}
 
-	public String getWassertransport() {
-		return wassertransport;
+	public String getWatherTransport() {
+		return wathertransport;
 	}
 
-	public void setWassertransport(String wassertransport) {
-		this.wassertransport = wassertransport;
+	public String getImportantContacts() {
+		return importantcontacts;
+	}
+	
+	public String getImageLink() {
+		return imageLink;
 	}
 
-	public String getWichtigeKontakte() {
-		return wichtigeKontakte;
+	public void setImageLink(String imageLink) {
+		this.imageLink = imageLink;
 	}
 
-	public void setWichtigeKontakte(String wichtigeKontakte) {
-		this.wichtigeKontakte = wichtigeKontakte;
-	}
+
 
 	public static class Builder{
 		private String id;
 		private String title;
 		private String description;
 		private String planNumber;
-		private String adresse;
-		private String sofortmassnahmen;
-		private String wassertransport;
-		private String wichtigeKontakte;
+		private String adress;
+		private String instantAction;
+		private String watherTransport;
+		private String importantContacts;
+		private String map;
+		private String imageLink;
 		
 		public Builder setId(String id){
 			this.id = id;
@@ -95,23 +106,33 @@ public class Plan {
 			return this;
 		}
 		
-		public Builder withAdresse(String adresse){
-			this.adresse = adresse;
+		public Builder withAdress(String adress){
+			this.adress = adress;
 			return this;
 		}
 		
-		public Builder withSofortmassnahmen(String sofortmassnahmen){
-			this.sofortmassnahmen = sofortmassnahmen;
+		public Builder withInstantAction(String instantaction){
+			this.instantAction = instantaction;
 			return this;
 		}
 		
-		public Builder withWassertransport(String wassertransport){
-			this.wassertransport = wassertransport;
+		public Builder wuithWatherTransport(String wathertransport){
+			this.watherTransport = wathertransport;
 			return this;
 		}
 		
-		public Builder withWichtigeKontakte(String wichtigeKontakte){
-			this.wichtigeKontakte = wichtigeKontakte;
+		public Builder withImportantContact(String importantcontacts){
+			this.importantContacts = importantcontacts;
+			return this;
+		}
+		
+		public Builder withMap(String map){
+			this.map = map;
+			return this;
+		}
+		
+		public Builder withImageLink(String imageLink){
+			this.imageLink = imageLink;
 			return this;
 		}
 		

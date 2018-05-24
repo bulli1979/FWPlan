@@ -46,8 +46,7 @@ public class PlanListScreen implements ApplicationScreen {
 		mapColumn.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
 		
 		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> cellFactory
-        = //
-        new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
+        = new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
 
 				public TableCell call(final TableColumn<Plan, String> param) {
 						final TableCell<Plan, String> cell = new TableCell<Plan, String>() {

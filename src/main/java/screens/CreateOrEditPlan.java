@@ -84,10 +84,10 @@ public class CreateOrEditPlan implements ApplicationScreen{
 			planNumberTextField.setText(editPlan.getPlanNumber());
 			titleTextField.setText(editPlan.getTitle());
 			descriptionTextField.setText(editPlan.getDescription());
-			adresseTextField.setText(editPlan.getAdresse());
-			sofortmassnahmenTextField.setText(editPlan.getSofortmassnahmen());
-			wassertransportTextField.setText(editPlan.getWassertransport());
-			wichtigeKontakteTextField.setText(editPlan.getWichtigeKontakte());
+			adresseTextField.setText(editPlan.getAdress());
+			sofortmassnahmenTextField.setText(editPlan.getInstantAction());
+			wassertransportTextField.setText(editPlan.getWatherTransport());
+			wichtigeKontakteTextField.setText(editPlan.getImportantContacts());
 		}
 		
 		/*Label map = new Label("Karte:");
@@ -141,10 +141,10 @@ public class CreateOrEditPlan implements ApplicationScreen{
 					withPlanNumber(planNumberTextField.getText()).
 					withTitle(titleTextField.getText()).
 					withDescription(descriptionTextField.getText()).
-					withAdresse(adresseTextField.getText()).
-					withSofortmassnahmen(sofortmassnahmenTextField.getText()).
-					withWassertransport(wassertransportTextField.getText()).
-					withWichtigeKontakte(wichtigeKontakteTextField.getText()).build();	
+					withAdress(adresseTextField.getText()).
+					withInstantAction(sofortmassnahmenTextField.getText()).
+					wuithWatherTransport(wassertransportTextField.getText()).
+					withImportantContact(wichtigeKontakteTextField.getText()).build();	
 					
 				if(editPlan == null){
 					System.out.println("insert");
