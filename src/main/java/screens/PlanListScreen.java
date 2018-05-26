@@ -42,49 +42,38 @@ public class PlanListScreen implements ApplicationScreen {
 		descriptionCol.setMinWidth(200);
 		descriptionCol.setCellValueFactory(new PropertyValueFactory<Plan, String>("description"));
 		
-		TableColumn mapColumn = new TableColumn("Kartenbild");
-		mapColumn.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+		TableColumn<Plan, String> mapColumn = new TableColumn<>("Kartenbild");
 		
-		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> cellFactory
-        = new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
+		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> takeMapCB = addCallbackForMapTaken();
 
-				public TableCell call(final TableColumn<Plan, String> param) {
-						final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
-
-							final Button btn = new Button("Map bearbeiten");
-
-							@Override
-							public void updateItem(String item, boolean empty) {
-								super.updateItem(item, empty);
-								if (empty) {
-									setGraphic(null);
-									setText(null);
-								} else {
-									btn.setOnAction(event -> {
-										Plan plan = getTableView().getItems().get(getIndex());
-										Constant.INSTANCE.setPlan(plan);
-										ApplicationHandler.setScreen(ScreenObject.MAPSCREEN);
-									});
-									setGraphic(btn);
-		                    setText(null);
-		                }
-		            }
-		        };
-		        return cell;
-		    }
-	
-		};
-
-		mapColumn.setCellFactory(cellFactory);
+		mapColumn.setCellFactory(takeMapCB);
 		
-		TableColumn editColumn = new TableColumn("Bearbeiten");
-		editColumn.setCellValueFactory(new PropertyValueFactory<>("DUMMY"));
+		TableColumn<Plan,String> editColumn = new TableColumn<>("Bearbeiten");
 		
-		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> cellFactoryEditColumn
-        = //
-        new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
+		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> editCB = createEditCallback();
 
-				public TableCell call(final TableColumn<Plan, String> param) {
+		editColumn.setCellFactory(editCB);
+		ObservableList<TableColumn<Plan, ?>> colls = table.getColumns();
+		colls.add(numberCol);
+		colls.add(titleCol);
+		colls.add(descriptionCol);
+		colls.add(mapColumn);
+		colls.add(editColumn);		
+		table.setItems(data);
+
+		final VBox vbox = new VBox();
+		vbox.setSpacing(5);
+		vbox.setPadding(new Insets(10, 0, 0, 10));
+		vbox.getChildren().addAll(label, table);
+
+		root.setCenter(vbox);
+		return root;
+	}
+
+	private Callback<TableColumn<Plan, String>, TableCell<Plan, String>> createEditCallback() {
+		return new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
+
+				public TableCell<Plan, String> call(final TableColumn<Plan, String> param) {
 						final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
 
 							final Button btn = new Button("Plan Bearbeiten");
@@ -110,18 +99,37 @@ public class PlanListScreen implements ApplicationScreen {
 		    }
 	
 		};
-
-		editColumn.setCellFactory(cellFactoryEditColumn);
-		
-		table.getColumns().setAll(numberCol, titleCol, descriptionCol, mapColumn, editColumn);
-		table.setUserData(data);
-
-		final VBox vbox = new VBox();
-		vbox.setSpacing(5);
-		vbox.setPadding(new Insets(10, 0, 0, 10));
-		vbox.getChildren().addAll(label, table);
-
-		root.setCenter(vbox);
-		return root;
 	}
+	
+	private Callback<TableColumn<Plan, String>, TableCell<Plan, String>> addCallbackForMapTaken() {
+		return new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
+			
+			public TableCell<Plan, String> call(final TableColumn<Plan, String> param) {
+					final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
+
+						final Button btn = new Button("Map aufnehmen");
+
+						@Override
+						public void updateItem(String item, boolean empty) {
+							super.updateItem(item, empty);
+							if (empty) {
+								setGraphic(null);
+								setText(null);
+							} else {
+								btn.setOnAction(event -> {
+									Plan plan = getTableView().getItems().get(getIndex());
+									Constant.INSTANCE.setPlan(plan);
+									ApplicationHandler.setScreen(ScreenObject.MAPSCREEN);
+								});
+								setGraphic(btn);
+	                    setText(null);
+	                }
+	            }
+	        };
+	        return cell;
+	    }
+
+	};
+	}
+	
 }
