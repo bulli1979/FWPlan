@@ -16,7 +16,7 @@ public class MenuBarBuilder {
 	public static MenuBar build(Stage primaryStage) {
 		MenuBar menuBar = new MenuBar();
 		Menu menuEinsatzplan = new Menu("Einsatzplan");
-		MenuItem overview = new MenuItem("Ãœbersicht");
+		MenuItem overview = new MenuItem("Übersicht");
 		overview.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override

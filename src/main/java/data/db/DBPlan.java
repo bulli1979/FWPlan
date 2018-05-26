@@ -37,7 +37,7 @@ public class DBPlan extends DBConnector {
 						.withInstantAction(resultSet.getString("instantaction"))
 						.wuithWatherTransport(resultSet.getString("wathertransport"))
 						.withImportantContact(resultSet.getString("importantcontacts"))
-						.withMap(resultSet.getString("map"))
+						.withMap(resultSet.getString("maplink"))
 						.build());
 			}
 			resultSet.close();
@@ -50,7 +50,7 @@ public class DBPlan extends DBConnector {
 	}
 	
 	public Plan insertPlan(Plan plan){
-		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`,`adress`,`instantaction`,`wathertransport`,`importantcontacts`,`map`) VALUES(?,?,?,?,?,?,?,?,?);";
+		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`,`adress`,`instantaction`,`wathertransport`,`importantcontacts`,`maplink`) VALUES(?,?,?,?,?,?,?,?,?);";
 		try(Connection conn = this.connect();
 	        PreparedStatement pstmt = conn.prepareStatement(sql)){
 			pstmt.setString(1,plan.getId());
@@ -73,21 +73,23 @@ public class DBPlan extends DBConnector {
 
 	
 	public Plan updatePlan(Plan plan){
-		String sql = "UPDATE plan SET `title`=? ,`description`=?, `plannumber`=?,`adress`=?.`instantaction`=?.`wathertransport`=?,`importantcontacts=?,`map=?  WHERE id=?";
+		String sql = "UPDATE plan SET `title`=? ,`description`=?, `plannumber`=? , `adress`=?, `instantaction`=?, `wathertransport`=?, `importantcontacts`=? ,`maplink`=?  WHERE id=?";
 		try(Connection conn = this.connect();
-                PreparedStatement pstmt = conn.prepareStatement(sql)){
+            PreparedStatement pstmt = conn.prepareStatement(sql)){
 			pstmt.setString(1,plan.getTitle());
 			pstmt.setString(2,plan.getDescription());
 			pstmt.setString(3,plan.getPlanNumber());
-			pstmt.setString(4,plan.getId());
-			pstmt.setString(5,plan.getAdress());
-			pstmt.setString(6,plan.getInstantAction());
-			pstmt.setString(7,plan.getWatherTransport());
-			pstmt.setString(8,plan.getImportantContacts());
-			pstmt.setString(9,plan.getMap());
+			pstmt.setString(4,plan.getAdress());
+			pstmt.setString(5,plan.getInstantAction());
+			pstmt.setString(6,plan.getWatherTransport());
+			pstmt.setString(7,plan.getImportantContacts());
+			pstmt.setString(8,plan.getMap());
+			pstmt.setString(9,plan.getId());
+			
 			pstmt.executeUpdate();
 		}catch(Exception e){
 			System.out.println("error in update");
+			e.printStackTrace();
 		}	
 		return plan;
 	}

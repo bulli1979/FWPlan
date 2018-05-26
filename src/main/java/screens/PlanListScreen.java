@@ -26,40 +26,24 @@ public class PlanListScreen implements ApplicationScreen {
 		ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getAllPlans());
 		TableView<Plan> table = new TableView<>(data);
 
-		Label label = new Label("Planliste");
-		label.setFont(new Font("Arial", 20));
-		table.setEditable(true);
+		Label label = createLabel(table);
 
-		TableColumn<Plan, String> numberCol = new TableColumn<>("Plannummer");
-		numberCol.setMinWidth(100);
-		numberCol.setCellValueFactory(new PropertyValueFactory<Plan, String>("planNumber"));
+		TableColumn<Plan, String> numberCol = createColumn("Plannummer", "planNumber", 100);
+		TableColumn<Plan, String> titleCol = createColumn("Titel", "title", 100);
+		TableColumn<Plan, String> descriptionCol = createColumn("Beschreibung", "description", 100);
+		TableColumn<Plan, String> editColumn = createEditColumn();
+		TableColumn<Plan, String> mapColumn = createMapColumn();
+		TableColumn<Plan, String> mapEditColumn = createMapEditColumn();
 
-		TableColumn<Plan, String> titleCol = new TableColumn<>("Titel");
-		titleCol.setMinWidth(100);
-		titleCol.setCellValueFactory(new PropertyValueFactory<Plan, String>("title"));
-
-		TableColumn<Plan, String> descriptionCol = new TableColumn<>("Description");
-		descriptionCol.setMinWidth(200);
-		descriptionCol.setCellValueFactory(new PropertyValueFactory<Plan, String>("description"));
-		
-		TableColumn<Plan, String> mapColumn = new TableColumn<>("Kartenbild");
-		
-		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> takeMapCB = addCallbackForMapTaken();
-
-		mapColumn.setCellFactory(takeMapCB);
-		
-		TableColumn<Plan,String> editColumn = new TableColumn<>("Bearbeiten");
-		
-		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> editCB = createEditCallback();
-
-		editColumn.setCellFactory(editCB);
 		ObservableList<TableColumn<Plan, ?>> colls = table.getColumns();
 		colls.add(numberCol);
 		colls.add(titleCol);
 		colls.add(descriptionCol);
 		colls.add(mapColumn);
-		colls.add(editColumn);		
+		colls.add(editColumn);
+		colls.add(mapEditColumn);
 		table.setItems(data);
+		
 
 		final VBox vbox = new VBox();
 		vbox.setSpacing(5);
@@ -70,66 +54,131 @@ public class PlanListScreen implements ApplicationScreen {
 		return root;
 	}
 
+	private TableColumn<Plan, String> createMapEditColumn() {
+		TableColumn<Plan, String> mapEditColumn = new TableColumn<>("Kartenbild");
+		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> takeMapEditCB = addCallbackForMapEditTaken();
+		mapEditColumn.setCellFactory(takeMapEditCB);
+		return mapEditColumn;
+	}
+
+	private TableColumn<Plan, String> createEditColumn() {
+		TableColumn<Plan, String> editColumn = new TableColumn<>("Bearbeiten");
+		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> editCB = createEditCallback();
+		editColumn.setCellFactory(editCB);
+		return editColumn;
+	}
+
+	private TableColumn<Plan, String> createMapColumn() {
+		TableColumn<Plan, String> mapColumn = new TableColumn<>("Kartenbild");
+		Callback<TableColumn<Plan, String>, TableCell<Plan, String>> takeMapCB = addCallbackForMapTaken();
+		mapColumn.setCellFactory(takeMapCB);
+		return mapColumn;
+	}
+
+	private TableColumn<Plan, String> createColumn(String headLine, String propertie, int width) {
+		TableColumn<Plan, String> col = new TableColumn<>(headLine);
+		col.setMinWidth(width);
+		col.setCellValueFactory(new PropertyValueFactory<Plan, String>(propertie));
+		return col;
+	}
+
+	private Label createLabel(TableView<Plan> table) {
+		Label label = new Label("Planliste");
+		label.setFont(new Font("Arial", 20));
+		table.setEditable(true);
+		return label;
+	}
+
 	private Callback<TableColumn<Plan, String>, TableCell<Plan, String>> createEditCallback() {
 		return new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
 
-				public TableCell<Plan, String> call(final TableColumn<Plan, String> param) {
-						final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
+			public TableCell<Plan, String> call(final TableColumn<Plan, String> param) {
+				final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
 
-							final Button btn = new Button("Plan Bearbeiten");
+					final Button btn = new Button("Plan Bearbeiten");
 
-							@Override
-							public void updateItem(String item, boolean empty) {
-								super.updateItem(item, empty);
-								if (empty) {
-									setGraphic(null);
-									setText(null);
-								} else {
-									btn.setOnAction(event -> {
-										Plan plan = getTableView().getItems().get(getIndex());
-										Constant.INSTANCE.setPlan(plan);
-										ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
-									});
-									setGraphic(btn);
-		                    setText(null);
-		                }
-		            }
-		        };
-		        return cell;
-		    }
-	
+					@Override
+					public void updateItem(String item, boolean empty) {
+						super.updateItem(item, empty);
+						if (empty) {
+							setGraphic(null);
+							setText(null);
+						} else {
+							btn.setOnAction(event -> {
+								Plan plan = getTableView().getItems().get(getIndex());
+								Constant.INSTANCE.setPlan(plan);
+								ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
+							});
+							setGraphic(btn);
+							setText(null);
+						}
+					}
+				};
+				return cell;
+			}
+
 		};
 	}
-	
+
 	private Callback<TableColumn<Plan, String>, TableCell<Plan, String>> addCallbackForMapTaken() {
 		return new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
-			
+
 			public TableCell<Plan, String> call(final TableColumn<Plan, String> param) {
-					final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
+				final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
 
-						final Button btn = new Button("Map aufnehmen");
+					final Button btn = new Button("Map aufnehmen");
 
-						@Override
-						public void updateItem(String item, boolean empty) {
-							super.updateItem(item, empty);
-							if (empty) {
-								setGraphic(null);
-								setText(null);
-							} else {
-								btn.setOnAction(event -> {
-									Plan plan = getTableView().getItems().get(getIndex());
-									Constant.INSTANCE.setPlan(plan);
-									ApplicationHandler.setScreen(ScreenObject.MAPSCREEN);
-								});
-								setGraphic(btn);
-	                    setText(null);
-	                }
-	            }
-	        };
-	        return cell;
-	    }
+					@Override
+					public void updateItem(String item, boolean empty) {
+						super.updateItem(item, empty);
+						if (empty) {
+							setGraphic(null);
+							setText(null);
+						} else {
+							btn.setOnAction(event -> {
+								Plan plan = getTableView().getItems().get(getIndex());
+								Constant.INSTANCE.setPlan(plan);
+								ApplicationHandler.setScreen(ScreenObject.MAPSCREEN);
+							});
+							setGraphic(btn);
+							setText(null);
+						}
+					}
+				};
+				return cell;
+			}
 
-	};
+		};
 	}
-	
+
+	private Callback<TableColumn<Plan, String>, TableCell<Plan, String>> addCallbackForMapEditTaken() {
+		return new Callback<TableColumn<Plan, String>, TableCell<Plan, String>>() {
+
+			public TableCell<Plan, String> call(final TableColumn<Plan, String> param) {
+				final TableCell<Plan, String> cell = new TableCell<Plan, String>() {
+
+					final Button btn = new Button("Auf Karte zeichnen");
+
+					@Override
+					public void updateItem(String item, boolean empty) {
+						super.updateItem(item, empty);
+						if (empty) {
+							setGraphic(null);
+							setText(null);
+						} else {
+							btn.setOnAction(event -> {
+								Plan plan = getTableView().getItems().get(getIndex());
+								Constant.INSTANCE.setPlan(plan);
+								ApplicationHandler.setScreen(ScreenObject.MAPEDITSCREEN);
+							});
+							setGraphic(btn);
+							setText(null);
+						}
+					}
+				};
+				return cell;
+			}
+		};
+	}
+
 }
