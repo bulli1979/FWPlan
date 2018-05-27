@@ -12,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
@@ -25,8 +26,9 @@ public class PlanListScreen implements ApplicationScreen {
 		BorderPane root = new BorderPane();
 		ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getAllPlans());
 		TableView<Plan> table = new TableView<>(data);
-
+		
 		Label label = createLabel(table);
+		TextField searchField = createSearchField(table);
 
 		TableColumn<Plan, String> numberCol = createColumn("Plannummer", "planNumber", 100);
 		TableColumn<Plan, String> titleCol = createColumn("Titel", "title", 100);
@@ -48,7 +50,7 @@ public class PlanListScreen implements ApplicationScreen {
 		final VBox vbox = new VBox();
 		vbox.setSpacing(5);
 		vbox.setPadding(new Insets(10, 0, 0, 10));
-		vbox.getChildren().addAll(label, table);
+		vbox.getChildren().addAll(label, searchField, table);
 
 		root.setCenter(vbox);
 		return root;
@@ -87,6 +89,19 @@ public class PlanListScreen implements ApplicationScreen {
 		label.setFont(new Font("Arial", 20));
 		table.setEditable(true);
 		return label;
+	}
+	
+	private TextField createSearchField(TableView<Plan> table) {
+		final TextField searchField = new TextField();
+		searchField.setFocusTraversable(false);
+		searchField.setPromptText("Einsatzpläne durchsuchen");
+		searchField.textProperty().addListener((observable, oldValue, newValue) -> {
+			//data.clear();
+			ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getPlansWithKeyword(newValue));
+			table.setItems(data);
+			table.refresh();
+		});
+		return searchField;
 	}
 
 	private Callback<TableColumn<Plan, String>, TableCell<Plan, String>> createEditCallback() {

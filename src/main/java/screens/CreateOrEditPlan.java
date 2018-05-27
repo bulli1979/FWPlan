@@ -47,37 +47,37 @@ public class CreateOrEditPlan implements ApplicationScreen{
 		
 		Label planNumber = new Label("Plannummer:");
 		grid.add(planNumber, 0, 2);
-		TextField planNumberTextField = new TextField();
+		final TextField planNumberTextField = new TextField();
 		grid.add(planNumberTextField, 1, 2);
 		
 		Label title = new Label("Titel:");
 		grid.add(title, 0, 3);
-		TextField titleTextField = new TextField();
+		final TextField titleTextField = new TextField();
 		grid.add(titleTextField, 1, 3);
 		
 		Label description = new Label("Beschreibung:");
 		grid.add(description, 0, 4);
-		TextArea descriptionTextField = new TextArea();
+		final TextArea descriptionTextField = new TextArea();
 		grid.add(descriptionTextField, 1, 4);
 		
 		Label adresse = new Label("Adresse:");
 		grid.add(adresse, 0, 5);
-		TextArea adresseTextField = new TextArea();
+		final TextArea adresseTextField = new TextArea();
 		grid.add(adresseTextField, 1, 5);
 		
 		Label sofortmassnahmen = new Label("Sofortmassnahmen:");
 		grid.add(sofortmassnahmen, 0, 6);
-		TextArea sofortmassnahmenTextField = new TextArea();
+		final TextArea sofortmassnahmenTextField = new TextArea();
 		grid.add(sofortmassnahmenTextField, 1, 6);
 		
 		Label wassertransport = new Label("Wassertransport:");
 		grid.add(wassertransport, 0, 7);
-		TextArea wassertransportTextField = new TextArea();
+		final TextArea wassertransportTextField = new TextArea();
 		grid.add(wassertransportTextField, 1, 7);
 		
 		Label wichtigeKontakte = new Label("Wichtige Kontakte:");
 		grid.add(wichtigeKontakte, 0, 8);
-		TextArea wichtigeKontakteTextField = new TextArea();
+		final TextArea wichtigeKontakteTextField = new TextArea();
 		grid.add(wichtigeKontakteTextField, 1, 8);
 		
 		if(editPlan != null) {

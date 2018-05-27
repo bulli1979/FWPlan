@@ -49,6 +49,42 @@ public class DBPlan extends DBConnector {
 		return list;
 	}
 	
+	public List<Plan> getPlansWithKeyword(String keyword) {
+		List<Plan> list = new ArrayList<>();
+		String sqlKeyword = "%" + keyword + "%";
+		String sql = "Select * from plan WHERE id LIKE ? OR description LIKE ? OR plannumber LIKE ? "
+				+ "OR title LIKE ? OR adress LIKE ? ORDER BY plannumber";
+		try(Connection conn = this.connect();
+		        PreparedStatement pstmt = conn.prepareStatement(sql)){
+				pstmt.setString(1,sqlKeyword);
+				pstmt.setString(2,sqlKeyword);
+				pstmt.setString(3,sqlKeyword);
+				pstmt.setString(4,sqlKeyword);
+				pstmt.setString(5,sqlKeyword);
+				
+				ResultSet resultSet = pstmt.executeQuery();
+			
+			while (resultSet.next()) {
+				list.add(new Plan.Builder().setId(resultSet.getString("id"))
+						.withDescription(resultSet.getString("description"))
+						.withPlanNumber(resultSet.getString("plannumber"))
+						.withTitle(resultSet.getString("title"))
+						.withAdress(resultSet.getString("adress"))
+						.withInstantAction(resultSet.getString("instantaction"))
+						.wuithWatherTransport(resultSet.getString("wathertransport"))
+						.withImportantContact(resultSet.getString("importantcontacts"))
+						.withMap(resultSet.getString("maplink"))
+						.build());
+			}
+			resultSet.close();
+			
+		} catch (Exception e) {
+			System.out.println("Error in DB");
+			e.printStackTrace();
+		}
+		return list;
+	}
+	
 	public Plan insertPlan(Plan plan){
 		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`,`adress`,`instantaction`,`wathertransport`,`importantcontacts`,`maplink`) VALUES(?,?,?,?,?,?,?,?,?);";
 		try(Connection conn = this.connect();
