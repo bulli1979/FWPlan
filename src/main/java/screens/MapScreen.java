@@ -2,19 +2,24 @@ package screens;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Optional;
 
 import javax.imageio.ImageIO;
 
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
+import application.ApplicationHandler;
 import application.Constant;
 import data.db.DBPlan;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.SnapshotParameters;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.PixelReader;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
@@ -23,7 +28,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
-public class MapScreen implements ApplicationScreen{
+public class MapScreen implements ApplicationScreen {
 	private static final WebView WEBVIEW = new WebView();
 
 	private static final String IMAGEENDING = "png";
@@ -73,19 +78,39 @@ public class MapScreen implements ApplicationScreen{
 	}
 
 	private static void cutAndWriteImage(WritableImage image) {
+		File file = new File(IMAGE_PREFIX + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
+		if(file.exists()) {
+			Alert alert = new Alert(AlertType.CONFIRMATION);
+			alert.setTitle("Kartenbild Überschreiben");
+			alert.setHeaderText(null);
+			alert.setContentText("Für diesen Einsatzplan exisitert schon ein Kartenbild.\n\n"
+					+ "Soll dieses Kartenbild überschrieben werden?");
+			Optional<ButtonType> result = alert.showAndWait();
+			if (result.get() == ButtonType.OK){
+				saveMap(file, image);
+			} 
+		}
+		else {
+			saveMap(file, image);
+		}
+		ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
+	}
+	
+	private static void saveMap(File file, WritableImage image) {
 		PixelReader reader = image.getPixelReader();
 		int width = (int) image.getWidth() - WIDTH_DIFFERENCE;
 		int height = (int) image.getHeight() - HEIGHT_TOP_DIFFERENCE - HEIGHT_BOTTOM_DIFFERENCE;
 		WritableImage newImage = new WritableImage(reader, WIDTH_DIFFERENCE, HEIGHT_TOP_DIFFERENCE, width, height);
-		File file = new File(IMAGE_PREFIX + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
+		//SRE hinzugefügt mkdirs um Ordnerstruktur zu erstellen falls diese noch nicht exisitert...
+		file.mkdirs();
 		try {
 			ImageIO.write(SwingFXUtils.fromFXImage(newImage, null), IMAGEENDING, file);
 		} catch (IOException error) {
-
-		}
-		
+			error.printStackTrace();
+		}				
 		setImagePath(file.getAbsolutePath());
-		Constant.INSTANCE.getPlan().setMap(file.getName());
+		//SRE geändert Map Value ist neu absoluter pfad / nicht nur Filename
+		Constant.INSTANCE.getPlan().setMap(file.getAbsolutePath());
 		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
 	}
 

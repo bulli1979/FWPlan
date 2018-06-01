@@ -1,5 +1,6 @@
 package application;
 
+
 import data.Plan;
 
 public enum Constant {
@@ -23,6 +24,5 @@ public enum Constant {
 	public double getAppWidth() {
 		return appWidth;
 	}
-	
 	
 }

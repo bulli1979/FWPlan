@@ -5,19 +5,26 @@ import application.Constant;
 import data.Plan;
 import data.db.DBPlan;
 import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TablePosition;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 
 public class PlanListScreen implements ApplicationScreen {
@@ -44,7 +51,19 @@ public class PlanListScreen implements ApplicationScreen {
 		colls.add(mapColumn);
 		colls.add(editColumn);
 		colls.add(mapEditColumn);
-		table.setItems(data);
+		table.setItems(data);	
+		
+		//SRE --> Mouse Click Listener f√ºr Plan Detailansicht
+		table.setOnMouseClicked(new EventHandler<MouseEvent>() {
+			
+			@Override
+			public void handle(MouseEvent event) {
+				if(event.getClickCount()==2) {
+					Constant.INSTANCE.setPlan(table.getSelectionModel().getSelectedItem());
+					openPlanDetailView(root);
+				}
+			}
+		});
 		
 
 		final VBox vbox = new VBox();
@@ -94,7 +113,7 @@ public class PlanListScreen implements ApplicationScreen {
 	private TextField createSearchField(TableView<Plan> table) {
 		final TextField searchField = new TextField();
 		searchField.setFocusTraversable(false);
-		searchField.setPromptText("Einsatzpl‰ne durchsuchen");
+		searchField.setPromptText("EinsatzplÔøΩne durchsuchen");
 		searchField.textProperty().addListener((observable, oldValue, newValue) -> {
 			//data.clear();
 			ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getPlansWithKeyword(newValue));
@@ -195,5 +214,13 @@ public class PlanListScreen implements ApplicationScreen {
 			}
 		};
 	}
-
+	
+	private void openPlanDetailView(Pane root) {
+		Stage dialog = new Stage();
+		Scene openMapScene = new Scene(ScreenObject.PLANDETAILSCREEN.screen.get());
+		dialog.setScene(openMapScene);
+		dialog.initOwner(root.getScene().getWindow());
+		dialog.initModality(Modality.APPLICATION_MODAL);
+		dialog.showAndWait();
+	}
 }

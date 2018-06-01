@@ -116,7 +116,7 @@ public class Plan {
 			return this;
 		}
 		
-		public Builder wuithWatherTransport(String wathertransport){
+		public Builder withWatherTransport(String wathertransport){
 			this.watherTransport = wathertransport;
 			return this;
 		}

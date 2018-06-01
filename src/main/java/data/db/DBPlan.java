@@ -35,7 +35,7 @@ public class DBPlan extends DBConnector {
 						.withTitle(resultSet.getString("title"))
 						.withAdress(resultSet.getString("adress"))
 						.withInstantAction(resultSet.getString("instantaction"))
-						.wuithWatherTransport(resultSet.getString("wathertransport"))
+						.withWatherTransport(resultSet.getString("wathertransport"))
 						.withImportantContact(resultSet.getString("importantcontacts"))
 						.withMap(resultSet.getString("maplink"))
 						.build());
@@ -71,7 +71,7 @@ public class DBPlan extends DBConnector {
 						.withTitle(resultSet.getString("title"))
 						.withAdress(resultSet.getString("adress"))
 						.withInstantAction(resultSet.getString("instantaction"))
-						.wuithWatherTransport(resultSet.getString("wathertransport"))
+						.withWatherTransport(resultSet.getString("wathertransport"))
 						.withImportantContact(resultSet.getString("importantcontacts"))
 						.withMap(resultSet.getString("maplink"))
 						.build());

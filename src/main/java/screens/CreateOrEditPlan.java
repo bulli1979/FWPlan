@@ -143,7 +143,8 @@ public class CreateOrEditPlan implements ApplicationScreen{
 					withDescription(descriptionTextField.getText()).
 					withAdress(adresseTextField.getText()).
 					withInstantAction(sofortmassnahmenTextField.getText()).
-					wuithWatherTransport(wassertransportTextField.getText()).
+					withWatherTransport(wassertransportTextField.getText()).
+					withMap(editPlan.getMap()).
 					withImportantContact(wichtigeKontakteTextField.getText()).build();	
 					
 				if(editPlan == null){
@@ -171,9 +172,5 @@ public class CreateOrEditPlan implements ApplicationScreen{
 		grid.add(hbBtn, 1, 9);
 		root.setCenter(grid);
 		return root;
-	}
-	
-	public void setFieldValues() {
-		
 	}
 }
