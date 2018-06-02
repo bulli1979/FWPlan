@@ -13,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.print.PrinterJob;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -97,7 +98,12 @@ public class PlanDetailScreen implements ApplicationScreen {
 			
 			@Override
 			public void handle(ActionEvent event) {
-				
+				/*PrinterJob job = PrinterJob.createPrinterJob();
+				if(job != null){
+					   job.showPrintDialog(root.getScene().getWindow()); // Window must be your main Stage
+					   job.printPage(root);
+					   job.endJob();
+				}*/
 				System.out.println("TODO Print PDF");
 			}
 		});	

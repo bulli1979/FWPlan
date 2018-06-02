@@ -144,7 +144,6 @@ public class CreateOrEditPlan implements ApplicationScreen{
 					withAdress(adresseTextField.getText()).
 					withInstantAction(sofortmassnahmenTextField.getText()).
 					withWatherTransport(wassertransportTextField.getText()).
-					withMap(editPlan.getMap()).
 					withImportantContact(wichtigeKontakteTextField.getText()).build();	
 					
 				if(editPlan == null){
@@ -152,6 +151,7 @@ public class CreateOrEditPlan implements ApplicationScreen{
 					DBPlan.getInstance().insertPlan(savePlan);
 				}else{
 					System.out.println("update");
+					savePlan.setMap(editPlan.getMap());
 					DBPlan.getInstance().updatePlan(savePlan);
 				}
 				editPlan = savePlan;
