@@ -11,7 +11,7 @@ import data.db.DBPlan;
 
 public class DBPlanCRUDTest {
 	
-	@Test
+	//@Test
 	public void testInsert(){
 		//TODO Simon ein bissl mehr testen und schön machen. 
 		String id = UUID.randomUUID().toString();
