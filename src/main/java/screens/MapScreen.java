@@ -83,8 +83,8 @@ public class MapScreen implements ApplicationScreen {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.setTitle("Kartenbild Ãœberschreiben");
 			alert.setHeaderText(null);
-			alert.setContentText("FÃ¼r diesen Einsatzplan exisitert schon ein Kartenbild.\n\n"
-					+ "Soll dieses Kartenbild Ã¼berschrieben werden?");
+			alert.setContentText("Für diesen Einsatzplan exisitert schon ein Kartenbild.\n\n"
+					+ "Soll dieses Kartenbild Überschrieben werden?");
 			Optional<ButtonType> result = alert.showAndWait();
 			if (result.get() == ButtonType.OK){
 				saveMap(file, image);

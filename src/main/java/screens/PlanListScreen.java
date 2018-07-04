@@ -113,7 +113,7 @@ public class PlanListScreen implements ApplicationScreen {
 	private TextField createSearchField(TableView<Plan> table) {
 		final TextField searchField = new TextField();
 		searchField.setFocusTraversable(false);
-		searchField.setPromptText("Einsatzplï¿½ne durchsuchen");
+		searchField.setPromptText("Einsatzpläne durchsuchen");
 		searchField.textProperty().addListener((observable, oldValue, newValue) -> {
 			//data.clear();
 			ObservableList<Plan> data = FXCollections.observableArrayList(DBPlan.getInstance().getPlansWithKeyword(newValue));
