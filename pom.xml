@@ -1,9 +1,26 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.fw.FwPlan</groupId>
 	<artifactId>FWPlan</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<junitVersion>4.12</junitVersion>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<developers>
+		<developer>
+			<id>meb</id>
+			<name>Mirko Eberlein</name>
+			<email>mirko.eberlein@webgate.biz</email>
+		</developer>
+		<developer>
+			<id>sir</id>
+			<name>Simon Reinhart</name>
+		</developer>
+	</developers>
 	<build>
 		<plugins>
 			<plugin>
@@ -12,14 +29,6 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.zenjava</groupId>
-				<artifactId>javafx-maven-plugin</artifactId>
-				<version>8.8.3</version>
-				<configuration>
-					<mainClass>application.ApplicationStarter</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -35,6 +44,18 @@
 			<artifactId>sqlite-jdbc</artifactId>
 			<version>3.8.11.2</version>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+			<version>${junitVersion}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.zenjava/javafx-maven-plugin -->
+		<dependency>
+			<groupId>com.zenjava</groupId>
+			<artifactId>javafx-maven-plugin</artifactId>
+			<version>1.5</version>
+		</dependency>
 
+	</dependencies>
 </project>
