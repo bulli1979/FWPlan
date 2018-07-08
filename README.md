@@ -6,5 +6,10 @@ Es ist ein Java FX Projekt welches eine ausführbare Exe erstellt und unter wind
 An Startprogrammen für OS und Linux wird gearbeitet. Über Jar Befehle ist dies schon möglich. 
 Wer interesse hat an diesem Projekt mitzuarbeiten kann sich gern bei uns melden. 
 
+Aktuelle Version kann bezogen werden unter
+
+https://s3-eu-west-1.amazonaws.com/biz.wgc.fwplan/FWPlan-0.0.1-SNAPSHOT.zip
+Entpacken und dann exe starten. 
+
 Freundliche Grüsse
 Mirko Eberlein
