@@ -2,3 +2,7 @@
 	-fx-color: #ff0000 ;
 }
 
+.mapView{
+	-fx-padding: 10;
+    -fx-background-color: #CCFF99;
+}

@@ -2,18 +2,13 @@ package screens;
 
 import java.io.File;
 import java.net.MalformedURLException;
-import java.util.UUID;
 
-import javax.swing.border.EmptyBorder;
-
-import application.ApplicationHandler;
 import application.Constant;
 import data.Plan;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.print.PrinterJob;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;

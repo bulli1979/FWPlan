@@ -7,8 +7,8 @@ public enum ScreenObject {
 	PLANLISTSCREEN(new PlanListScreen()), 
 	MAPSCREEN(new MapScreen()),
 	PLANDETAILSCREEN(new PlanDetailScreen()), 
-	MAPEDITSCREEN(new MapEditScreen()); //TODO Detailscreen erstellen
-	
+	MAPEDITSCREEN(new MapEditScreen()),
+	IMAGEUPLOADDIALOG(new ImageUploadScreen());
 	public ApplicationScreen screen;
 	
 	private ScreenObject(ApplicationScreen screen){

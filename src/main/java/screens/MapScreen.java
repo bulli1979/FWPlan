@@ -54,7 +54,8 @@ public class MapScreen implements ApplicationScreen {
 
 	private ScrollPane createMapHolder() {
 		ScrollPane mapHolder = new ScrollPane();
-		System.out.println(WIDTH + " x " + HEIGHT);
+		mapHolder.setMinWidth(WIDTH);
+		mapHolder.setMinWidth(HEIGHT);
 		WEBVIEW.setMaxWidth(WIDTH);
 		WEBVIEW.setMinWidth(WIDTH);
 		WEBVIEW.setMaxHeight(HEIGHT);
@@ -81,10 +82,10 @@ public class MapScreen implements ApplicationScreen {
 		File file = new File(IMAGE_PREFIX + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
 		if(file.exists()) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
-			alert.setTitle("Kartenbild Ãœberschreiben");
+			alert.setTitle("Kartenbild Überschreiben");
 			alert.setHeaderText(null);
 			alert.setContentText("Für diesen Einsatzplan exisitert schon ein Kartenbild.\n\n"
-					+ "Soll dieses Kartenbild Überschrieben werden?");
+					+ "Soll dieses Kartenbild überschrieben werden?");
 			Optional<ButtonType> result = alert.showAndWait();
 			if (result.get() == ButtonType.OK){
 				saveMap(file, image);
@@ -101,7 +102,7 @@ public class MapScreen implements ApplicationScreen {
 		int width = (int) image.getWidth() - WIDTH_DIFFERENCE;
 		int height = (int) image.getHeight() - HEIGHT_TOP_DIFFERENCE - HEIGHT_BOTTOM_DIFFERENCE;
 		WritableImage newImage = new WritableImage(reader, WIDTH_DIFFERENCE, HEIGHT_TOP_DIFFERENCE, width, height);
-		//SRE hinzugefÃ¼gt mkdirs um Ordnerstruktur zu erstellen falls diese noch nicht exisitert...
+		//SRE hinzugefügt mkdirs um Ordnerstruktur zu erstellen falls diese noch nicht exisitert...
 		file.mkdirs();
 		try {
 			ImageIO.write(SwingFXUtils.fromFXImage(newImage, null), IMAGEENDING, file);
@@ -109,7 +110,7 @@ public class MapScreen implements ApplicationScreen {
 			error.printStackTrace();
 		}				
 		setImagePath(file.getAbsolutePath());
-		//SRE geÃ¤ndert Map Value ist neu absoluter pfad / nicht nur Filename
+		//SRE geändert Map Value ist neu absoluter pfad / nicht nur Filename
 		Constant.INSTANCE.getPlan().setMap(file.getAbsolutePath());
 		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
 	}

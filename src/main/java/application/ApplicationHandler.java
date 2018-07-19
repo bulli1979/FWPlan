@@ -12,10 +12,8 @@ public class ApplicationHandler {
 	private static VBox vbox = new VBox();
 	private static final int INITIAL_WIDTH_HEIGHT = 100;
 	public ApplicationHandler(Stage stage){
-		
 		this.stage = stage;
 		this.stage.setTitle(APPTITLE);
-		
 	}
 	
 	public static void setScreen(ScreenObject screenObject){
@@ -31,6 +29,7 @@ public class ApplicationHandler {
 		stage.setScene(scene);
 		stage.setMaximized(true);
 		Constant.INSTANCE.setAppWidth(stage.getWidth());
+		Constant.INSTANCE.setStage(stage);
 		stage.show();
 	}
 	

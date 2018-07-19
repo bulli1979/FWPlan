@@ -2,13 +2,14 @@ package application;
 
 
 import data.Plan;
+import javafx.stage.Stage;
 
 public enum Constant {
 	INSTANCE;
 	
 	private Plan plan;
 	private double appWidth;
-	
+	private Stage stage;
 	public Plan getPlan() {
 		return plan;
 	}
@@ -23,6 +24,13 @@ public enum Constant {
 	}
 	public double getAppWidth() {
 		return appWidth;
+	}
+
+	public void setStage(Stage stage) {
+		this.stage = stage;
+	}
+	public Stage getStage() {
+		return this.stage;
 	}
 	
 }
