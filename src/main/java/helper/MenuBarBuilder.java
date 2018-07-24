@@ -18,7 +18,6 @@ public class MenuBarBuilder {
 		Menu menuEinsatzplan = new Menu("Einsatzplan");
 		MenuItem overview = new MenuItem("Übersicht");
 		overview.setOnAction(new EventHandler<ActionEvent>() {
-
 			@Override
 			public void handle(ActionEvent event) {
 				Constant.INSTANCE.setPlan(null);

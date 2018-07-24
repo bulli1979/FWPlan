@@ -23,10 +23,12 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.PixelReader;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.stage.Screen;
 
 public class MapScreen implements ApplicationScreen {
 	private static final WebView WEBVIEW = new WebView();
@@ -36,18 +38,25 @@ public class MapScreen implements ApplicationScreen {
 	private static final int HEIGHT_TOP_DIFFERENCE = 220;
 	private static final int HEIGHT_BOTTOM_DIFFERENCE = 100;
 	private static final int WIDTH_DIFFERENCE = 340;
-	
-	private static final double WIDTH = PDRectangle.A3.getHeight() + WIDTH_DIFFERENCE;
-	private static final double HEIGHT = PDRectangle.A3.getWidth() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE;
+	private static final String SAVE = "speichern";
+	private static final String PORTRAIT = "hochkant";
+	private static final String LANDSCAPE = "Leinwand";
+	private static double WIDTH;
+	private static double HEIGHT;
 	private static final String IMAGE_PREFIX = System.getProperty("user.dir") + File.separator + "maps"+File.separator+"image_";
 	private static String imagePath = null;
-	
+	private int displayForm = 1;
+	private VBox centerBox;
+	private HBox buttons;
 	public Pane get() {
 		BorderPane root = new BorderPane();
-		Button save = createsaveButton(); 
+		Button saveButton = createsaveButton(); 
+		Button directionButton = createDirectionButton();
+		buttons = new HBox(saveButton,directionButton);
+		setSizing();
 		ScrollPane mapHolder = createMapHolder();
-		VBox centerBox = new VBox();
-		centerBox.getChildren().addAll(save, mapHolder);
+		centerBox = new VBox();
+		centerBox.getChildren().addAll(buttons, mapHolder);
 		root.setCenter(centerBox);
 		return root;
 	}
@@ -55,7 +64,9 @@ public class MapScreen implements ApplicationScreen {
 	private ScrollPane createMapHolder() {
 		ScrollPane mapHolder = new ScrollPane();
 		mapHolder.setMinWidth(WIDTH);
-		mapHolder.setMinWidth(HEIGHT);
+		mapHolder.setMinHeight(400);
+		int maxHeight = (int) Screen.getPrimary().getVisualBounds().getHeight()-80;
+		mapHolder.setMinHeight(maxHeight);
 		WEBVIEW.setMaxWidth(WIDTH);
 		WEBVIEW.setMinWidth(WIDTH);
 		WEBVIEW.setMaxHeight(HEIGHT);
@@ -67,17 +78,50 @@ public class MapScreen implements ApplicationScreen {
 	}
 
 	private Button createsaveButton() {
-		Button save = new Button("speichern");
-		save.setOnAction(new EventHandler<ActionEvent>() {
+		Button button = new Button(SAVE);
+		button.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
 				WritableImage image = WEBVIEW.snapshot(new SnapshotParameters(), null);
 				cutAndWriteImage(image);
 			}
 		});
-		return save;
+		return button;
 	}
 
+	private Button createDirectionButton() {
+		
+		Button button = new Button(displayForm==1?PORTRAIT:LANDSCAPE);
+		
+		button.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				displayForm = displayForm==1?2:1;
+				setSizing();
+				buildWebView();
+			}
+		});
+		return button;
+	}
+	
+	private void setSizing() {
+		if(displayForm==1) {
+			WIDTH = PDRectangle.A3.getHeight() + WIDTH_DIFFERENCE;
+			HEIGHT = PDRectangle.A3.getWidth() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE;
+		}else {
+			WIDTH = PDRectangle.A3.getWidth() + WIDTH_DIFFERENCE;
+			HEIGHT = PDRectangle.A3.getHeight() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE;
+		}
+	}
+	
+	private void buildWebView() {
+		ScrollPane mapHolder = createMapHolder();
+		centerBox.getChildren().remove(1);
+		centerBox.getChildren().add(mapHolder);
+		buttons.getChildren().remove(1);
+		buttons.getChildren().add(createDirectionButton());
+	}
+	
 	private static void cutAndWriteImage(WritableImage image) {
 		File file = new File(IMAGE_PREFIX + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
 		if(file.exists()) {
@@ -102,7 +146,6 @@ public class MapScreen implements ApplicationScreen {
 		int width = (int) image.getWidth() - WIDTH_DIFFERENCE;
 		int height = (int) image.getHeight() - HEIGHT_TOP_DIFFERENCE - HEIGHT_BOTTOM_DIFFERENCE;
 		WritableImage newImage = new WritableImage(reader, WIDTH_DIFFERENCE, HEIGHT_TOP_DIFFERENCE, width, height);
-		//SRE hinzugefügt mkdirs um Ordnerstruktur zu erstellen falls diese noch nicht exisitert...
 		file.mkdirs();
 		try {
 			ImageIO.write(SwingFXUtils.fromFXImage(newImage, null), IMAGEENDING, file);
@@ -110,8 +153,7 @@ public class MapScreen implements ApplicationScreen {
 			error.printStackTrace();
 		}				
 		setImagePath(file.getAbsolutePath());
-		//SRE geändert Map Value ist neu absoluter pfad / nicht nur Filename
-		Constant.INSTANCE.getPlan().setMap(file.getAbsolutePath());
+		Constant.INSTANCE.getPlan().setMap(file.getName());
 		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
 	}
 

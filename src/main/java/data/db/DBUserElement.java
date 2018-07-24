@@ -23,6 +23,7 @@ public class DBUserElement extends DBConnector {
 
 	public List<UserElement> getAllElementsForPlan(String planId) {
 		List<UserElement> list = new ArrayList<>();
+		System.out.println("PlanId" + planId);
 		String sql = "Select * from userelement where plan=?";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, planId);
@@ -31,9 +32,9 @@ public class DBUserElement extends DBConnector {
 			while (resultSet.next()) {
 				list.add(new UserElement.Builder().setId(resultSet.getString("id"))
 						.withLeft(resultSet.getDouble("left"))
-						.withLeft2(resultSet.getDouble("left2"))
+						.withWidth(resultSet.getDouble("width"))
 						.withTop(resultSet.getDouble("top"))
-						.withTop2(resultSet.getDouble("top2"))
+						.withHeight(resultSet.getDouble("height"))
 						.withText(resultSet.getString("text"))
 						.withType(resultSet.getInt("typ"))
 						.forPlan(resultSet.getString("plan"))
@@ -49,18 +50,18 @@ public class DBUserElement extends DBConnector {
 	}
 
 	public UserElement insertElement(UserElement userElement) {
-		String sql = "INSERT INTO userelement (`id`,`plan`,`text`,`left`,`left2`,`top`,`top2`,`typ`) VALUES(?,?,?,?,?,?,?,?);";
+		String sql = "INSERT INTO userelement (`id`,`plan`,`text`,`left`,`width`,`top`,`height`,`typ`) VALUES(?,?,?,?,?,?,?,?);";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, userElement.getId());
 			pstmt.setString(2, userElement.getPlanId());
 			pstmt.setString(3, userElement.getText());
 			pstmt.setDouble(4, userElement.getLeft());
-			pstmt.setDouble(5, userElement.getLeft2());
+			pstmt.setDouble(5, userElement.getWidth());
 			pstmt.setDouble(6, userElement.getTop());
-			pstmt.setDouble(7, userElement.getTop2());
+			pstmt.setDouble(7, userElement.getHeight());
 			pstmt.setInt(8, userElement.getType());
-
 			pstmt.executeUpdate();
+			
 		} catch (Exception e) {
 			System.out.println("error in insert" + e);
 			e.printStackTrace();
@@ -68,16 +69,16 @@ public class DBUserElement extends DBConnector {
 		return userElement;
 	}
 
-	public UserElement updatePlan(UserElement userElement) {
-		String sql = "UPDATE plan SET `id`=? ,`plan`=?, `text`=?,`left`=?.`left2`=?.`top`=?,`top2=?,`typ=?  WHERE id=?";
+	public UserElement updateElement(UserElement userElement) {
+		String sql = "UPDATE plan SET `id`=? ,`plan`=?, `text`=?,`left`=?.`width`=?.`top`=?,`height=?,`typ=?  WHERE id=?";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, userElement.getId());
 			pstmt.setString(2, userElement.getPlanId());
 			pstmt.setString(3, userElement.getText());
 			pstmt.setDouble(4, userElement.getLeft());
-			pstmt.setDouble(5, userElement.getLeft2());
+			pstmt.setDouble(5, userElement.getWidth());
 			pstmt.setDouble(6, userElement.getTop());
-			pstmt.setDouble(7, userElement.getTop2());
+			pstmt.setDouble(7, userElement.getHeight());
 			pstmt.setInt(8, userElement.getType());
 			pstmt.setString(9, userElement.getId());
 			pstmt.executeUpdate();
@@ -87,7 +88,7 @@ public class DBUserElement extends DBConnector {
 		return userElement;
 	}
 
-	public boolean deletePlan(UserElement userelement) {
+	public boolean deleteElement(UserElement userelement) {
 		String sql = "DELETE FROM userelement WHERE id=?";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, userelement.getId());

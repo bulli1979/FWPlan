@@ -6,8 +6,8 @@ public class UserElement {
 	private String text;
 	private double top;
 	private double left;
-	private double top2;
-	private double left2;
+	private double height;
+	private double width;
 	private int type;
 	
 	private UserElement(Builder builder) {
@@ -16,8 +16,8 @@ public class UserElement {
 		this.left = builder.left;
 		this.type = builder.type;
 		this.text = builder.text;
-		this.top2 = builder.top2;
-		this.left2 = builder.left2;
+		this.width = builder.width;
+		this.height = builder.height;
 		this.planId = builder.planId;
 	}
 	
@@ -48,17 +48,17 @@ public class UserElement {
 	public void setText(String text) {
 		this.text = text;
 	}
-	public double getTop2() {
-		return top2;
+	public double getHeight() {
+		return height;
 	}
-	public void setTop2(double top2) {
-		this.top2 = top2;
+	public void setHeight(double height) {
+		this.height = height;
 	}
-	public double getLeft2() {
-		return left2;
+	public double getWidth() {
+		return width;
 	}
-	public void setLeft2(double left2) {
-		this.left2 = left2;
+	public void setWidth(double width) {
+		this.width = width;
 	}
 	public String getPlanId() {
 		return planId;
@@ -66,18 +66,21 @@ public class UserElement {
 	public void setPlanId(String planId) {
 		this.planId = planId;
 	}
-	
+	public void setId(String id) {
+		this.id = id;
+	}
 	public static class Builder{
 		private String id;
 		private String planId;
 		private String text;
 		private double top;
 		private double left;
-		private double top2;
-		private double left2;
+		private double height;
+		private double width;
 		private int type;
 		
-		public Builder(){}
+		public Builder(){
+		}
 		
 		public Builder setId(String id) {
 			this.id = id;
@@ -95,16 +98,16 @@ public class UserElement {
 			this.left = left;
 			return this;
 		}
-		public Builder withLeft2(double left2) {
-			this.left2 = left2;
+		public Builder withWidth(double width) {
+			this.width = width;
 			return this;
 		}
 		public Builder withTop(double top) {
 			this.top = top;
 			return this;
 		}
-		public Builder withTop2(double top2) {
-			this.top2 = top2;
+		public Builder withHeight(double height) {
+			this.height = height;
 			return this;
 		}
 		
@@ -112,10 +115,15 @@ public class UserElement {
 			this.type = type;
 			return this;
 		}
-		
+		public Builder setPlanId(String planId) {
+			this.planId = planId;
+			return this;
+		}
 		public UserElement build() {
 			return new UserElement(this);
 		}
 	}
+
+	
 	
 }

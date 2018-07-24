@@ -2,7 +2,6 @@ package screens;
 
 import java.io.File;
 import java.net.MalformedURLException;
-
 import application.Constant;
 import data.Plan;
 import javafx.event.ActionEvent;
@@ -77,7 +76,7 @@ public class PlanDetailScreen implements ApplicationScreen {
 			if(plan.getMap() != null) {
 				File imageFile = new File(plan.getMap());
 				if(imageFile.exists()) {
-					mapImage = new Image(imageFile.toURI().toURL().toString());
+					mapImage = new Image(Constant.INSTANCE.getImagePrefix() + imageFile.toURI().toURL().toString());
 					mapImageView.setFitWidth(700);
 					mapImageView.setFitHeight(500);
 				}

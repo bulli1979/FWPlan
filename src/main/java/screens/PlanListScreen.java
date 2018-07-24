@@ -51,7 +51,6 @@ public class PlanListScreen implements ApplicationScreen {
 		colls.add(mapEditColumn);
 		table.setItems(data);	
 		
-		//SRE --> Mouse Click Listener für Plan Detailansicht
 		table.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			
 			@Override

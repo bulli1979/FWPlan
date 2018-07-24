@@ -1,6 +1,8 @@
 package application;
 
 
+import java.io.File;
+
 import data.Plan;
 import javafx.stage.Stage;
 
@@ -10,6 +12,8 @@ public enum Constant {
 	private Plan plan;
 	private double appWidth;
 	private Stage stage;
+	private String imagePrefix = System.getProperty("user.dir") + File.separator + "maps"
+			+ File.separator;
 	public Plan getPlan() {
 		return plan;
 	}
@@ -31,6 +35,9 @@ public enum Constant {
 	}
 	public Stage getStage() {
 		return this.stage;
+	}
+	public String getImagePrefix() {
+		return imagePrefix;
 	}
 	
 }
