@@ -36,7 +36,5 @@ public enum Tool {
 	public String createStringFromDate(Date date){
 		return formater.format(date);
 	}
-	
-
 
 }

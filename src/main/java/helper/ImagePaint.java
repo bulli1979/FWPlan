@@ -33,6 +33,7 @@ public class ImagePaint {
 			System.out.println("Error");
 			e.printStackTrace();
 		}
+		
 		mapImageView.setImage(mapImage);
 		return mapImageView;
 	}
@@ -57,7 +58,7 @@ public class ImagePaint {
 		}
 		return new File("image.jpg");
 	}
-	
+
 	private static void copyImage(File imageFile, File endFile) {
 		try {
 			InputStream is = null;
