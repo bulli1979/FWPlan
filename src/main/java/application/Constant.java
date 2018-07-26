@@ -12,8 +12,8 @@ public enum Constant {
 	private Plan plan;
 	private double appWidth;
 	private Stage stage;
-	private String imagePrefix = System.getProperty("user.dir") + File.separator + "maps"
-			+ File.separator + "image_";
+	private String imagePrefix = System.getProperty("user.dir") + File.separator + "maps" + File.separator;
+	private String outputPath = System.getProperty("user.dir") + File.separator + "pdfs" + File.separator;
 	public Plan getPlan() {
 		return plan;
 	}
@@ -38,6 +38,10 @@ public enum Constant {
 	}
 	public String getImagePrefix() {
 		return imagePrefix;
+	}
+
+	public String getOutputPath() {
+		return outputPath;
 	}
 	
 }

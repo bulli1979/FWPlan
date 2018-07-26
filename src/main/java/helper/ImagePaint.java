@@ -46,17 +46,16 @@ public class ImagePaint {
 			imageFile = new File(Constant.INSTANCE.getImagePrefix() + plan.getMap());
 			copyImage(imageFile, endFile);
 			paintUserElements(endFile, userElements);
-
 		}
 		return endFile;
 	}
 
 	private static File getEndFile() {
-		File endFile = new File("image.jpg");
+		File endFile = new File("image.png");
 		if(endFile.exists()) {
 			endFile.delete();
 		}
-		return new File("image.jpg");
+		return new File("image.png");
 	}
 
 	private static void copyImage(File imageFile, File endFile) {
@@ -104,7 +103,7 @@ public class ImagePaint {
 			g.drawImage(image, 0, 0, null);
 			g.drawImage(overlay, (int) toAdd.getLeft(), (int) toAdd.getTop(), null);
 			// Save as new image
-			ImageIO.write(combined, "PNG", source);
+			ImageIO.write(combined, "png", source);
 		} catch (IOException e) {
 			System.out.println("Error in Merger");
 			e.printStackTrace();

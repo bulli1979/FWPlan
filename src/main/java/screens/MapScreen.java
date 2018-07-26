@@ -160,6 +160,7 @@ public class MapScreen implements ApplicationScreen {
 		}
 		
 		setImagePath(file.getAbsolutePath());
+		System.out.println(file.getName());
 		Constant.INSTANCE.getPlan().setMap(file.getName());
 		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
 	}
