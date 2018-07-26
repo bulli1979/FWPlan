@@ -50,8 +50,6 @@ public class MapScreen implements ApplicationScreen {
 	private static final String LANDSCAPE = "Leinwand";
 	private static double WIDTH;
 	private static double HEIGHT;
-	private static final String IMAGE_PREFIX = System.getProperty("user.dir") + File.separator + "maps" + File.separator
-			+ "image_";
 	private static String imagePath = null;
 	private int displayForm = 1;
 	private VBox centerBox;
@@ -132,7 +130,7 @@ public class MapScreen implements ApplicationScreen {
 	}
 
 	private static void cutAndWriteImage(WritableImage image) {
-		File file = new File(IMAGE_PREFIX + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
+		File file = new File(Constant.INSTANCE.getImagePrefix() + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
 		if (file.exists()) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.setTitle("Kartenbild Überschreiben");

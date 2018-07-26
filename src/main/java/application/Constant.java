@@ -13,7 +13,7 @@ public enum Constant {
 	private double appWidth;
 	private Stage stage;
 	private String imagePrefix = System.getProperty("user.dir") + File.separator + "maps"
-			+ File.separator;
+			+ File.separator + "image_";
 	public Plan getPlan() {
 		return plan;
 	}
