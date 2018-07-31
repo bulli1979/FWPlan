@@ -58,7 +58,7 @@ public class ImagePaint {
 		return new File("image.png");
 	}
 
-	private static void copyImage(File imageFile, File endFile) {
+	public static void copyImage(File imageFile, File endFile) {
 		try {
 			InputStream is = null;
 			OutputStream os = null;
@@ -82,10 +82,8 @@ public class ImagePaint {
 
 	private static void paintUserElements(File endFile, List<UserElement> userElements) {
 		for (UserElement element : userElements) {
-			// userElements.forEach(element -> {
 			mergeImage(endFile, element);
 		}
-		;
 	}
 
 	// TODO CHange this to not use AWT
@@ -120,6 +118,8 @@ public class ImagePaint {
 			case CAR:
 				break;
 			case IMAGE:
+				System.out.println(Constant.INSTANCE.getUserImagePrfix()+element.getImage());
+				toMerge = new File(Constant.INSTANCE.getUserImagePrfix()+element.getImage());
 				break;
 			}
 		} catch (Exception e) {

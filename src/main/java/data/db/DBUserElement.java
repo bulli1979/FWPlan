@@ -38,6 +38,7 @@ public class DBUserElement extends DBConnector {
 						.withText(resultSet.getString("text"))
 						.withType(resultSet.getInt("typ"))
 						.forPlan(resultSet.getString("plan"))
+						.withImage(resultSet.getString("image"))
 						.build());
 			}
 			resultSet.close();
@@ -50,7 +51,7 @@ public class DBUserElement extends DBConnector {
 	}
 
 	public UserElement insertElement(UserElement userElement) {
-		String sql = "INSERT INTO userelement (`id`,`plan`,`text`,`left`,`width`,`top`,`height`,`typ`) VALUES(?,?,?,?,?,?,?,?);";
+		String sql = "INSERT INTO userelement (`id`,`plan`,`text`,`left`,`width`,`top`,`height`,`typ`,`image`) VALUES(?,?,?,?,?,?,?,?,?);";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, userElement.getId());
 			pstmt.setString(2, userElement.getPlanId());
@@ -60,6 +61,7 @@ public class DBUserElement extends DBConnector {
 			pstmt.setDouble(6, userElement.getTop());
 			pstmt.setDouble(7, userElement.getHeight());
 			pstmt.setInt(8, userElement.getType());
+			pstmt.setString(9, userElement.getImage());
 			pstmt.executeUpdate();
 			
 		} catch (Exception e) {
@@ -70,7 +72,7 @@ public class DBUserElement extends DBConnector {
 	}
 
 	public UserElement updateElement(UserElement userElement) {
-		String sql = "UPDATE plan SET `id`=? ,`plan`=?, `text`=?,`left`=?.`width`=?.`top`=?,`height=?,`typ=?  WHERE id=?";
+		String sql = "UPDATE plan SET `id`=? ,`plan`=?, `text`=?,`left`=?.`width`=?.`top`=?,`height`=?,`typ`=?,`image`=?  WHERE id=?";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, userElement.getId());
 			pstmt.setString(2, userElement.getPlanId());
@@ -80,7 +82,8 @@ public class DBUserElement extends DBConnector {
 			pstmt.setDouble(6, userElement.getTop());
 			pstmt.setDouble(7, userElement.getHeight());
 			pstmt.setInt(8, userElement.getType());
-			pstmt.setString(9, userElement.getId());
+			pstmt.setString(9, userElement.getImage());
+			pstmt.setString(10, userElement.getId());
 			pstmt.executeUpdate();
 		} catch (Exception e) {
 			System.out.println("error in update");

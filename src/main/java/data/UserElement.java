@@ -9,6 +9,7 @@ public class UserElement {
 	private double height;
 	private double width;
 	private int type;
+	private String image;
 	
 	private UserElement(Builder builder) {
 		this.id = builder.id;
@@ -19,6 +20,7 @@ public class UserElement {
 		this.width = builder.width;
 		this.height = builder.height;
 		this.planId = builder.planId;
+		this.image = builder.image;
 	}
 	
 	public String getId() {
@@ -69,6 +71,15 @@ public class UserElement {
 	public void setId(String id) {
 		this.id = id;
 	}
+	
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
 	public static class Builder{
 		private String id;
 		private String planId;
@@ -78,6 +89,7 @@ public class UserElement {
 		private double height;
 		private double width;
 		private int type;
+		private String image;
 		
 		public Builder(){
 		}
@@ -119,9 +131,14 @@ public class UserElement {
 			this.planId = planId;
 			return this;
 		}
+		public Builder withImage(String image) {
+			this.image = image;
+			return this;
+		}
 		public UserElement build() {
 			return new UserElement(this);
 		}
+		
 	}
 
 	

@@ -9,6 +9,7 @@ import application.Constant;
 import data.ToolType;
 import data.UserElement;
 import data.db.DBUserElement;
+import elements.UserElementTable;
 import helper.ImagePaint;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -34,11 +35,13 @@ public class MapEditScreen implements ApplicationScreen {
 	private BorderPane root;
 	private Button carButton, hydranthButton, imageButton;
 	private VBox centerBox;
+	private Stage uploadDialog;
+	private double x;
+	private double y;
 	public Pane get() {
 		this.root = new BorderPane();
 		try {
 			userElements = DBUserElement.getInstance().getAllElementsForPlan(Constant.INSTANCE.getPlan().getId());
-			System.out.println(userElements.size());
 			ScrollPane mapHolder = createMapHolder();
 			centerBox = new VBox();
 			HBox toolBox = createToolBox();
@@ -58,7 +61,10 @@ public class MapEditScreen implements ApplicationScreen {
 		mapHolder.setMaxWidth(maxWidth);
 		mapHolder.setMaxHeight(maxHeight);		
 		ImageView mapImageView = ImagePaint.paintTempImage(userElements);
-		mapHolder.setContent(mapImageView);
+		VBox vbox = new VBox();
+		vbox.getChildren().add(mapImageView);
+		vbox.getChildren().add(new UserElementTable(userElements));
+		mapHolder.setContent(vbox);
 		mapHolder.getStyleClass().add("mapView");
 		mapImageView.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
@@ -95,7 +101,7 @@ public class MapEditScreen implements ApplicationScreen {
 				.build();
 	}
 
-	private void paintNewMap() {
+	public void paintNewMap() {
 		try {
 			ScrollPane mapHolder = createMapHolder();
 			centerBox.getChildren().remove(1);
@@ -162,7 +168,6 @@ public class MapEditScreen implements ApplicationScreen {
 			public void handle(ActionEvent event) {
 				userElements.forEach(element->{
 					if(element.getId()==null) {
-						System.out.println("saveNew");
 						element.setId(UUID.randomUUID().toString());
 						DBUserElement.getInstance().insertElement(element);
 					}else {
@@ -184,12 +189,33 @@ public class MapEditScreen implements ApplicationScreen {
 	}
 	
 	private void openAddImageView(MouseEvent event) {
-		Stage dialog = new Stage();
+		uploadDialog = new Stage();
 		Scene openFileUpload = new Scene(ScreenObject.IMAGEUPLOADDIALOG.screen.get());
-		dialog.setScene(openFileUpload);
-		dialog.initOwner(this.root.getScene().getWindow());
-		dialog.initModality(Modality.APPLICATION_MODAL);
-		dialog.showAndWait();
+		Constant.INSTANCE.setMapEditScreen(this);
+		this.x = event.getX();
+		this.y = event.getY();
+		uploadDialog.setScene(openFileUpload);
+		uploadDialog.initOwner(this.root.getScene().getWindow());
+		uploadDialog.initModality(Modality.APPLICATION_MODAL);
+		uploadDialog.showAndWait();
 	}
+	
+	public void closeImageDialog() {
+		uploadDialog.close();
+	}
+
+	public List<UserElement> getUserElements() {
+		return userElements;
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	
 	
 }
