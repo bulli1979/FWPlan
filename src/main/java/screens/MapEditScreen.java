@@ -63,7 +63,7 @@ public class MapEditScreen implements ApplicationScreen {
 		ImageView mapImageView = ImagePaint.paintTempImage(userElements);
 		VBox vbox = new VBox();
 		vbox.getChildren().add(mapImageView);
-		vbox.getChildren().add(new UserElementTable(userElements));
+		vbox.getChildren().add(new UserElementTable(userElements,this));
 		mapHolder.setContent(vbox);
 		mapHolder.getStyleClass().add("mapView");
 		mapImageView.setOnMouseClicked(new EventHandler<MouseEvent>() {

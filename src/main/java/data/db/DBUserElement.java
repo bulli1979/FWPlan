@@ -72,21 +72,21 @@ public class DBUserElement extends DBConnector {
 	}
 
 	public UserElement updateElement(UserElement userElement) {
-		String sql = "UPDATE plan SET `id`=? ,`plan`=?, `text`=?,`left`=?.`width`=?.`top`=?,`height`=?,`typ`=?,`image`=?  WHERE id=?";
+		String sql = "UPDATE userelement SET `id`=? ,`text`=?,`left`=?,`width`=?,`top`=?,`height`=?,`typ`=?,`image`=?  WHERE id=?";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, userElement.getId());
-			pstmt.setString(2, userElement.getPlanId());
-			pstmt.setString(3, userElement.getText());
-			pstmt.setDouble(4, userElement.getLeft());
-			pstmt.setDouble(5, userElement.getWidth());
-			pstmt.setDouble(6, userElement.getTop());
-			pstmt.setDouble(7, userElement.getHeight());
-			pstmt.setInt(8, userElement.getType());
-			pstmt.setString(9, userElement.getImage());
-			pstmt.setString(10, userElement.getId());
+			pstmt.setString(2, userElement.getText());
+			pstmt.setDouble(3, userElement.getLeft());
+			pstmt.setDouble(4, userElement.getWidth());
+			pstmt.setDouble(5, userElement.getTop());
+			pstmt.setDouble(6, userElement.getHeight());
+			pstmt.setInt(7,userElement.getType());
+			pstmt.setString(8, userElement.getImage());
+			pstmt.setString(9, userElement.getId());
 			pstmt.executeUpdate();
 		} catch (Exception e) {
 			System.out.println("error in update");
+			e.printStackTrace();
 		}
 		return userElement;
 	}

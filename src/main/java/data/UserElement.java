@@ -10,7 +10,7 @@ public class UserElement {
 	private double width;
 	private int type;
 	private String image;
-	
+	public UserElement() {}
 	private UserElement(Builder builder) {
 		this.id = builder.id;
 		this.top = builder.top;
