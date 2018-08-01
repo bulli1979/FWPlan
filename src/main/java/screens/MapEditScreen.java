@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.UUID;
 
 import application.Constant;
+import constants.CSSClassNames;
 import data.ToolType;
 import data.UserElement;
 import data.db.DBUserElement;
@@ -65,7 +66,7 @@ public class MapEditScreen implements ApplicationScreen {
 		vbox.getChildren().add(mapImageView);
 		vbox.getChildren().add(new UserElementTable(userElements,this));
 		mapHolder.setContent(vbox);
-		mapHolder.getStyleClass().add("mapView");
+		mapHolder.getStyleClass().add(CSSClassNames.MAPVIEW);
 		mapImageView.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
 			public void handle(MouseEvent event) {

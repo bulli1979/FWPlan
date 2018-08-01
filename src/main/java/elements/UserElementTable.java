@@ -147,7 +147,6 @@ public class UserElementTable extends TableView<UserElement> {
 		String fileName = userElement.getImage();
 		if(userElement.getType()==2 && fileName != null) {
 			File file = new File(Constant.INSTANCE.getUserImagePrfix() + userElement.getImage());
-			
 			if(file != null && file.exists()) {
 				file.delete();
 			}
