@@ -4,6 +4,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import data.UserElement;
+
 /**
  * @author Mirko Eberlein
  *
@@ -36,7 +38,23 @@ public enum Tool {
 	public String createStringFromDate(Date date){
 		return formater.format(date);
 	}
+
+	public void resizeHeight(UserElement element, double newHeight) {
+		double oldHeight = element.getHeight();
+		double percentage = oldHeight/newHeight;
+		double oldWidth = element.getWidth();
+		double newWidth = oldWidth*percentage;
+		element.setHeight(newHeight);
+		element.setWidth(newWidth);
+	}
 	
-
-
+	public void resizeWidth(UserElement element, double newWidth) {
+		double oldHeight = element.getHeight();
+		double oldWidth = element.getWidth();
+		double percentage = oldWidth/newWidth;
+		double newHeight = oldHeight*percentage;
+		element.setHeight(newHeight);
+		element.setWidth(newWidth);
+	}
+	
 }

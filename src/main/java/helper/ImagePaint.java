@@ -12,6 +12,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import org.imgscalr.Scalr;
+
 import application.Constant;
 import data.Plan;
 import data.ToolType;
@@ -33,6 +35,7 @@ public class ImagePaint {
 			System.out.println("Error");
 			e.printStackTrace();
 		}
+		
 		mapImageView.setImage(mapImage);
 		return mapImageView;
 	}
@@ -45,20 +48,19 @@ public class ImagePaint {
 			imageFile = new File(Constant.INSTANCE.getImagePrefix() + plan.getMap());
 			copyImage(imageFile, endFile);
 			paintUserElements(endFile, userElements);
-
 		}
 		return endFile;
 	}
 
 	private static File getEndFile() {
-		File endFile = new File("image.jpg");
+		File endFile = new File("image.png");
 		if(endFile.exists()) {
 			endFile.delete();
 		}
-		return new File("image.jpg");
+		return new File("image.png");
 	}
-	
-	private static void copyImage(File imageFile, File endFile) {
+
+	public static void copyImage(File imageFile, File endFile) {
 		try {
 			InputStream is = null;
 			OutputStream os = null;
@@ -82,13 +84,10 @@ public class ImagePaint {
 
 	private static void paintUserElements(File endFile, List<UserElement> userElements) {
 		for (UserElement element : userElements) {
-			// userElements.forEach(element -> {
 			mergeImage(endFile, element);
 		}
-		;
 	}
 
-	// TODO CHange this to not use AWT
 	private static void mergeImage(File source, UserElement toAdd) {
 		try {
 			BufferedImage image = ImageIO.read(source);
@@ -103,7 +102,7 @@ public class ImagePaint {
 			g.drawImage(image, 0, 0, null);
 			g.drawImage(overlay, (int) toAdd.getLeft(), (int) toAdd.getTop(), null);
 			// Save as new image
-			ImageIO.write(combined, "PNG", source);
+			ImageIO.write(combined, "png", source);
 		} catch (IOException e) {
 			System.out.println("Error in Merger");
 			e.printStackTrace();
@@ -120,6 +119,7 @@ public class ImagePaint {
 			case CAR:
 				break;
 			case IMAGE:
+				toMerge = new File(Constant.INSTANCE.getUserImagePrfix()+element.getImage());
 				break;
 			}
 		} catch (Exception e) {
@@ -128,5 +128,14 @@ public class ImagePaint {
 		}
 		return toMerge;
 	}
-
+	
+	public static void resizeImage(UserElement userElement) throws IOException {
+		File f = createFileFromUserElement(userElement);
+		BufferedImage userImage = ImageIO.read(f);
+		BufferedImage scaledImage = Scalr.resize(userImage,Scalr.Method.SPEED, Scalr.Mode.FIT_TO_WIDTH, (int)userElement.getWidth(), (int)userElement.getHeight(),  Scalr.OP_ANTIALIAS);
+		String[] split = f.getName().split("\\.");
+		String ending = split[split.length-1];
+		ImageIO.write(scaledImage, ending, f);
+	}
+	
 }

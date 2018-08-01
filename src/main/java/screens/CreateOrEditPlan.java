@@ -90,46 +90,6 @@ public class CreateOrEditPlan implements ApplicationScreen{
 			wichtigeKontakteTextField.setText(editPlan.getImportantContacts());
 		}
 		
-		/*Label map = new Label("Karte:");
-		grid.add(map, 0, 5);
-		
-		ImageView mapImage = new ImageView();
-		Image image = new Image("no-image.jpg");
-		mapImage.setImage(image);
-		grid.add(mapImage, 1, 5);
-		
-		
-		Button modifyMap = new Button("Neue Karte erstellen");
-		modifyMap.setOnAction(new EventHandler<ActionEvent>() {
-			
-			@Override
-			public void handle(ActionEvent event) {	
-				if(planNumberTextField.getText().equals("") || planNumberTextField.getText() == null) {
-					Alert alert = new Alert(AlertType.WARNING);
-					alert.setTitle("Keine Plannummer eingetragen");
-					alert.setHeaderText("Bitte trage eine Plannummer ein um eine Karte zu erzeugen.");
-					alert.showAndWait();
-				}
-				else {
-					Stage dialog = new Stage();
-					Pane mapPane = MapScreen.getScreen(planNumberTextField.getText(), dialog);
-					Scene openMapScene = new Scene(mapPane);
-					dialog.setScene(openMapScene);
-					dialog.initOwner(callerStage);
-					dialog.initModality(Modality.APPLICATION_MODAL);
-					dialog.showAndWait();
-					File file = new File(MapScreen.getImagePath());
-					Image newMapImage = new Image(file.toURI().toString());
-					mapImage.setImage(newMapImage);
-					mapImage.setFitWidth(700);
-					mapImage.setFitHeight(500);
-					callerStage.sizeToScene();
-				}
-			}
-		});
-		
-		grid.add(modifyMap, 1, 6);
-		*/
 		Button btnSave = new Button("Speichern");
 		btnSave.setOnAction(new EventHandler<ActionEvent>() {
 			

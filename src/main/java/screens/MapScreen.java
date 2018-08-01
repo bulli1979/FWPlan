@@ -16,10 +16,10 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.PixelReader;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
@@ -43,16 +43,16 @@ public class MapScreen implements ApplicationScreen {
 	private static final String LANDSCAPE = "Leinwand";
 	private static double WIDTH;
 	private static double HEIGHT;
-	private static final String IMAGE_PREFIX = System.getProperty("user.dir") + File.separator + "maps"+File.separator+"image_";
 	private static String imagePath = null;
 	private int displayForm = 1;
 	private VBox centerBox;
 	private HBox buttons;
+
 	public Pane get() {
 		BorderPane root = new BorderPane();
-		Button saveButton = createsaveButton(); 
+		Button saveButton = createsaveButton();
 		Button directionButton = createDirectionButton();
-		buttons = new HBox(saveButton,directionButton);
+		buttons = new HBox(saveButton, directionButton);
 		setSizing();
 		ScrollPane mapHolder = createMapHolder();
 		centerBox = new VBox();
@@ -65,7 +65,7 @@ public class MapScreen implements ApplicationScreen {
 		ScrollPane mapHolder = new ScrollPane();
 		mapHolder.setMinWidth(WIDTH);
 		mapHolder.setMinHeight(400);
-		int maxHeight = (int) Screen.getPrimary().getVisualBounds().getHeight()-80;
+		int maxHeight = (int) Screen.getPrimary().getVisualBounds().getHeight() - 80;
 		mapHolder.setMinHeight(maxHeight);
 		WEBVIEW.setMaxWidth(WIDTH);
 		WEBVIEW.setMinWidth(WIDTH);
@@ -90,30 +90,30 @@ public class MapScreen implements ApplicationScreen {
 	}
 
 	private Button createDirectionButton() {
-		
-		Button button = new Button(displayForm==1?PORTRAIT:LANDSCAPE);
-		
+
+		Button button = new Button(displayForm == 1 ? PORTRAIT : LANDSCAPE);
+
 		button.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				displayForm = displayForm==1?2:1;
+				displayForm = displayForm == 1 ? 2 : 1;
 				setSizing();
 				buildWebView();
 			}
 		});
 		return button;
 	}
-	
+
 	private void setSizing() {
-		if(displayForm==1) {
+		if (displayForm == 1) {
 			WIDTH = PDRectangle.A3.getHeight() + WIDTH_DIFFERENCE;
 			HEIGHT = PDRectangle.A3.getWidth() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE;
-		}else {
+		} else {
 			WIDTH = PDRectangle.A3.getWidth() + WIDTH_DIFFERENCE;
 			HEIGHT = PDRectangle.A3.getHeight() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE;
 		}
 	}
-	
+
 	private void buildWebView() {
 		ScrollPane mapHolder = createMapHolder();
 		centerBox.getChildren().remove(1);
@@ -121,26 +121,25 @@ public class MapScreen implements ApplicationScreen {
 		buttons.getChildren().remove(1);
 		buttons.getChildren().add(createDirectionButton());
 	}
-	
+
 	private static void cutAndWriteImage(WritableImage image) {
-		File file = new File(IMAGE_PREFIX + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
-		if(file.exists()) {
+		File file = new File(Constant.INSTANCE.getImagePrefix() + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
+		if (file.exists()) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.setTitle("Kartenbild Überschreiben");
 			alert.setHeaderText(null);
 			alert.setContentText("Für diesen Einsatzplan exisitert schon ein Kartenbild.\n\n"
 					+ "Soll dieses Kartenbild überschrieben werden?");
 			Optional<ButtonType> result = alert.showAndWait();
-			if (result.get() == ButtonType.OK){
+			if (result.get() == ButtonType.OK) {
 				saveMap(file, image);
-			} 
-		}
-		else {
+			}
+		} else {
 			saveMap(file, image);
 		}
 		ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
 	}
-	
+
 	private static void saveMap(File file, WritableImage image) {
 		PixelReader reader = image.getPixelReader();
 		int width = (int) image.getWidth() - WIDTH_DIFFERENCE;
@@ -151,12 +150,12 @@ public class MapScreen implements ApplicationScreen {
 			ImageIO.write(SwingFXUtils.fromFXImage(newImage, null), IMAGEENDING, file);
 		} catch (IOException error) {
 			error.printStackTrace();
-		}				
+		}
+		
 		setImagePath(file.getAbsolutePath());
 		Constant.INSTANCE.getPlan().setMap(file.getName());
 		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
 	}
-
 	public static String getImagePath() {
 		return imagePath;
 	}
