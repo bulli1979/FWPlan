@@ -12,6 +12,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import org.imgscalr.Scalr;
+
 import application.Constant;
 import data.Plan;
 import data.ToolType;
@@ -86,7 +88,6 @@ public class ImagePaint {
 		}
 	}
 
-	// TODO CHange this to not use AWT
 	private static void mergeImage(File source, UserElement toAdd) {
 		try {
 			BufferedImage image = ImageIO.read(source);
@@ -118,7 +119,6 @@ public class ImagePaint {
 			case CAR:
 				break;
 			case IMAGE:
-				System.out.println(Constant.INSTANCE.getUserImagePrfix()+element.getImage());
 				toMerge = new File(Constant.INSTANCE.getUserImagePrfix()+element.getImage());
 				break;
 			}
@@ -128,5 +128,14 @@ public class ImagePaint {
 		}
 		return toMerge;
 	}
-
+	
+	public static void resizeImage(UserElement userElement) throws IOException {
+		File f = createFileFromUserElement(userElement);
+		BufferedImage userImage = ImageIO.read(f);
+		BufferedImage scaledImage = Scalr.resize(userImage,Scalr.Method.SPEED, Scalr.Mode.FIT_TO_WIDTH, (int)userElement.getWidth(), (int)userElement.getHeight(),  Scalr.OP_ANTIALIAS);
+		String[] split = f.getName().split("\\.");
+		String ending = split[split.length-1];
+		ImageIO.write(scaledImage, ending, f);
+	}
+	
 }

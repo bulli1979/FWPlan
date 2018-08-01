@@ -85,7 +85,6 @@ public class MapEditScreen implements ApplicationScreen {
 					System.out.println("paint New");
 					paintNewMap();
 				}
-				
 			}
 		});
 		return mapHolder;

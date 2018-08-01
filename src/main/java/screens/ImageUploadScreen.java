@@ -1,6 +1,7 @@
 package screens;
 
 import java.io.File;
+import java.net.MalformedURLException;
 import java.util.UUID;
 
 import application.Constant;
@@ -12,6 +13,7 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -32,7 +34,12 @@ public class ImageUploadScreen implements ApplicationScreen {
 			public void handle(final ActionEvent e) {
 				File selectedFile = fileChooser.showOpenDialog(Constant.INSTANCE.getStage());
 				if(selectedFile != null) {
-					UserElement element = createUserElement(selectedFile);
+					UserElement element = null;
+					try {
+						element = createUserElement(selectedFile);
+					} catch (MalformedURLException e1) {
+						e1.printStackTrace();
+					}
 					Constant.INSTANCE.getMapEditScreen().closeImageDialog();
 					Constant.INSTANCE.getMapEditScreen().getUserElements().add(element);
 					Constant.INSTANCE.getMapEditScreen().paintNewMap();
@@ -45,15 +52,18 @@ public class ImageUploadScreen implements ApplicationScreen {
 		return root;
 	}
 	
-	private UserElement createUserElement(File selectedFile) {
+	private UserElement createUserElement(File selectedFile) throws MalformedURLException {
 		String id = UUID.randomUUID().toString();
 		File endFile = new File(Constant.INSTANCE.getUserImagePrfix()+selectedFile.getName());
+		Image img = new Image(endFile.toURI().toURL().toString());
 		ImagePaint.copyImage(selectedFile, endFile);
 		UserElement userElement = new UserElement.Builder().
 				forPlan(Constant.INSTANCE.getPlan().getId()).
 				setId(id).
 				withLeft(Constant.INSTANCE.getMapEditScreen().getX()).
 				withTop(Constant.INSTANCE.getMapEditScreen().getY()).
+				withWidth(img.getWidth()).
+				withHeight(img.getHeight()).
 				withType(2).
 				withImage(endFile.getName()).
 				build();
