@@ -4,7 +4,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.util.UUID;
 
-import application.Constant;
+import application.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;
@@ -32,7 +32,7 @@ public class ImageUploadScreen implements ApplicationScreen {
 		openButton.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(final ActionEvent e) {
-				File selectedFile = fileChooser.showOpenDialog(Constant.INSTANCE.getStage());
+				File selectedFile = fileChooser.showOpenDialog(ValueHolder.INSTANCE.getStage());
 				if(selectedFile != null) {
 					UserElement element = null;
 					try {
@@ -40,9 +40,9 @@ public class ImageUploadScreen implements ApplicationScreen {
 					} catch (MalformedURLException e1) {
 						e1.printStackTrace();
 					}
-					Constant.INSTANCE.getMapEditScreen().closeImageDialog();
-					Constant.INSTANCE.getMapEditScreen().getUserElements().add(element);
-					Constant.INSTANCE.getMapEditScreen().paintNewMap();
+					ValueHolder.INSTANCE.getMapEditScreen().closeImageDialog();
+					ValueHolder.INSTANCE.getMapEditScreen().getUserElements().add(element);
+					ValueHolder.INSTANCE.getMapEditScreen().paintNewMap();
 				}
 			}
 		});
@@ -54,14 +54,15 @@ public class ImageUploadScreen implements ApplicationScreen {
 	
 	private UserElement createUserElement(File selectedFile) throws MalformedURLException {
 		String id = UUID.randomUUID().toString();
-		File endFile = new File(Constant.INSTANCE.getUserImagePrfix()+selectedFile.getName());
-		Image img = new Image(endFile.toURI().toURL().toString());
+		File endFile = new File(ValueHolder.INSTANCE.getUserImagePrfix()+selectedFile.getName());
 		ImagePaint.copyImage(selectedFile, endFile);
+		Image img = new Image(endFile.toURI().toURL().toString());
+
 		UserElement userElement = new UserElement.Builder().
-				forPlan(Constant.INSTANCE.getPlan().getId()).
+				forPlan(ValueHolder.INSTANCE.getPlan().getId()).
 				setId(id).
-				withLeft(Constant.INSTANCE.getMapEditScreen().getX()).
-				withTop(Constant.INSTANCE.getMapEditScreen().getY()).
+				withLeft(ValueHolder.INSTANCE.getMapEditScreen().getX()).
+				withTop(ValueHolder.INSTANCE.getMapEditScreen().getY()).
 				withWidth(img.getWidth()).
 				withHeight(img.getHeight()).
 				withType(2).

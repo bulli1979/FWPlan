@@ -2,7 +2,7 @@ package screens;
 
 import java.util.List;
 
-import application.Constant;
+import application.ValueHolder;
 import data.Plan;
 import data.UserElement;
 import data.db.DBUserElement;
@@ -29,7 +29,7 @@ public class PlanDetailScreen implements ApplicationScreen {
 
 	@Override
 	public Pane get() {
-		Plan plan = Constant.INSTANCE.getPlan();
+		Plan plan = ValueHolder.INSTANCE.getPlan();
 		BorderPane root = new BorderPane();
 		ScrollPane scrollPane = new ScrollPane();
 		scrollPane.setPadding(new Insets(0, 25, 25, 25));

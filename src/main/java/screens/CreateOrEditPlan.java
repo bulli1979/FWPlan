@@ -2,7 +2,7 @@ package screens;
 
 import java.util.UUID;
 import application.ApplicationHandler;
-import application.Constant;
+import application.ValueHolder;
 import data.Plan;
 import data.db.DBPlan;
 import javafx.event.ActionEvent;
@@ -32,7 +32,7 @@ public class CreateOrEditPlan implements ApplicationScreen{
 	
 	@Override
 	public Pane get() {
-		editPlan = Constant.INSTANCE.getPlan();
+		editPlan = ValueHolder.INSTANCE.getPlan();
 		System.out.println(editPlan);
 		BorderPane root = new BorderPane();
 		GridPane grid = new GridPane();

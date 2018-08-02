@@ -14,7 +14,7 @@ import javax.imageio.ImageIO;
 
 import org.imgscalr.Scalr;
 
-import application.Constant;
+import application.ValueHolder;
 import data.Plan;
 import data.ToolType;
 import data.UserElement;
@@ -43,9 +43,9 @@ public class ImagePaint {
 	public static File createImageFile(List<UserElement> userElements) {
 		File imageFile = null;
 		File endFile = getEndFile();
-		Plan plan = Constant.INSTANCE.getPlan();
+		Plan plan = ValueHolder.INSTANCE.getPlan();
 		if (plan.getMap() != null) {
-			imageFile = new File(Constant.INSTANCE.getImagePrefix() + plan.getMap());
+			imageFile = new File(ValueHolder.INSTANCE.getImagePrefix() + plan.getMap());
 			copyImage(imageFile, endFile);
 			paintUserElements(endFile, userElements);
 		}
@@ -119,7 +119,7 @@ public class ImagePaint {
 			case CAR:
 				break;
 			case IMAGE:
-				toMerge = new File(Constant.INSTANCE.getUserImagePrfix()+element.getImage());
+				toMerge = new File(ValueHolder.INSTANCE.getUserImagePrfix()+element.getImage());
 				break;
 			}
 		} catch (Exception e) {

@@ -9,7 +9,9 @@ import javax.imageio.ImageIO;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
 import application.ApplicationHandler;
-import application.Constant;
+import application.ValueHolder;
+import constants.CSSClassNames;
+import constants.Settings;
 import data.db.DBPlan;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -29,15 +31,11 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Screen;
+import tools.Constants;
 
 public class MapScreen implements ApplicationScreen {
 	private static final WebView WEBVIEW = new WebView();
 
-	private static final String IMAGEENDING = "png";
-	private static final String DEFAULTURL = "https://map.search.ch/";
-	private static final int HEIGHT_TOP_DIFFERENCE = 220;
-	private static final int HEIGHT_BOTTOM_DIFFERENCE = 100;
-	private static final int WIDTH_DIFFERENCE = 340;
 	private static final String SAVE = "speichern";
 	private static final String PORTRAIT = "hochkant";
 	private static final String LANDSCAPE = "Leinwand";
@@ -71,12 +69,50 @@ public class MapScreen implements ApplicationScreen {
 		WEBVIEW.setMinWidth(WIDTH);
 		WEBVIEW.setMaxHeight(HEIGHT);
 		WEBVIEW.setMinHeight(HEIGHT);
+		VBox toAdd = new VBox(createHorizontalBorder(),createMiddle(),createHorizontalBorder());
 		WebEngine webEngine = WEBVIEW.getEngine();
-		webEngine.load(DEFAULTURL);
-		mapHolder.setContent(WEBVIEW);
+		webEngine.load(Settings.MAPLINK);
+		mapHolder.setContent(toAdd);
 		return mapHolder;
 	}
 
+	private HBox createMiddle() {
+		HBox hBox = new HBox(createVerticalBorder(),WEBVIEW,createVerticalBorder());
+		return hBox;
+	}
+	
+	private VBox createVerticalBorder(){
+		VBox vBox = new VBox();
+		if(Settings.HEIGHT_TOP_DIFFERENCE>0) {
+			vBox.getChildren().add(createHBox(Settings.BORDERWIDTH, Settings.HEIGHT_TOP_DIFFERENCE, CSSClassNames.RED));
+		}
+		vBox.getChildren().add(createHBox(Settings.BORDERWIDTH, displayForm==1?PDRectangle.A3.getWidth():PDRectangle.A3.getHeight(), CSSClassNames.GREEN));
+		if(Settings.HEIGHT_BOTTOM_DIFFERENCE>0) {
+			vBox.getChildren().add(createHBox(Settings.BORDERWIDTH, Settings.HEIGHT_BOTTOM_DIFFERENCE, CSSClassNames.RED));
+		}
+		return vBox;
+	}
+	
+	private HBox createHorizontalBorder(){
+		HBox hBox = new HBox();
+		if(Settings.WIDTH_LEFT_DIFFERENCE>0) {
+			hBox.getChildren().add(createHBox(Settings.WIDTH_LEFT_DIFFERENCE, Settings.BORDERWIDTH,  CSSClassNames.RED));
+		}
+		hBox.getChildren().add(createHBox( displayForm!=1?PDRectangle.A3.getWidth():PDRectangle.A3.getHeight(), Settings.BORDERWIDTH, CSSClassNames.GREEN));
+		if(Settings.WIDTH_RIGHT_DIFFERENCE>0) {
+			hBox.getChildren().add(createHBox( Settings.WIDTH_RIGHT_DIFFERENCE, Settings.BORDERWIDTH,CSSClassNames.RED));
+		}
+		return hBox;
+	}
+	
+	private HBox createHBox(float width,float height,String styleClass) {
+		HBox hBox = new HBox();
+		hBox.setMinWidth(width);
+		hBox.setMinHeight(height);
+		hBox.getStyleClass().add(styleClass);
+		return hBox;
+	}
+	
 	private Button createsaveButton() {
 		Button button = new Button(SAVE);
 		button.setOnAction(new EventHandler<ActionEvent>() {
@@ -106,11 +142,11 @@ public class MapScreen implements ApplicationScreen {
 
 	private void setSizing() {
 		if (displayForm == 1) {
-			WIDTH = PDRectangle.A3.getHeight() + WIDTH_DIFFERENCE;
-			HEIGHT = PDRectangle.A3.getWidth() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE;
+			WIDTH = PDRectangle.A3.getHeight() + Settings.WIDTH_LEFT_DIFFERENCE + Settings.WIDTH_RIGHT_DIFFERENCE;
+			HEIGHT = PDRectangle.A3.getWidth() + Settings.HEIGHT_TOP_DIFFERENCE + Settings.HEIGHT_BOTTOM_DIFFERENCE;
 		} else {
-			WIDTH = PDRectangle.A3.getWidth() + WIDTH_DIFFERENCE;
-			HEIGHT = PDRectangle.A3.getHeight() + HEIGHT_TOP_DIFFERENCE + HEIGHT_BOTTOM_DIFFERENCE;
+			WIDTH = PDRectangle.A3.getWidth() + Settings.WIDTH_LEFT_DIFFERENCE;
+			HEIGHT = PDRectangle.A3.getHeight() + Settings.HEIGHT_TOP_DIFFERENCE + Settings.HEIGHT_BOTTOM_DIFFERENCE;
 		}
 	}
 
@@ -123,7 +159,7 @@ public class MapScreen implements ApplicationScreen {
 	}
 
 	private static void cutAndWriteImage(WritableImage image) {
-		File file = new File(Constant.INSTANCE.getImagePrefix() + Constant.INSTANCE.getPlan().getId() + "." + IMAGEENDING);
+		File file = new File(ValueHolder.INSTANCE.getImagePrefix() + ValueHolder.INSTANCE.getPlan().getId() + "." + Constants.IMAGEENDING);
 		if (file.exists()) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.setTitle("Kartenbild Überschreiben");
@@ -139,22 +175,21 @@ public class MapScreen implements ApplicationScreen {
 		}
 		ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
 	}
-
 	private static void saveMap(File file, WritableImage image) {
 		PixelReader reader = image.getPixelReader();
-		int width = (int) image.getWidth() - WIDTH_DIFFERENCE;
-		int height = (int) image.getHeight() - HEIGHT_TOP_DIFFERENCE - HEIGHT_BOTTOM_DIFFERENCE;
-		WritableImage newImage = new WritableImage(reader, WIDTH_DIFFERENCE, HEIGHT_TOP_DIFFERENCE, width, height);
+		int width = (int) image.getWidth() - Settings.WIDTH_LEFT_DIFFERENCE;
+		int height = (int) image.getHeight() - Settings.HEIGHT_TOP_DIFFERENCE - Settings.HEIGHT_BOTTOM_DIFFERENCE;
+		WritableImage newImage = new WritableImage(reader, Settings.WIDTH_LEFT_DIFFERENCE, Settings.HEIGHT_TOP_DIFFERENCE, width, height);
 		file.mkdirs();
 		try {
-			ImageIO.write(SwingFXUtils.fromFXImage(newImage, null), IMAGEENDING, file);
+			ImageIO.write(SwingFXUtils.fromFXImage(newImage, null), Constants.IMAGEENDING, file);
 		} catch (IOException error) {
 			error.printStackTrace();
 		}
 		
 		setImagePath(file.getAbsolutePath());
-		Constant.INSTANCE.getPlan().setMap(file.getName());
-		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
+		ValueHolder.INSTANCE.getPlan().setMap(file.getName());
+		DBPlan.getInstance().updatePlan(ValueHolder.INSTANCE.getPlan());
 	}
 	public static String getImagePath() {
 		return imagePath;

@@ -7,7 +7,7 @@ import data.Plan;
 import javafx.stage.Stage;
 import screens.MapEditScreen;
 
-public enum Constant {
+public enum ValueHolder {
 	INSTANCE;
 	
 	private Plan plan;

@@ -28,8 +28,8 @@ public class ApplicationHandler {
 		scene.getStylesheets().add("application/application.css");
 		stage.setScene(scene);
 		stage.setMaximized(true);
-		Constant.INSTANCE.setAppWidth(stage.getWidth());
-		Constant.INSTANCE.setStage(stage);
+		ValueHolder.INSTANCE.setAppWidth(stage.getWidth());
+		ValueHolder.INSTANCE.setStage(stage);
 		stage.show();
 	}
 	

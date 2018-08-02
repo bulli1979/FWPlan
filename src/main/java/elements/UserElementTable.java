@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import application.Constant;
+import application.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;
@@ -131,6 +131,7 @@ public class UserElementTable extends TableView<UserElement> {
 							btn.setOnAction(event -> {
 								UserElement userElement = getTableView().getItems().get(getIndex());
 								deleteElement(userElement);
+								repaint();
 							});
 							setGraphic(btn);
 							setText(null);
@@ -143,11 +144,14 @@ public class UserElementTable extends TableView<UserElement> {
 		};
 	}
 	
+	private void repaint() {
+		this.parent.paintNewMap();
+	}
+	
 	private void deleteElement(UserElement userElement) {
 		String fileName = userElement.getImage();
 		if(userElement.getType()==2 && fileName != null) {
-			File file = new File(Constant.INSTANCE.getUserImagePrfix() + userElement.getImage());
-			
+			File file = new File(ValueHolder.INSTANCE.getUserImagePrfix() + userElement.getImage());
 			if(file != null && file.exists()) {
 				file.delete();
 			}

@@ -1,7 +1,7 @@
 package helper;
 
 import application.ApplicationHandler;
-import application.Constant;
+import application.ValueHolder;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Menu;
@@ -20,7 +20,7 @@ public class MenuBarBuilder {
 		overview.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				Constant.INSTANCE.setPlan(null);
+				ValueHolder.INSTANCE.setPlan(null);
 				ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
 			}
 		});
@@ -29,7 +29,7 @@ public class MenuBarBuilder {
 
 			@Override
 			public void handle(ActionEvent event) {
-				Constant.INSTANCE.setPlan(null);
+				ValueHolder.INSTANCE.setPlan(null);
 				ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
 			}
 		});
@@ -40,7 +40,8 @@ public class MenuBarBuilder {
 
 			@Override
 			public void handle(ActionEvent event) {
-				System.out.println("TODO about...");
+				ValueHolder.INSTANCE.setPlan(null);
+				ApplicationHandler.setScreen(ScreenObject.ABOUTSCREEN);
 			}
 		});
 		menuHelp.getItems().addAll(about);

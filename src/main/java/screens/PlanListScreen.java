@@ -1,7 +1,7 @@
 package screens;
 
 import application.ApplicationHandler;
-import application.Constant;
+import application.ValueHolder;
 import data.Plan;
 import data.db.DBPlan;
 import javafx.collections.FXCollections;
@@ -56,7 +56,7 @@ public class PlanListScreen implements ApplicationScreen {
 			@Override
 			public void handle(MouseEvent event) {
 				if(event.getClickCount()==2) {
-					Constant.INSTANCE.setPlan(table.getSelectionModel().getSelectedItem());
+					ValueHolder.INSTANCE.setPlan(table.getSelectionModel().getSelectedItem());
 					openPlanDetailView(root);
 				}
 			}
@@ -137,7 +137,7 @@ public class PlanListScreen implements ApplicationScreen {
 						} else {
 							btn.setOnAction(event -> {
 								Plan plan = getTableView().getItems().get(getIndex());
-								Constant.INSTANCE.setPlan(plan);
+								ValueHolder.INSTANCE.setPlan(plan);
 								ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
 							});
 							setGraphic(btn);
@@ -168,7 +168,7 @@ public class PlanListScreen implements ApplicationScreen {
 						} else {
 							btn.setOnAction(event -> {
 								Plan plan = getTableView().getItems().get(getIndex());
-								Constant.INSTANCE.setPlan(plan);
+								ValueHolder.INSTANCE.setPlan(plan);
 								ApplicationHandler.setScreen(ScreenObject.MAPSCREEN);
 							});
 							setGraphic(btn);
@@ -199,7 +199,7 @@ public class PlanListScreen implements ApplicationScreen {
 						} else {
 							btn.setOnAction(event -> {
 								Plan plan = getTableView().getItems().get(getIndex());
-								Constant.INSTANCE.setPlan(plan);
+								ValueHolder.INSTANCE.setPlan(plan);
 								ApplicationHandler.setScreen(ScreenObject.MAPEDITSCREEN);
 							});
 							setGraphic(btn);
