@@ -5,7 +5,7 @@ import java.net.MalformedURLException;
 import java.util.List;
 import java.util.UUID;
 
-import application.Constant;
+import application.ValueHolder;
 import constants.CSSClassNames;
 import data.ToolType;
 import data.UserElement;
@@ -42,7 +42,7 @@ public class MapEditScreen implements ApplicationScreen {
 	public Pane get() {
 		this.root = new BorderPane();
 		try {
-			userElements = DBUserElement.getInstance().getAllElementsForPlan(Constant.INSTANCE.getPlan().getId());
+			userElements = DBUserElement.getInstance().getAllElementsForPlan(ValueHolder.INSTANCE.getPlan().getId());
 			ScrollPane mapHolder = createMapHolder();
 			centerBox = new VBox();
 			HBox toolBox = createToolBox();
@@ -93,7 +93,7 @@ public class MapEditScreen implements ApplicationScreen {
 	
 	private UserElement createUserElement(MouseEvent event) {
 		return new UserElement.Builder()
-				.setPlanId(Constant.INSTANCE.getPlan().getId())
+				.setPlanId(ValueHolder.INSTANCE.getPlan().getId())
 				.setId(null)
 				.withLeft(event.getX())
 				.withTop(event.getY())
@@ -191,7 +191,7 @@ public class MapEditScreen implements ApplicationScreen {
 	private void openAddImageView(MouseEvent event) {
 		uploadDialog = new Stage();
 		Scene openFileUpload = new Scene(ScreenObject.IMAGEUPLOADDIALOG.screen.get());
-		Constant.INSTANCE.setMapEditScreen(this);
+		ValueHolder.INSTANCE.setMapEditScreen(this);
 		this.x = event.getX();
 		this.y = event.getY();
 		uploadDialog.setScene(openFileUpload);

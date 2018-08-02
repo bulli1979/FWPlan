@@ -10,7 +10,7 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
-import application.Constant;
+import application.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;
@@ -22,7 +22,7 @@ public class PDFCreator {
 			
 			PDDocument document = new PDDocument();
 			PDPage page = new PDPage(new PDRectangle(PDRectangle.A3.getHeight(), PDRectangle.A3.getWidth()));
-			List<UserElement> userElements = DBUserElement.getInstance().getAllElementsForPlan(Constant.INSTANCE.getPlan().getId());
+			List<UserElement> userElements = DBUserElement.getInstance().getAllElementsForPlan(ValueHolder.INSTANCE.getPlan().getId());
 			File printFile = ImagePaint.createImageFile(userElements);
 			
 			PDImageXObject pdImage = PDImageXObject.createFromFile(printFile.getAbsolutePath(), document);
@@ -31,11 +31,11 @@ public class PDFCreator {
 			contentStream.beginText(); 
 			contentStream.newLineAtOffset(25, PDRectangle.A3.getWidth()-25);
 			contentStream.setFont(PDType1Font.TIMES_ROMAN, 20);
-			contentStream.showText("Einsatzplan " + Constant.INSTANCE.getPlan().getPlanNumber());
+			contentStream.showText("Einsatzplan " + ValueHolder.INSTANCE.getPlan().getPlanNumber());
 			contentStream.endText();
 			contentStream.close();
 			document.addPage(page);
-			document.save(Constant.INSTANCE.getOutputPath()+"plan-"+Constant.INSTANCE.getPlan().getPlanNumber()+".pdf");
+			document.save(ValueHolder.INSTANCE.getOutputPath()+"plan-"+ValueHolder.INSTANCE.getPlan().getPlanNumber()+".pdf");
 			document.close();
 			
 		}catch(Exception e){

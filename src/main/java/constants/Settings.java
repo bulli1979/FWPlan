@@ -7,6 +7,7 @@ public class Settings {
 	public static int HEIGHT_TOP_DIFFERENCE = 220;;
 	public static int HEIGHT_BOTTOM_DIFFERENCE = 100;;
 	public static int BORDERWIDTH = 2;
+	public static String ABOUTUS = "https://webgate.biz/einsatzplaner/";
 	
 	
 }

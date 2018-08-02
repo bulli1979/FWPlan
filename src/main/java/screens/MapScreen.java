@@ -9,7 +9,7 @@ import javax.imageio.ImageIO;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
 import application.ApplicationHandler;
-import application.Constant;
+import application.ValueHolder;
 import constants.CSSClassNames;
 import constants.Settings;
 import data.db.DBPlan;
@@ -159,7 +159,7 @@ public class MapScreen implements ApplicationScreen {
 	}
 
 	private static void cutAndWriteImage(WritableImage image) {
-		File file = new File(Constant.INSTANCE.getImagePrefix() + Constant.INSTANCE.getPlan().getId() + "." + Constants.IMAGEENDING);
+		File file = new File(ValueHolder.INSTANCE.getImagePrefix() + ValueHolder.INSTANCE.getPlan().getId() + "." + Constants.IMAGEENDING);
 		if (file.exists()) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.setTitle("Kartenbild Überschreiben");
@@ -188,8 +188,8 @@ public class MapScreen implements ApplicationScreen {
 		}
 		
 		setImagePath(file.getAbsolutePath());
-		Constant.INSTANCE.getPlan().setMap(file.getName());
-		DBPlan.getInstance().updatePlan(Constant.INSTANCE.getPlan());
+		ValueHolder.INSTANCE.getPlan().setMap(file.getName());
+		DBPlan.getInstance().updatePlan(ValueHolder.INSTANCE.getPlan());
 	}
 	public static String getImagePath() {
 		return imagePath;
