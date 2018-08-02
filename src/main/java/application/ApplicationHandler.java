@@ -25,7 +25,7 @@ public class ApplicationHandler {
 		
 		vbox.getChildren().addAll(MenuBarBuilder.build(stage), startObject.screen.get());
 		Scene scene = new Scene(vbox, INITIAL_WIDTH_HEIGHT, INITIAL_WIDTH_HEIGHT);
-		scene.getStylesheets().add("application/application.css");
+		scene.getStylesheets().add("application.css");
 		stage.setScene(scene);
 		stage.setMaximized(true);
 		ValueHolder.INSTANCE.setAppWidth(stage.getWidth());

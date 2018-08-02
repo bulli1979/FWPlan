@@ -16,6 +16,7 @@ public enum ValueHolder {
 	private String imagePrefix = System.getProperty("user.dir") + File.separator + "maps" + File.separator;
 	private String userImagePrfix = System.getProperty("user.dir") + File.separator + "userimage" + File.separator;
 	private String outputPath = System.getProperty("user.dir") + File.separator + "pdfs" + File.separator;
+	private String userDir = System.getProperty("user.dir") + File.separator+"images"+File.separator;
 	private MapEditScreen mapEditScreen;
 	public Plan getPlan() {
 		return plan;
@@ -57,6 +58,10 @@ public enum ValueHolder {
 
 	public void setMapEditScreen(MapEditScreen mapEditScreen) {
 		this.mapEditScreen = mapEditScreen;
+	}
+
+	public String getUserDir() {
+		return this.userDir;
 	}
 	
 	

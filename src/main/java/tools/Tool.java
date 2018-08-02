@@ -41,7 +41,7 @@ public enum Tool {
 
 	public void resizeHeight(UserElement element, double newHeight) {
 		double oldHeight = element.getHeight();
-		double percentage = oldHeight/newHeight;
+		double percentage = newHeight/oldHeight;
 		double oldWidth = element.getWidth();
 		double newWidth = oldWidth*percentage;
 		element.setHeight(newHeight);
@@ -51,7 +51,7 @@ public enum Tool {
 	public void resizeWidth(UserElement element, double newWidth) {
 		double oldHeight = element.getHeight();
 		double oldWidth = element.getWidth();
-		double percentage = oldWidth/newWidth;
+		double percentage = newWidth/oldWidth;
 		double newHeight = oldHeight*percentage;
 		element.setHeight(newHeight);
 		element.setWidth(newWidth);

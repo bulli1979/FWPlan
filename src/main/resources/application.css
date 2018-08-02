@@ -1,0 +1,15 @@
+.activeTool{
+	-fx-color: #ff0000 ;
+}
+
+.mapView{
+	-fx-padding: 10;
+    -fx-background-color: #CCFF99;
+}
+
+.red{
+	-fx-background-color : #ff0000;
+}
+.green{
+	-fx-background-color : #00ff00;
+}

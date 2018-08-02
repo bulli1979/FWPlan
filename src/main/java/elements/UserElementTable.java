@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import application.ApplicationHandler;
 import application.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
@@ -21,6 +22,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.Callback;
 import javafx.util.converter.DoubleStringConverter;
 import screens.MapEditScreen;
+import screens.ScreenObject;
 import tools.Tool;
 
 public class UserElementTable extends TableView<UserElement> {
@@ -131,7 +133,7 @@ public class UserElementTable extends TableView<UserElement> {
 							btn.setOnAction(event -> {
 								UserElement userElement = getTableView().getItems().get(getIndex());
 								deleteElement(userElement);
-								repaint();
+								ApplicationHandler.setScreen(ScreenObject.MAPEDITSCREEN);
 							});
 							setGraphic(btn);
 							setText(null);
@@ -142,10 +144,6 @@ public class UserElementTable extends TableView<UserElement> {
 			}
 
 		};
-	}
-	
-	private void repaint() {
-		this.parent.paintNewMap();
 	}
 	
 	private void deleteElement(UserElement userElement) {

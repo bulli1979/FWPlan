@@ -20,6 +20,7 @@ import data.ToolType;
 import data.UserElement;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import tools.Constants;
 
 public class ImagePaint {
 	
@@ -115,7 +116,7 @@ public class ImagePaint {
 			switch (ToolType.getToolType(element.getType())) {
 			case HYDRANTH:
 				ClassLoader classLoader = ImagePaint.class.getClassLoader();
-				toMerge = new File(classLoader.getResource("hydrant.png").getFile());
+				toMerge = new File(ValueHolder.INSTANCE.getUserDir()+"hydrant.png");
 			case CAR:
 				break;
 			case IMAGE:
