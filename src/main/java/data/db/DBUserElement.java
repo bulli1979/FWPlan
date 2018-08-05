@@ -23,7 +23,6 @@ public class DBUserElement extends DBConnector {
 
 	public List<UserElement> getAllElementsForPlan(String planId) {
 		List<UserElement> list = new ArrayList<>();
-		System.out.println("PlanId" + planId);
 		String sql = "Select * from userelement where plan=?";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, planId);

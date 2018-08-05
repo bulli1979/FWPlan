@@ -21,16 +21,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.Callback;
 import javafx.util.converter.DoubleStringConverter;
-import screens.MapEditScreen;
 import screens.ScreenObject;
 import tools.Tool;
 
 public class UserElementTable extends TableView<UserElement> {
-	private MapEditScreen parent;
 	@SuppressWarnings("unchecked")
-	public UserElementTable(List<UserElement> userElements,MapEditScreen parent) {
+	public UserElementTable(List<UserElement> userElements) {
 		super();
-		this.parent = parent;
 		ObservableList<UserElement> data = FXCollections.observableArrayList(userElements);
 		TableColumn<UserElement, Integer> typeCol = createTypeColumn();
 		TableColumn<UserElement, Double> topCol = createDoubleColumn("Abstand von oben", "top", 200);
@@ -89,7 +86,7 @@ public class UserElementTable extends TableView<UserElement> {
 
 	private void save(UserElement userElement) {
 		DBUserElement.getInstance().updateElement(userElement);
-		parent.paintNewMap();
+		ApplicationHandler.setScreen(ScreenObject.MAP_EDIT_SCREEN);
 	}
 	
 	private TableColumn<UserElement, Double> createDoubleColumn(String headLine, String propertie, int width) {
@@ -133,7 +130,7 @@ public class UserElementTable extends TableView<UserElement> {
 							btn.setOnAction(event -> {
 								UserElement userElement = getTableView().getItems().get(getIndex());
 								deleteElement(userElement);
-								ApplicationHandler.setScreen(ScreenObject.MAPEDITSCREEN);
+								ApplicationHandler.setScreen(ScreenObject.MAP_EDIT_SCREEN);
 							});
 							setGraphic(btn);
 							setText(null);
@@ -148,14 +145,13 @@ public class UserElementTable extends TableView<UserElement> {
 	
 	private void deleteElement(UserElement userElement) {
 		String fileName = userElement.getImage();
-		if(userElement.getType()==2 && fileName != null) {
+		if(fileName != null && !fileName.isEmpty()) {
 			File file = new File(ValueHolder.INSTANCE.getUserImagePrfix() + userElement.getImage());
 			if(file != null && file.exists()) {
 				file.delete();
 			}
 		}
 		DBUserElement.getInstance().deleteElement(userElement);
-		parent.paintNewMap();
 	}
 
 }

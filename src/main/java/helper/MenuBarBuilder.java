@@ -21,7 +21,7 @@ public class MenuBarBuilder {
 			@Override
 			public void handle(ActionEvent event) {
 				ValueHolder.INSTANCE.setPlan(null);
-				ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
+				ApplicationHandler.setScreen(ScreenObject.$PLAN_LIST_SCREE);
 			}
 		});
 		MenuItem neuerEinsatzplan = new MenuItem("Neuer Einsatzplan");
@@ -30,7 +30,7 @@ public class MenuBarBuilder {
 			@Override
 			public void handle(ActionEvent event) {
 				ValueHolder.INSTANCE.setPlan(null);
-				ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
+				ApplicationHandler.setScreen(ScreenObject.PLAN_EDIT_SCREEN);
 			}
 		});
 		menuEinsatzplan.getItems().addAll(overview, neuerEinsatzplan);
@@ -41,7 +41,7 @@ public class MenuBarBuilder {
 			@Override
 			public void handle(ActionEvent event) {
 				ValueHolder.INSTANCE.setPlan(null);
-				ApplicationHandler.setScreen(ScreenObject.ABOUTSCREEN);
+				ApplicationHandler.setScreen(ScreenObject.ABOUT_SCREEN);
 			}
 		});
 		menuHelp.getItems().addAll(about);

@@ -13,3 +13,6 @@
 .green{
 	-fx-background-color : #00ff00;
 }
+.transparent{
+	-fx-background-color:transparent;
+}

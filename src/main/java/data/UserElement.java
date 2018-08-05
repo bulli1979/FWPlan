@@ -4,6 +4,7 @@ public class UserElement {
 	private String id;
 	private String planId;
 	private String text;
+	private int textPosition;
 	private double top;
 	private double left;
 	private double height;
@@ -21,6 +22,7 @@ public class UserElement {
 		this.height = builder.height;
 		this.planId = builder.planId;
 		this.image = builder.image;
+		this.textPosition = builder.textPosition;
 	}
 	
 	public String getId() {
@@ -79,6 +81,13 @@ public class UserElement {
 	public void setImage(String image) {
 		this.image = image;
 	}
+	
+	public int getTextPosition() {
+		return textPosition;
+	}
+	public void setTextPosition(int textPosition) {
+		this.textPosition = textPosition;
+	}
 
 	public static class Builder{
 		private String id;
@@ -90,7 +99,8 @@ public class UserElement {
 		private double width;
 		private int type;
 		private String image;
-		
+		private int textPosition;
+
 		public Builder(){
 		}
 		
@@ -135,10 +145,13 @@ public class UserElement {
 			this.image = image;
 			return this;
 		}
+		public Builder withTextPosition(int textPosition) {
+			this.textPosition = textPosition;
+			return this;
+		}
 		public UserElement build() {
 			return new UserElement(this);
 		}
-		
 	}
 
 	

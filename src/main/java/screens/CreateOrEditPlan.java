@@ -122,7 +122,7 @@ public class CreateOrEditPlan implements ApplicationScreen{
 				alert.setContentText("Der Einsatzplan " + planNumberTextField.getText() + " wurde erfolgreich gespeichert.");
 				alert.showAndWait();
 				
-				ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
+				ApplicationHandler.setScreen(ScreenObject.$PLAN_LIST_SCREE);
 			}
 		});
 	

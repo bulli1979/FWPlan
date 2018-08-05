@@ -1,7 +1,7 @@
 package data;
 
 public enum ToolType {
-	HYDRANTH(1),IMAGE(2),CAR(3);
+	IMAGE(1), ICON(2);
 	
 	private int type;
 	

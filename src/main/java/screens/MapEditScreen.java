@@ -5,17 +5,18 @@ import java.net.MalformedURLException;
 import java.util.List;
 import java.util.UUID;
 
+import application.ApplicationHandler;
 import application.ValueHolder;
 import constants.CSSClassNames;
+import data.EditIcon;
 import data.ToolType;
 import data.UserElement;
 import data.db.DBUserElement;
+import elements.MapEditIconButtons;
 import elements.UserElementTable;
 import helper.ImagePaint;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -29,16 +30,17 @@ import javafx.stage.Stage;
 
 public class MapEditScreen implements ApplicationScreen {
 	
-	private static final String ACTIVE_CLASS = "activeTool";
-	private static final String BUTTON_CLASS = "button";
+	private static final int SCEENSITZE_RESERVE = 80;
+
 	private List<UserElement> userElements;
 	private ToolType activeType;
 	private BorderPane root;
-	private Button carButton, hydranthButton, imageButton;
 	private VBox centerBox;
 	private Stage uploadDialog;
+	private Stage iconTextDialog;
 	private double x;
 	private double y;
+	private EditIcon icon;
 	public Pane get() {
 		this.root = new BorderPane();
 		try {
@@ -57,48 +59,57 @@ public class MapEditScreen implements ApplicationScreen {
 
 	private ScrollPane createMapHolder() throws IOException, MalformedURLException {
 		ScrollPane mapHolder = new ScrollPane();
-		int maxHeight = (int) Screen.getPrimary().getVisualBounds().getHeight()-80;
-		int maxWidth = (int) Screen.getPrimary().getVisualBounds().getWidth();
+		int maxHeight = (int) Screen.getPrimary().getVisualBounds().getHeight()-SCEENSITZE_RESERVE;
+		int maxWidth = (int) Screen.getPrimary().getVisualBounds().getWidth()-SCEENSITZE_RESERVE;
 		mapHolder.setMaxWidth(maxWidth);
 		mapHolder.setMaxHeight(maxHeight);		
 		ImageView mapImageView = ImagePaint.paintTempImage(userElements);
 		VBox vbox = new VBox();
 		vbox.getChildren().add(mapImageView);
-		vbox.getChildren().add(new UserElementTable(userElements,this));
+		vbox.getChildren().add(new UserElementTable(userElements));
 		mapHolder.setContent(vbox);
 		mapHolder.getStyleClass().add(CSSClassNames.MAPVIEW);
 		mapImageView.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
 			public void handle(MouseEvent event) {
-				boolean change = false;
 				switch(activeType) {
-					case HYDRANTH:
-						userElements.add(createUserElement(event));
-						change=true;
-						break;
-					case CAR:
+					case ICON:
+						handleUserElementClick(event);
 						break;
 					case IMAGE:
 						openAddImageView(event);
+						ApplicationHandler.setScreen(ScreenObject.MAP_EDIT_SCREEN);
+						break;
+					default:
 						break;
 				}
-				if(change) {
-					System.out.println("paint New");
-					paintNewMap();
-				}
 			}
+
+			
 		});
 		return mapHolder;
 	}
 	
+	private void handleUserElementClick(MouseEvent event) {
+		if(this.icon.getText()>0) {
+			openEditIconTextDialog(event);
+		}else {
+			userElements.add(createUserElement(event));
+		}
+		
+	}
+	
 	private UserElement createUserElement(MouseEvent event) {
-		return new UserElement.Builder()
+		UserElement userElement = new UserElement.Builder()
 				.setPlanId(ValueHolder.INSTANCE.getPlan().getId())
-				.setId(null)
+				.setId(UUID.randomUUID().toString())
 				.withLeft(event.getX())
 				.withTop(event.getY())
 				.withType(activeType.getType())
+				.withImage(this.icon.getImage())
 				.build();
+		DBUserElement.getInstance().insertElement(userElement);
+		return userElement;
 	}
 
 	public void paintNewMap() {
@@ -114,83 +125,30 @@ public class MapEditScreen implements ApplicationScreen {
 	
 	private HBox createToolBox() {
 		HBox toolBox = new HBox();
-		carButton = createCarButton();
-		hydranthButton = createHydranthButton();
-		imageButton = createImageButton();
-		Button save = createSaveButton();
-		toolBox.getChildren().addAll(hydranthButton,carButton,imageButton, save);
+		MapEditIconButtons buttonCreator = new MapEditIconButtons();
+		toolBox.getChildren().addAll(buttonCreator.getButtons(this));
 		return toolBox;
 	}
 
-	private Button createHydranthButton() {
-		hydranthButton = new Button("Hydrant");
-		hydranthButton.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				removeButtonStyle();
-				activeType = ToolType.HYDRANTH;
-				hydranthButton.getStyleClass().add(ACTIVE_CLASS);
-			}
-		});
-		return hydranthButton;
-	}
+	
 
-	private Button createImageButton() {
-		imageButton = new Button("Bild");
-		imageButton.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				removeButtonStyle();
-				activeType = ToolType.IMAGE;
-				imageButton.getStyleClass().add(ACTIVE_CLASS);
-			}
-		});
-		return imageButton;
-	}
-
-	private Button createCarButton() {
-		carButton = new Button("Auto");
-		carButton.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				removeButtonStyle();
-				activeType = ToolType.CAR;
-				carButton.getStyleClass().add(ACTIVE_CLASS);
-			}
-		});
-		return carButton;
-	}
-
-	private Button createSaveButton() {
-		Button save = new Button("speichern");
-		save.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				userElements.forEach(element->{
-					if(element.getId()==null) {
-						element.setId(UUID.randomUUID().toString());
-						DBUserElement.getInstance().insertElement(element);
-					}else {
-						DBUserElement.getInstance().updateElement(element);
-					}
-				});
-			}
-		});
-		return save;
-	}
-
-	private void removeButtonStyle() {
-		carButton.getStyleClass().clear();
-		carButton.getStyleClass().add(BUTTON_CLASS);
-		hydranthButton.getStyleClass().clear();
-		hydranthButton.getStyleClass().add(BUTTON_CLASS);
-		imageButton.getStyleClass().clear();
-		imageButton.getStyleClass().add(BUTTON_CLASS);
+	
+	
+	private void openEditIconTextDialog(MouseEvent event) {
+		iconTextDialog = new Stage();
+		Scene editIconText = new Scene(ScreenObject.EDIT_ICON_TEXT_DIALOG.screen.get());
+		ValueHolder.INSTANCE.setMapEditScreen(this);
+		this.x = event.getX();
+		this.y = event.getY();
+		iconTextDialog.setScene(editIconText);
+		iconTextDialog.initOwner(this.root.getScene().getWindow());
+		iconTextDialog.initModality(Modality.APPLICATION_MODAL);
+		iconTextDialog.showAndWait();
 	}
 	
 	private void openAddImageView(MouseEvent event) {
 		uploadDialog = new Stage();
-		Scene openFileUpload = new Scene(ScreenObject.IMAGEUPLOADDIALOG.screen.get());
+		Scene openFileUpload = new Scene(ScreenObject.IMAGE_UPLOAD_DIALOG.screen.get());
 		ValueHolder.INSTANCE.setMapEditScreen(this);
 		this.x = event.getX();
 		this.y = event.getY();
@@ -198,6 +156,10 @@ public class MapEditScreen implements ApplicationScreen {
 		uploadDialog.initOwner(this.root.getScene().getWindow());
 		uploadDialog.initModality(Modality.APPLICATION_MODAL);
 		uploadDialog.showAndWait();
+	}
+	
+	public void closeTextDialog() {
+		iconTextDialog.close();
 	}
 	
 	public void closeImageDialog() {
@@ -216,6 +178,22 @@ public class MapEditScreen implements ApplicationScreen {
 		return y;
 	}
 
-	
+	public ToolType getActiveType() {
+		return activeType;
+	}
+
+	public void setActiveType(ToolType activeType) {
+		this.activeType = activeType;
+	}
+
+	public void setActiveIcon(EditIcon icon) {
+		this.icon = icon;
+		
+	}
+
+	public EditIcon getActiveIcon() {
+		return this.icon;
+		
+	}
 	
 }

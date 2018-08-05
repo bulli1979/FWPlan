@@ -100,7 +100,7 @@ public class MapScreen implements ApplicationScreen {
 		}
 		hBox.getChildren().add(createHBox( displayForm!=1?PDRectangle.A3.getWidth():PDRectangle.A3.getHeight(), Settings.BORDERWIDTH, CSSClassNames.GREEN));
 		if(Settings.WIDTH_RIGHT_DIFFERENCE>0) {
-			hBox.getChildren().add(createHBox( Settings.WIDTH_RIGHT_DIFFERENCE, Settings.BORDERWIDTH,CSSClassNames.RED));
+			hBox.getChildren().add(createHBox(Settings.WIDTH_RIGHT_DIFFERENCE, Settings.BORDERWIDTH,CSSClassNames.RED));
 		}
 		return hBox;
 	}
@@ -159,7 +159,7 @@ public class MapScreen implements ApplicationScreen {
 	}
 
 	private static void cutAndWriteImage(WritableImage image) {
-		File file = new File(ValueHolder.INSTANCE.getImagePrefix() + ValueHolder.INSTANCE.getPlan().getId() + "." + Constants.IMAGEENDING);
+		File file = new File(ValueHolder.INSTANCE.getImagePrefix() + ValueHolder.INSTANCE.getPlan().getId() + Constants.POINT + Constants.IMAGEENDING);
 		if (file.exists()) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.setTitle("Kartenbild Überschreiben");
@@ -173,7 +173,7 @@ public class MapScreen implements ApplicationScreen {
 		} else {
 			saveMap(file, image);
 		}
-		ApplicationHandler.setScreen(ScreenObject.PLANLISTSCREEN);
+		ApplicationHandler.setScreen(ScreenObject.$PLAN_LIST_SCREE);
 	}
 	private static void saveMap(File file, WritableImage image) {
 		PixelReader reader = image.getPixelReader();

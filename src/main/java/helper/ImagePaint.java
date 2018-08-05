@@ -1,5 +1,7 @@
 package helper;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -15,6 +17,7 @@ import javax.imageio.ImageIO;
 import org.imgscalr.Scalr;
 
 import application.ValueHolder;
+import data.EditIcon;
 import data.Plan;
 import data.ToolType;
 import data.UserElement;
@@ -23,7 +26,7 @@ import javafx.scene.image.ImageView;
 import tools.Constants;
 
 public class ImagePaint {
-	
+
 	public static ImageView paintTempImage(List<UserElement> userElements) {
 		Image mapImage = new Image("no-image.jpg");
 		ImageView mapImageView = new ImageView();
@@ -36,7 +39,7 @@ public class ImagePaint {
 			System.out.println("Error");
 			e.printStackTrace();
 		}
-		
+
 		mapImageView.setImage(mapImage);
 		return mapImageView;
 	}
@@ -55,7 +58,7 @@ public class ImagePaint {
 
 	private static File getEndFile() {
 		File endFile = new File("image.png");
-		if(endFile.exists()) {
+		if (endFile.exists()) {
 			endFile.delete();
 		}
 		return new File("image.png");
@@ -93,7 +96,8 @@ public class ImagePaint {
 		try {
 			BufferedImage image = ImageIO.read(source);
 			BufferedImage overlay = ImageIO.read(createFileFromUserElement(toAdd));
-
+			
+			
 			// create the new image, canvas size is the max. of both image sizes
 			int w = Math.max(image.getWidth(), overlay.getWidth());
 			int h = Math.max(image.getHeight(), overlay.getHeight());
@@ -112,15 +116,13 @@ public class ImagePaint {
 
 	private static File createFileFromUserElement(UserElement element) {
 		File toMerge = null;
-		try { 
+		try {
 			switch (ToolType.getToolType(element.getType())) {
-			case HYDRANTH:
-				ClassLoader classLoader = ImagePaint.class.getClassLoader();
-				toMerge = new File(ValueHolder.INSTANCE.getUserDir()+"hydrant.png");
-			case CAR:
+			case ICON:
+				toMerge = new File(ValueHolder.INSTANCE.getUserImagePrfix() + element.getImage());
 				break;
 			case IMAGE:
-				toMerge = new File(ValueHolder.INSTANCE.getUserImagePrfix()+element.getImage());
+				toMerge = new File(ValueHolder.INSTANCE.getUserImagePrfix() + element.getImage());
 				break;
 			}
 		} catch (Exception e) {
@@ -129,14 +131,49 @@ public class ImagePaint {
 		}
 		return toMerge;
 	}
-	
+
 	public static void resizeImage(UserElement userElement) throws IOException {
 		File f = createFileFromUserElement(userElement);
 		BufferedImage userImage = ImageIO.read(f);
-		BufferedImage scaledImage = Scalr.resize(userImage,Scalr.Method.SPEED, Scalr.Mode.FIT_TO_WIDTH, (int)userElement.getWidth(), (int)userElement.getHeight(),  Scalr.OP_ANTIALIAS);
+		BufferedImage scaledImage = Scalr.resize(userImage, Scalr.Method.SPEED, Scalr.Mode.FIT_TO_WIDTH,
+				(int) userElement.getWidth(), (int) userElement.getHeight(), Scalr.OP_ANTIALIAS);
 		String[] split = f.getName().split("\\.");
-		String ending = split[split.length-1];
+		String ending = split[split.length - 1];
 		ImageIO.write(scaledImage, ending, f);
 	}
-	
+
+	public static void writeText(File endFile, UserElement userelement,EditIcon icon) throws IOException {
+		final BufferedImage image = ImageIO.read(endFile);
+		Graphics g = image.getGraphics();
+		Color black = new Color(0, 0, 0);
+		int fontSize = 8;
+		Font font = new Font("Verdana", Font.CENTER_BASELINE, fontSize);
+		g.setFont(font);
+		g.setColor(black);
+		int top=0;
+		String text = userelement.getText();
+		switch (userelement.getTextPosition()) {
+		case 1:
+			g.drawString(text, icon.getLeft(), icon.getTop());
+			break;
+		case 2:
+			for (int i = 0; i < text.length(); i++) {
+				top = top==0?top=icon.getTop():top;
+				g.drawString(""+text.charAt(i), icon.getLeft(), top);
+				top += (fontSize-1);
+			}
+			break;
+		case 3:
+			top = image.getHeight() - icon.getTop();
+			g.drawString(text, icon.getLeft(), top);
+			break;
+		default:
+			break;
+		}
+
+		g.dispose();
+		ImageIO.write(image, Constants.IMAGEENDING, endFile);
+
+	}
+
 }

@@ -1,10 +1,11 @@
-package screens;
+package screens.dialogs;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.util.UUID;
 
 import application.ValueHolder;
+import constants.CSSClassNames;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;
@@ -18,6 +19,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
+import screens.ApplicationScreen;
 
 public class ImageUploadScreen implements ApplicationScreen {
 	@Override
@@ -25,7 +27,7 @@ public class ImageUploadScreen implements ApplicationScreen {
 		BorderPane root = new BorderPane();
 		ScrollPane scrollPane = new ScrollPane();
 		scrollPane.setPadding(new Insets(0, 25, 25, 25));
-		scrollPane.setStyle("-fx-background-color:transparent;");
+		scrollPane.getStyleClass().add(CSSClassNames.TRANSPARENT);
 		
 		final FileChooser fileChooser = new FileChooser();
 		final Button openButton = new Button("Bild wählen");

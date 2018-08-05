@@ -138,7 +138,7 @@ public class PlanListScreen implements ApplicationScreen {
 							btn.setOnAction(event -> {
 								Plan plan = getTableView().getItems().get(getIndex());
 								ValueHolder.INSTANCE.setPlan(plan);
-								ApplicationHandler.setScreen(ScreenObject.PLANEDITSCREEN);
+								ApplicationHandler.setScreen(ScreenObject.PLAN_EDIT_SCREEN);
 							});
 							setGraphic(btn);
 							setText(null);
@@ -169,7 +169,7 @@ public class PlanListScreen implements ApplicationScreen {
 							btn.setOnAction(event -> {
 								Plan plan = getTableView().getItems().get(getIndex());
 								ValueHolder.INSTANCE.setPlan(plan);
-								ApplicationHandler.setScreen(ScreenObject.MAPSCREEN);
+								ApplicationHandler.setScreen(ScreenObject.MAP_SCREEN);
 							});
 							setGraphic(btn);
 							setText(null);
@@ -200,7 +200,7 @@ public class PlanListScreen implements ApplicationScreen {
 							btn.setOnAction(event -> {
 								Plan plan = getTableView().getItems().get(getIndex());
 								ValueHolder.INSTANCE.setPlan(plan);
-								ApplicationHandler.setScreen(ScreenObject.MAPEDITSCREEN);
+								ApplicationHandler.setScreen(ScreenObject.MAP_EDIT_SCREEN);
 							});
 							setGraphic(btn);
 							setText(null);
@@ -214,7 +214,7 @@ public class PlanListScreen implements ApplicationScreen {
 	
 	private void openPlanDetailView(Pane root) {
 		Stage dialog = new Stage();
-		Scene openMapScene = new Scene(ScreenObject.PLANDETAILSCREEN.screen.get());
+		Scene openMapScene = new Scene(ScreenObject.PLAN_DETAIL_DIALOG.screen.get());
 		dialog.setScene(openMapScene);
 		dialog.initOwner(root.getScene().getWindow());
 		dialog.initModality(Modality.APPLICATION_MODAL);

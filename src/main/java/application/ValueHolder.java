@@ -15,8 +15,9 @@ public enum ValueHolder {
 	private Stage stage;
 	private String imagePrefix = System.getProperty("user.dir") + File.separator + "maps" + File.separator;
 	private String userImagePrfix = System.getProperty("user.dir") + File.separator + "userimage" + File.separator;
-	private String outputPath = System.getProperty("user.dir") + File.separator + "pdfs" + File.separator;
-	private String userDir = System.getProperty("user.dir") + File.separator+"images"+File.separator;
+	private final String OUTPUTPATH = System.getProperty("user.dir") + File.separator + "pdfs" + File.separator;
+	private final String USERDIR = System.getProperty("user.dir") + File.separator+"images" + File.separator;
+	private final String EDIT_ICONS_PATH = System.getProperty("user.dir") + File.separator +"images" + File.separator + "editicons" + File.separator;
 	private MapEditScreen mapEditScreen;
 	public Plan getPlan() {
 		return plan;
@@ -45,7 +46,7 @@ public enum ValueHolder {
 	}
 
 	public String getOutputPath() {
-		return outputPath;
+		return OUTPUTPATH;
 	}
 
 	public String getUserImagePrfix() {
@@ -61,7 +62,11 @@ public enum ValueHolder {
 	}
 
 	public String getUserDir() {
-		return this.userDir;
+		return this.USERDIR;
+	}
+
+	public String getEDITICONS() {
+		return EDIT_ICONS_PATH;
 	}
 	
 	

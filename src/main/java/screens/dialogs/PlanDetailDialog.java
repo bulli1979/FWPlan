@@ -1,4 +1,4 @@
-package screens;
+package screens.dialogs;
 
 import java.util.List;
 
@@ -23,9 +23,10 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
+import screens.ApplicationScreen;
 import tools.PDFCreator;
 
-public class PlanDetailScreen implements ApplicationScreen {
+public class PlanDetailDialog implements ApplicationScreen {
 
 	@Override
 	public Pane get() {
