@@ -1,5 +1,6 @@
 package application;
 
+import constants.ValueHolder;
 import helper.MenuBarBuilder;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;

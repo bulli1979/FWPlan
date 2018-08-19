@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.List;
 
 import application.ApplicationHandler;
-import application.ValueHolder;
+import constants.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;
@@ -40,7 +40,7 @@ public class UserElementTable extends TableView<UserElement> {
 				save(userElement);
 			}
 		});
-		TableColumn<UserElement, Double> leftCol = createDoubleColumn("Abstand von links", "left", 200);
+		TableColumn<UserElement, Double> leftCol = createDoubleColumn("Abstand von links", "left", 150);
 		leftCol.setOnEditCommit(new EventHandler<CellEditEvent<UserElement, Double>>() {
 			@Override
 			public void handle(CellEditEvent<UserElement, Double> t) {
@@ -49,7 +49,7 @@ public class UserElementTable extends TableView<UserElement> {
 				save(userElement);
 			}
 		});
-		TableColumn<UserElement, Double> widthCol = createDoubleColumn("Breite", "width", 200);
+		TableColumn<UserElement, Double> widthCol = createDoubleColumn("Breite", "width", 150);
 		widthCol.setOnEditCommit(new EventHandler<CellEditEvent<UserElement, Double>>() {
 			@Override
 			public void handle(CellEditEvent<UserElement, Double> t) {
@@ -63,7 +63,7 @@ public class UserElementTable extends TableView<UserElement> {
 				save(userElement);
 			}
 		});
-		TableColumn<UserElement, Double> heightCol = createDoubleColumn("Höhe", "height", 200);
+		TableColumn<UserElement, Double> heightCol = createDoubleColumn("Höhe", "height", 150);
 		heightCol.setOnEditCommit(new EventHandler<CellEditEvent<UserElement, Double>>() {
 			@Override
 			public void handle(CellEditEvent<UserElement, Double> t) {
@@ -77,9 +77,10 @@ public class UserElementTable extends TableView<UserElement> {
 				save(userElement);
 			}
 		});
+		TableColumn<UserElement,String> textString = createStringColumn("Text", "text", 150);
 		
 		this.setItems(data);
-		this.getColumns().addAll(typeCol, topCol, leftCol, widthCol, heightCol, deleteCol);
+		this.getColumns().addAll(typeCol, topCol, leftCol, widthCol, heightCol,textString, deleteCol);
 		this.setEditable(true);
 
 	}
@@ -103,6 +104,13 @@ public class UserElementTable extends TableView<UserElement> {
 		typeColumn.setMinWidth(200);
 		typeColumn.setCellFactory(new UserElementTypeFactory());
 		return typeColumn;
+	}
+	
+	private TableColumn<UserElement, String> createStringColumn(String headLine, String propertie, int width) {
+		TableColumn<UserElement, String> col = new TableColumn<>(headLine);
+		col.setCellValueFactory(new PropertyValueFactory<UserElement, String>(propertie));
+		col.setMinWidth(width);
+		return col;
 	}
 	
 	private TableColumn<UserElement, String> createDeleteColumn() {

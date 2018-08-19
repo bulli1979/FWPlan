@@ -2,7 +2,7 @@ package screens.dialogs;
 
 import java.util.List;
 
-import application.ValueHolder;
+import constants.ValueHolder;
 import data.Plan;
 import data.UserElement;
 import data.db.DBUserElement;

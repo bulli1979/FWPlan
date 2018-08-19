@@ -12,6 +12,7 @@ public final class Settings {
 	private static final String WIDTH_RIGHT_NAME = "widthRightDifference";
 	private static final String HEIGHT_TOP_NAME = "topDifference";
 	private static final String HEIGHT_BOTTOM_NAME = "bottomDifference";
+	private static final String USERDATA = "userdata";
 	public static String MAPLINK;
 	public static int WIDTH_LEFT_DIFFERENCE = 340;
 	public static int WIDTH_RIGHT_DIFFERENCE = 0;
@@ -19,8 +20,8 @@ public final class Settings {
 	public static int HEIGHT_BOTTOM_DIFFERENCE = 100;
 	public static int BORDERWIDTH = 2;
 	public static final String ABOUTUS = "https://webgate.biz/einsatzplaner/";
-	public static final String EDITICONS_PROPERTIES = System.getProperty("user.dir") + File.separator + "properties" + File.separator + "icon.properties";
-	public static final String APP_PROPERTIES = System.getProperty("user.dir") + File.separator + "properties" + File.separator + "app.properties";
+	public static final String EDITICONS_PROPERTIES = System.getProperty("user.dir") + File.separator + USERDATA + File.separator + "properties" + File.separator + "icon.properties";
+	public static final String APP_PROPERTIES = System.getProperty("user.dir") + File.separator + USERDATA + File.separator + "properties" + File.separator + "app.properties";
 	
 	public static void setSettings() throws IOException {
 		Properties props = new Properties();

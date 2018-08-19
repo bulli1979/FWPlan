@@ -9,9 +9,9 @@ import javax.imageio.ImageIO;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 
 import application.ApplicationHandler;
-import application.ValueHolder;
 import constants.CSSClassNames;
 import constants.Settings;
+import constants.ValueHolder;
 import data.db.DBPlan;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;

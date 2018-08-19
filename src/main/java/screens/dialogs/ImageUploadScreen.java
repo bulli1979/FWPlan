@@ -4,8 +4,8 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.util.UUID;
 
-import application.ValueHolder;
 import constants.CSSClassNames;
+import constants.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;

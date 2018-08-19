@@ -10,7 +10,7 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
-import application.ValueHolder;
+import constants.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;

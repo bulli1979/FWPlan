@@ -1,7 +1,7 @@
 package helper;
 
 import application.ApplicationHandler;
-import application.ValueHolder;
+import constants.ValueHolder;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Menu;

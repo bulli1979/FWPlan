@@ -16,7 +16,7 @@ import javax.imageio.ImageIO;
 
 import org.imgscalr.Scalr;
 
-import application.ValueHolder;
+import constants.ValueHolder;
 import data.EditIcon;
 import data.Plan;
 import data.ToolType;

@@ -1,7 +1,7 @@
 package screens;
 
 import application.ApplicationHandler;
-import application.ValueHolder;
+import constants.ValueHolder;
 import data.Plan;
 import data.db.DBPlan;
 import javafx.collections.FXCollections;

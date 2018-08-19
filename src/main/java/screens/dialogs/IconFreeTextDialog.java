@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.UUID;
 
 import application.ApplicationHandler;
-import application.ValueHolder;
 import constants.CSSClassNames;
+import constants.ValueHolder;
 import data.UserElement;
 import data.db.DBUserElement;
 import helper.ImagePaint;

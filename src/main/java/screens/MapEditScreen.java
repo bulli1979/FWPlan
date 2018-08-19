@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.UUID;
 
 import application.ApplicationHandler;
-import application.ValueHolder;
 import constants.CSSClassNames;
+import constants.ValueHolder;
 import data.EditIcon;
 import data.ToolType;
 import data.UserElement;

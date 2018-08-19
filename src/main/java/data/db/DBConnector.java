@@ -11,7 +11,7 @@ import java.sql.SQLException;
  */
 public class DBConnector {
 	private static final String DBPATH = "jdbc:sqlite:";
-	private static final String FBNAME = System.getProperty("user.dir") + File.separator + "db"+File.separator+"fwplan.db";
+	private static final String FBNAME = System.getProperty("user.dir") + File.separator + "userdata" + File.separator + "db" + File.separator + "fwplan.db";
 	protected Connection connect() throws ClassNotFoundException{
         Connection conn = null;
         try {
