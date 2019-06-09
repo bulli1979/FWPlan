@@ -1,9 +1,10 @@
-package application;
+package biz.wgc.fwplan;
 
-import constants.Settings;
+import biz.wgc.fwplan.constants.ApplicationSettings;
+import biz.wgc.fwplan.screens.ScreenObject;
+import biz.wgc.fwplan.update.UpdateClass;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import screens.ScreenObject;
 
 public class ApplicationStarter extends Application {
 	
@@ -13,7 +14,9 @@ public class ApplicationStarter extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {		
-		Settings.setSettings();
+		ApplicationSettings.setSettings();
+		UpdateClass updater = new UpdateClass();
+		updater.chkForUpdates();
 		ApplicationHandler handler = new ApplicationHandler(primaryStage);
 		handler.start(ScreenObject.$PLAN_LIST_SCREE);
 	}

@@ -1,11 +1,11 @@
-package application;
+package biz.wgc.fwplan;
 
-import constants.ValueHolder;
-import helper.MenuBarBuilder;
+import biz.wgc.fwplan.constants.ValueHolder;
+import biz.wgc.fwplan.helper.MenuBarBuilder;
+import biz.wgc.fwplan.screens.ScreenObject;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import screens.ScreenObject;
 
 public class ApplicationHandler {	
 	private Stage stage;
