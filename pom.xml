@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.fw.FwPlan</groupId>
 	<artifactId>FWPlan</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.9</version>
 	<properties>
 		<junitVersion>4.12</junitVersion>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -37,9 +37,13 @@
 				<version>8.8.3</version>
 				<configuration>
 					<vendor>Webgate Consulting AG</vendor>
-					<mainClass>application.ApplicationStarter</mainClass>
+					<mainClass>biz.wgc.fwplan.ApplicationStarter</mainClass>
+					<allPermissions>true</allPermissions>
+					<verbose>true</verbose>
+					<additionalAppResources>${project.build.directory}/properties</additionalAppResources>
 				</configuration>
 			</plugin>
+			
 		</plugins>
 	</build>
 	<dependencies>
@@ -81,6 +85,31 @@
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
 			<version>11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.8</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.itextpdf/itext7-core -->
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itext7-core</artifactId>
+			<version>7.1.6</version>
+			<type>pom</type>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.itextpdf/html2pdf -->
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>html2pdf</artifactId>
+			<version>2.1.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
 </project>
