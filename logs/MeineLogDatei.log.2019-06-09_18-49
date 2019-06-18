@@ -1,0 +1,6 @@
+2019-06-09 18:49:38,895 DEBUG [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: checkForUpdates
+2019-06-09 18:49:39,217 INFO  [JavaFX Application Thread] biz.wgc.fwplan.data.db.DBSettings: settings nicht gefunden initial Settings
+2019-06-09 18:49:39,217 WARN  [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: updateFile not found for update--v0-9.txt
+2019-06-09 18:49:39,218 ERROR [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: Error in updateorg.apache.log4j.Logger@2e539cd6
+2019-06-09 18:49:58,166 DEBUG [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: checkForUpdates
+2019-06-09 18:49:58,482 INFO  [JavaFX Application Thread] biz.wgc.fwplan.data.db.DBSettings: settings nicht gefunden initial Settings

@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
@@ -35,6 +36,8 @@ import biz.wgc.fwplan.data.db.DBUserElement;
 import biz.wgc.fwplan.helper.ImagePaint;
 
 public class PDFCreator {
+	private static Logger logger = Logger.getLogger(PDFCreator.class);
+
 	private PDFCreator() {
 	}
 
@@ -49,8 +52,7 @@ public class PDFCreator {
 			document.close();
 
 		} catch (Exception e) {
-			System.out.println(e);
-			e.printStackTrace();
+			logger.error("Error in create PDF ", e);
 		}
 	}
 
@@ -93,7 +95,7 @@ public class PDFCreator {
 		props.setTagWorkerFactory(tagWorkerFactory);
 		try (FileInputStream fileInputStream = new FileInputStream(
 				new File(ValueHolder.INSTANCE.getHTMLPath() + "plan.html"))) {
-			
+
 			HtmlConverter.convertToPdf(manipulateHTML(fileInputStream), pdfDoc, props);
 		}
 		pdfDoc.close();
@@ -114,24 +116,80 @@ public class PDFCreator {
 		html = html.replaceAll("@@title@@", addBr(plan.getTitle()));
 		html = html.replaceAll("@@plannumber@@", addBr(plan.getPlanNumber()));
 		html = html.replaceAll("@@description@@", addBr(plan.getDescription()));
-		html = html.replaceAll("@@adress@@", addBr(plan.getAdress()));
+		html = html.replaceAll("@@adress@@", createAdressBlock(plan));
 		html = html.replaceAll("@@instantaction@@", addBr(plan.getInstantAction()));
 		html = html.replaceAll("@@wathertransport@@", createWhaterTransportTable());
 		html = html.replaceAll("@@importantcontacts@@", addBr(plan.getImportantContacts()));
 		return new ByteArrayInputStream(html.getBytes());
 	}
-	
+
+	private static String createAdressBlock(Plan plan) {
+		if (plan.getAdress().indexOf("@@@\n") > -1) {
+			String[] split = plan.getAdress().split("@@@\n");
+			StringBuilder wt = new StringBuilder("<table><tbody><tr><td>");
+			wt.append(split[0].replaceAll("\\n", "<br>"));
+			wt.append("</td><td>");
+			wt.append(split[1].replaceAll("\\n", "<br>"));
+			wt.append("</td></tr></tbody></table>");
+			return wt.toString();
+		} else {
+			return plan.getAdress().replaceAll("\\n", "<br>");
+		}
+	}
+
 	private static String createWhaterTransportTable() {
-		int countWatherTransport =  Tool.INSTANCE.countWhaterTransports();
+		int countWatherTransport = Tool.INSTANCE.countWhaterTransports();
 		StringBuilder wt = new StringBuilder("<table><tbody><tr>");
 		Plan plan = ValueHolder.INSTANCE.getPlan();
-		for(int i = 0; i < countWatherTransport;i++) {
-			wt.append("<td>"+ (i==0? addBr(plan.getWatherTransport1()):i==1?addBr(plan.getWatherTransport2()):i==2?addBr(plan.getWatherTransport3()):addBr(plan.getWatherTransport4()))+"</td>");
+		for (int i = 0; i < countWatherTransport; i++) {
+			if (i == 0) {
+				wt.append("<td" + getClass(plan.getWatherColor1()) + ">");
+				wt.append(plan.getWatherTransport1());
+			} else if (i == 1) {
+				wt.append("<td" + getClass(plan.getWatherColor2()) + ">");
+				wt.append(plan.getWatherTransport2());
+			} else if (i == 2) {
+				wt.append("<td" + getClass(plan.getWatherColor3()) + ">");
+				wt.append(plan.getWatherTransport3());
+			} else if (i == 3) {
+				wt.append("<td" + getClass(plan.getWatherColor4()) + ">");
+				wt.append(plan.getWatherTransport4());
+			}
+			wt.append("</td>");
 		}
 		wt.append("</tr></tbody></table>");
 		return wt.toString();
 	}
-	
+
+	private static String getClass(String select) {
+		String styleClass = "";
+		if (select != null && !select.isEmpty()) {
+			styleClass += " class=\"";
+			switch (select) {
+			case "Schwarz":
+				styleClass += "black";
+				break;
+			case "Rot":
+				styleClass += "red";
+				break;
+			case "Grün":
+				styleClass += "green";
+				break;
+			case "Blau":
+				styleClass += "blue";
+				break;
+			case "Gelb":
+				styleClass += "yellow";
+				break;
+			case "Orange":
+				styleClass += "orange";
+				break;
+			}
+			styleClass += "\"";
+		}
+		return styleClass;
+	}
+
 	private static String addBr(String toAdd) {
 		return toAdd.replaceAll("\\n", "<br>");
 	}

@@ -10,6 +10,7 @@ import javafx.scene.web.WebView;
 public class AboutUsScreen implements ApplicationScreen {
 	private static final WebView WEBVIEW = new WebView();
 	private VBox centerBox;
+
 	public Pane get() {
 		BorderPane root = new BorderPane();
 		WebEngine webEngine = WEBVIEW.getEngine();

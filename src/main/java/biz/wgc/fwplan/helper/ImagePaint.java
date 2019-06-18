@@ -146,7 +146,7 @@ public class ImagePaint {
 		final BufferedImage image = ImageIO.read(endFile);
 		Graphics g = image.getGraphics();
 		Color black = new Color(0, 0, 0);
-		int fontSize = 8;
+		int fontSize = 10;
 		Font font = new Font("Verdana", Font.CENTER_BASELINE, fontSize);
 		g.setFont(font);
 		g.setColor(black);

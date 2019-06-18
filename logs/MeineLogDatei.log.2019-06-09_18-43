@@ -1,0 +1,2 @@
+2019-06-09 18:43:29,527 DEBUG [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: checkForUpdates
+2019-06-09 18:43:30,210 WARN  [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: updateFile not found for sql.txt

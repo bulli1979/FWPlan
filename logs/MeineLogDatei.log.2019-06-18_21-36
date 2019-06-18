@@ -1,0 +1,1028 @@
+2019-06-18 21:36:19,881 DEBUG [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: checkForUpdates
+2019-06-18 21:36:26,314 DEBUG [JavaFX Application Thread] org.apache.fontbox.ttf.GlyphSubstitutionTable: Type 4 GSUB lookup table is not supported and will be ignored
+2019-06-18 21:36:26,314 DEBUG [JavaFX Application Thread] org.apache.fontbox.ttf.GlyphSubstitutionTable: Type 4 GSUB lookup table is not supported and will be ignored
+2019-06-18 21:36:26,314 DEBUG [JavaFX Application Thread] org.apache.fontbox.ttf.GlyphSubstitutionTable: Type 6 GSUB lookup table is not supported and will be ignored
+2019-06-18 21:36:26,314 DEBUG [JavaFX Application Thread] org.apache.fontbox.ttf.GlyphSubstitutionTable: Type 4 GSUB lookup table is not supported and will be ignored
+2019-06-18 21:36:26,315 DEBUG [JavaFX Application Thread] org.apache.fontbox.ttf.GlyphSubstitutionTable: Type 4 GSUB lookup table is not supported and will be ignored
+2019-06-18 21:36:26,348 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514fix.fon
+2019-06-18 21:36:26,348 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514fixe.fon
+2019-06-18 21:36:26,349 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514fixg.fon
+2019-06-18 21:36:26,349 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514fixr.fon
+2019-06-18 21:36:26,349 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514fixt.fon
+2019-06-18 21:36:26,349 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514oem.fon
+2019-06-18 21:36:26,349 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514oeme.fon
+2019-06-18 21:36:26,349 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514oemg.fon
+2019-06-18 21:36:26,349 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514oemr.fon
+2019-06-18 21:36:26,350 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514oemt.fon
+2019-06-18 21:36:26,350 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514sys.fon
+2019-06-18 21:36:26,350 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514syse.fon
+2019-06-18 21:36:26,350 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514sysg.fon
+2019-06-18 21:36:26,350 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514sysr.fon
+2019-06-18 21:36:26,350 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\8514syst.fon
+2019-06-18 21:36:26,351 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85775.fon
+2019-06-18 21:36:26,351 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85855.fon
+2019-06-18 21:36:26,351 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85f1255.fon
+2019-06-18 21:36:26,351 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85f1256.fon
+2019-06-18 21:36:26,351 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85f1257.fon
+2019-06-18 21:36:26,351 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85f874.fon
+2019-06-18 21:36:26,352 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85s1255.fon
+2019-06-18 21:36:26,352 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85s1256.fon
+2019-06-18 21:36:26,352 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85s1257.fon
+2019-06-18 21:36:26,352 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\85s874.fon
+2019-06-18 21:36:26,352 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\AGENCYB.TTF
+2019-06-18 21:36:26,352 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\AGENCYB.TTF
+2019-06-18 21:36:26,352 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\AGENCYR.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\AGENCYR.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ALGER.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ALGER.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ANTQUAB.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ANTQUAB.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ANTQUABI.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ANTQUABI.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ANTQUAI.TTF
+2019-06-18 21:36:26,353 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ANTQUAI.TTF
+2019-06-18 21:36:26,354 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app775.fon
+2019-06-18 21:36:26,354 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app850.fon
+2019-06-18 21:36:26,354 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app852.fon
+2019-06-18 21:36:26,354 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app855.fon
+2019-06-18 21:36:26,354 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app857.fon
+2019-06-18 21:36:26,354 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app866.fon
+2019-06-18 21:36:26,354 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app932.fon
+2019-06-18 21:36:26,355 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app936.fon
+2019-06-18 21:36:26,355 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app949.fon
+2019-06-18 21:36:26,355 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\app950.fon
+2019-06-18 21:36:26,355 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\arial.ttf
+2019-06-18 21:36:26,355 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\arial.ttf
+2019-06-18 21:36:26,355 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\arialbd.ttf
+2019-06-18 21:36:26,355 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\arialbd.ttf
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\arialbi.ttf
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\arialbi.ttf
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ariali.ttf
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ariali.ttf
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ARIALN.TTF
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ARIALN.TTF
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ARIALNB.TTF
+2019-06-18 21:36:26,356 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ARIALNB.TTF
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ARIALNBI.TTF
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ARIALNBI.TTF
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ARIALNI.TTF
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ARIALNI.TTF
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ariblk.ttf
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ariblk.ttf
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ARLRDBD.TTF
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ARLRDBD.TTF
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\bahnschrift.ttf
+2019-06-18 21:36:26,357 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\bahnschrift.ttf
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BASKVILL.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BASKVILL.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BAUHS93.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BAUHS93.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BELL.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BELL.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BELLB.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BELLB.TTF
+2019-06-18 21:36:26,358 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BELLI.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BELLI.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BERNHC.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BERNHC.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BKANT.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BKANT.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_B.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_B.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_BI.TTF
+2019-06-18 21:36:26,359 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_BI.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_BLAI.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_BLAI.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_BLAR.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_BLAR.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_CB.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_CB.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_CBI.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_CBI.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_CI.TTF
+2019-06-18 21:36:26,360 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_CI.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_CR.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_CR.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_I.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_I.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_PSTC.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_PSTC.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOD_R.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOD_R.TTF
+2019-06-18 21:36:26,361 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOOKOS.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOOKOS.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOOKOSB.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOOKOSB.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOOKOSBI.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOOKOSBI.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BOOKOSI.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BOOKOSI.TTF
+2019-06-18 21:36:26,362 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BRADHITC.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BRADHITC.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BRITANIC.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BRITANIC.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BRLNSB.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BRLNSB.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BRLNSDB.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BRLNSDB.TTF
+2019-06-18 21:36:26,363 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BRLNSR.TTF
+2019-06-18 21:36:26,364 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BRLNSR.TTF
+2019-06-18 21:36:26,364 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BROADW.TTF
+2019-06-18 21:36:26,364 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BROADW.TTF
+2019-06-18 21:36:26,364 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BRUSHSCI.TTF
+2019-06-18 21:36:26,365 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BRUSHSCI.TTF
+2019-06-18 21:36:26,365 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BSSYM7.TTF
+2019-06-18 21:36:26,365 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BSSYM7.TTF
+2019-06-18 21:36:26,365 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\BuxtonSketch.ttf
+2019-06-18 21:36:26,365 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\BuxtonSketch.ttf
+2019-06-18 21:36:26,365 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\c8514fix.fon
+2019-06-18 21:36:26,365 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\c8514oem.fon
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\c8514sys.fon
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\calibri.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\calibri.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\calibrib.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\calibrib.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\calibrii.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\calibrii.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\calibril.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\calibril.ttf
+2019-06-18 21:36:26,366 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\calibrili.ttf
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\calibrili.ttf
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\calibriz.ttf
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\calibriz.ttf
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CALIFB.TTF
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CALIFB.TTF
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CALIFI.TTF
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CALIFI.TTF
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CALIFR.TTF
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CALIFR.TTF
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CALIST.TTF
+2019-06-18 21:36:26,367 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CALIST.TTF
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CALISTB.TTF
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CALISTB.TTF
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CALISTBI.TTF
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CALISTBI.TTF
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CALISTI.TTF
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CALISTI.TTF
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cambria.ttc
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\cambria.ttc
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cambriab.ttf
+2019-06-18 21:36:26,368 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\cambriab.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cambriai.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\cambriai.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cambriaz.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\cambriaz.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Candara.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Candara.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Candarab.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Candarab.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Candarai.ttf
+2019-06-18 21:36:26,369 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Candarai.ttf
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Candaraz.ttf
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Candaraz.ttf
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CASTELAR.TTF
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CASTELAR.TTF
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CENSCBK.TTF
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CENSCBK.TTF
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CENTAUR.TTF
+2019-06-18 21:36:26,370 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CENTAUR.TTF
+2019-06-18 21:36:26,371 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CENTURY.TTF
+2019-06-18 21:36:26,371 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CENTURY.TTF
+2019-06-18 21:36:26,371 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga40737.fon
+2019-06-18 21:36:26,371 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga40850.fon
+2019-06-18 21:36:26,371 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga40852.fon
+2019-06-18 21:36:26,371 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga40857.fon
+2019-06-18 21:36:26,372 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga40866.fon
+2019-06-18 21:36:26,372 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga40869.fon
+2019-06-18 21:36:26,372 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga40woa.fon
+2019-06-18 21:36:26,372 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga80737.fon
+2019-06-18 21:36:26,372 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga80850.fon
+2019-06-18 21:36:26,372 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga80852.fon
+2019-06-18 21:36:26,372 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga80857.fon
+2019-06-18 21:36:26,373 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga80866.fon
+2019-06-18 21:36:26,373 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga80869.fon
+2019-06-18 21:36:26,373 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cga80woa.fon
+2019-06-18 21:36:26,373 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CHILLER.TTF
+2019-06-18 21:36:26,373 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CHILLER.TTF
+2019-06-18 21:36:26,373 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\COLONNA.TTF
+2019-06-18 21:36:26,373 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\COLONNA.TTF
+2019-06-18 21:36:26,374 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\comic.ttf
+2019-06-18 21:36:26,374 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\comic.ttf
+2019-06-18 21:36:26,374 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\comicbd.ttf
+2019-06-18 21:36:26,374 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\comicbd.ttf
+2019-06-18 21:36:26,374 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\comici.ttf
+2019-06-18 21:36:26,374 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\comici.ttf
+2019-06-18 21:36:26,374 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\comicz.ttf
+2019-06-18 21:36:26,375 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\comicz.ttf
+2019-06-18 21:36:26,375 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\consola.ttf
+2019-06-18 21:36:26,375 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\consola.ttf
+2019-06-18 21:36:26,375 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\consolab.ttf
+2019-06-18 21:36:26,375 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\consolab.ttf
+2019-06-18 21:36:26,375 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\consolai.ttf
+2019-06-18 21:36:26,375 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\consolai.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\consolaz.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\consolaz.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\constan.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\constan.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\constanb.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\constanb.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\constani.ttf
+2019-06-18 21:36:26,376 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\constani.ttf
+2019-06-18 21:36:26,377 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\constanz.ttf
+2019-06-18 21:36:26,377 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\constanz.ttf
+2019-06-18 21:36:26,377 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\COOPBL.TTF
+2019-06-18 21:36:26,377 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\COOPBL.TTF
+2019-06-18 21:36:26,377 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\COPRGTB.TTF
+2019-06-18 21:36:26,377 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\COPRGTB.TTF
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\COPRGTL.TTF
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\COPRGTL.TTF
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\corbel.ttf
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\corbel.ttf
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\corbelb.ttf
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\corbelb.ttf
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\corbeli.ttf
+2019-06-18 21:36:26,378 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\corbeli.ttf
+2019-06-18 21:36:26,379 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\corbelz.ttf
+2019-06-18 21:36:26,379 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\corbelz.ttf
+2019-06-18 21:36:26,379 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\coue1255.fon
+2019-06-18 21:36:26,379 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\coue1256.fon
+2019-06-18 21:36:26,379 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\coue1257.fon
+2019-06-18 21:36:26,379 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\couf1255.fon
+2019-06-18 21:36:26,380 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\couf1256.fon
+2019-06-18 21:36:26,380 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\couf1257.fon
+2019-06-18 21:36:26,380 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cour.ttf
+2019-06-18 21:36:26,380 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\cour.ttf
+2019-06-18 21:36:26,380 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courbd.ttf
+2019-06-18 21:36:26,380 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\courbd.ttf
+2019-06-18 21:36:26,381 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courbi.ttf
+2019-06-18 21:36:26,381 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\courbi.ttf
+2019-06-18 21:36:26,381 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\coure.fon
+2019-06-18 21:36:26,381 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\couree.fon
+2019-06-18 21:36:26,381 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\coureg.fon
+2019-06-18 21:36:26,382 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courer.fon
+2019-06-18 21:36:26,382 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\couret.fon
+2019-06-18 21:36:26,382 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courf.fon
+2019-06-18 21:36:26,382 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courfe.fon
+2019-06-18 21:36:26,382 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courfg.fon
+2019-06-18 21:36:26,382 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courfr.fon
+2019-06-18 21:36:26,382 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\courft.fon
+2019-06-18 21:36:26,383 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\couri.ttf
+2019-06-18 21:36:26,383 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\couri.ttf
+2019-06-18 21:36:26,383 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\CURLZ___.TTF
+2019-06-18 21:36:26,383 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\CURLZ___.TTF
+2019-06-18 21:36:26,383 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cvgafix.fon
+2019-06-18 21:36:26,383 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\cvgasys.fon
+2019-06-18 21:36:26,383 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\desktop.ini
+2019-06-18 21:36:26,384 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\dos737.fon
+2019-06-18 21:36:26,384 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\dos869.fon
+2019-06-18 21:36:26,384 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\dosapp.fon
+2019-06-18 21:36:26,384 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\DUBAI-BOLD.TTF
+2019-06-18 21:36:26,384 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\DUBAI-BOLD.TTF
+2019-06-18 21:36:26,384 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\DUBAI-LIGHT.TTF
+2019-06-18 21:36:26,384 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\DUBAI-LIGHT.TTF
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\DUBAI-MEDIUM.TTF
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\DUBAI-MEDIUM.TTF
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\DUBAI-REGULAR.TTF
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\DUBAI-REGULAR.TTF
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ebrima.ttf
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ebrima.ttf
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ebrimabd.ttf
+2019-06-18 21:36:26,385 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ebrimabd.ttf
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega40737.fon
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega40850.fon
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega40852.fon
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega40857.fon
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega40866.fon
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega40869.fon
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega40woa.fon
+2019-06-18 21:36:26,386 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega80737.fon
+2019-06-18 21:36:26,387 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega80850.fon
+2019-06-18 21:36:26,387 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega80852.fon
+2019-06-18 21:36:26,387 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega80857.fon
+2019-06-18 21:36:26,387 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega80866.fon
+2019-06-18 21:36:26,387 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega80869.fon
+2019-06-18 21:36:26,387 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ega80woa.fon
+2019-06-18 21:36:26,387 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ELEPHNT.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ELEPHNT.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ELEPHNTI.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ELEPHNTI.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ENGR.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ENGR.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ERASBD.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ERASBD.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ERASDEMI.TTF
+2019-06-18 21:36:26,388 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ERASDEMI.TTF
+2019-06-18 21:36:26,389 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ERASLGHT.TTF
+2019-06-18 21:36:26,389 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ERASLGHT.TTF
+2019-06-18 21:36:26,389 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ERASMD.TTF
+2019-06-18 21:36:26,389 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ERASMD.TTF
+2019-06-18 21:36:26,389 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FELIXTI.TTF
+2019-06-18 21:36:26,389 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FELIXTI.TTF
+2019-06-18 21:36:26,389 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\fms_metadata.xml
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FORTE.TTF
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FORTE.TTF
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRABK.TTF
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRABK.TTF
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRABKIT.TTF
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRABKIT.TTF
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRADM.TTF
+2019-06-18 21:36:26,390 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRADM.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRADMCN.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRADMCN.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRADMIT.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRADMIT.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRAHV.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRAHV.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRAHVIT.TTF
+2019-06-18 21:36:26,391 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRAHVIT.TTF
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\framd.ttf
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\framd.ttf
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRAMDCN.TTF
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRAMDCN.TTF
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\framdit.ttf
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\framdit.ttf
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FREESCPT.TTF
+2019-06-18 21:36:26,392 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FREESCPT.TTF
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FRSCRIPT.TTF
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FRSCRIPT.TTF
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\FTLTLT.TTF
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\FTLTLT.TTF
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Gabriola.ttf
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Gabriola.ttf
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\gadugi.ttf
+2019-06-18 21:36:26,393 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\gadugi.ttf
+2019-06-18 21:36:26,394 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\gadugib.ttf
+2019-06-18 21:36:26,394 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\gadugib.ttf
+2019-06-18 21:36:26,394 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GARA.TTF
+2019-06-18 21:36:26,394 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GARA.TTF
+2019-06-18 21:36:26,394 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GARABD.TTF
+2019-06-18 21:36:26,394 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GARABD.TTF
+2019-06-18 21:36:26,394 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GARAIT.TTF
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GARAIT.TTF
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\georgia.ttf
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\georgia.ttf
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\georgiab.ttf
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\georgiab.ttf
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\georgiai.ttf
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\georgiai.ttf
+2019-06-18 21:36:26,395 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\georgiaz.ttf
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\georgiaz.ttf
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GIGI.TTF
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GIGI.TTF
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GILBI___.TTF
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GILBI___.TTF
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GILB____.TTF
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GILB____.TTF
+2019-06-18 21:36:26,396 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GILC____.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GILC____.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GILI____.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GILI____.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GILLUBCD.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GILLUBCD.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GILSANUB.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GILSANUB.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GIL_____.TTF
+2019-06-18 21:36:26,397 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GIL_____.TTF
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GLECB.TTF
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GLECB.TTF
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GlobalMonospace.CompositeFont
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GlobalSansSerif.CompositeFont
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GlobalSerif.CompositeFont
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GlobalUserInterface.CompositeFont
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GLSNECB.TTF
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GLSNECB.TTF
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOTHIC.TTF
+2019-06-18 21:36:26,398 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOTHIC.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOTHICB.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOTHICB.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOTHICBI.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOTHICBI.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOTHICI.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOTHICI.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOUDOS.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOUDOS.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOUDOSB.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOUDOSB.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOUDOSI.TTF
+2019-06-18 21:36:26,399 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOUDOSI.TTF
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\GOUDYSTO.TTF
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\GOUDYSTO.TTF
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\h8514fix.fon
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\h8514oem.fon
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\h8514sys.fon
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HARLOWSI.TTF
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HARLOWSI.TTF
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HARNGTON.TTF
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HARNGTON.TTF
+2019-06-18 21:36:26,400 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HATTEN.TTF
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HATTEN.TTF
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\himalaya.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\himalaya.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\holomdl2.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\holomdl2.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HPSimplified.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HPSimplified.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HPSimplified_BdIt.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HPSimplified_BdIt.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HPSimplified_It.ttf
+2019-06-18 21:36:26,401 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HPSimplified_It.ttf
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HPSimplified_Lt.ttf
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HPSimplified_Lt.ttf
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HPSimplified_LtIt.ttf
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HPSimplified_LtIt.ttf
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HPSimplified_Rg.ttf
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HPSimplified_Rg.ttf
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HTOWERT.TTF
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HTOWERT.TTF
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\HTOWERTI.TTF
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\HTOWERTI.TTF
+2019-06-18 21:36:26,402 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\hvgafix.fon
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\hvgasys.fon
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\impact.ttf
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\impact.ttf
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\IMPRISHA.TTF
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\IMPRISHA.TTF
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\INFROMAN.TTF
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\INFROMAN.TTF
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Inkfree.ttf
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Inkfree.ttf
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ITCBLKAD.TTF
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ITCBLKAD.TTF
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ITCEDSCR.TTF
+2019-06-18 21:36:26,403 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ITCEDSCR.TTF
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ITCKRIST.TTF
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ITCKRIST.TTF
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\j8514fix.fon
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\j8514oem.fon
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\j8514sys.fon
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\javatext.ttf
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\javatext.ttf
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\JOKERMAN.TTF
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\JOKERMAN.TTF
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\jsmalle.fon
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\jsmallf.fon
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\JUICE___.TTF
+2019-06-18 21:36:26,404 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\JUICE___.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\jvgafix.fon
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\jvgasys.fon
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\KUNSTLER.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\KUNSTLER.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LATINWD.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LATINWD.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LBRITE.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LBRITE.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LBRITED.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LBRITED.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LBRITEDI.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LBRITEDI.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LBRITEI.TTF
+2019-06-18 21:36:26,405 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LBRITEI.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LCALLIG.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LCALLIG.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LeelaUIb.ttf
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LeelaUIb.ttf
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LEELAWAD.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LEELAWAD.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LEELAWDB.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LEELAWDB.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LeelawUI.ttf
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LeelawUI.ttf
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LeelUIsl.ttf
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LeelUIsl.ttf
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LFAX.TTF
+2019-06-18 21:36:26,406 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LFAX.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LFAXD.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LFAXD.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LFAXDI.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LFAXDI.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LFAXI.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LFAXI.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LHANDW.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LHANDW.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LSANS.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LSANS.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LSANSD.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LSANSD.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LSANSDI.TTF
+2019-06-18 21:36:26,407 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LSANSDI.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LSANSI.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LSANSI.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LTYPE.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LTYPE.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LTYPEB.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LTYPEB.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LTYPEBO.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LTYPEBO.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\LTYPEO.TTF
+2019-06-18 21:36:26,408 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\LTYPEO.TTF
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\lucon.ttf
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\lucon.ttf
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\l_10646.ttf
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\l_10646.ttf
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MAGNETOB.TTF
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MAGNETOB.TTF
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MAIAN.TTF
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MAIAN.TTF
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\malgun.ttf
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\malgun.ttf
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\malgunbd.ttf
+2019-06-18 21:36:26,409 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\malgunbd.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\malgunsl.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\malgunsl.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\marlett.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\marlett.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MATURASC.TTF
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MATURASC.TTF
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\micross.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\micross.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\mingliub.ttc
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\mingliub.ttc
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MISTRAL.TTF
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MISTRAL.TTF
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\mmrtext.ttf
+2019-06-18 21:36:26,410 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\mmrtext.ttf
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\mmrtextb.ttf
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\mmrtextb.ttf
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MOD20.TTF
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MOD20.TTF
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\modern.fon
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\monbaiti.ttf
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\monbaiti.ttf
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msgothic.ttc
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msgothic.ttc
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msjh.ttc
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msjh.ttc
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msjhbd.ttc
+2019-06-18 21:36:26,411 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msjhbd.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msjhl.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msjhl.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MSUIGHUB.TTF
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MSUIGHUB.TTF
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MSUIGHUR.TTF
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MSUIGHUR.TTF
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msyh.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msyh.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msyhbd.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msyhbd.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msyhl.ttc
+2019-06-18 21:36:26,412 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msyhl.ttc
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\msyi.ttf
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\msyi.ttf
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MTCORSVA.TTF
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MTCORSVA.TTF
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\MTEXTRA.TTF
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\MTEXTRA.TTF
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\mvboli.ttf
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\mvboli.ttf
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\NIAGENG.TTF
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\NIAGENG.TTF
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\NIAGSOL.TTF
+2019-06-18 21:36:26,413 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\NIAGSOL.TTF
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Nirmala.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Nirmala.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\NirmalaB.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\NirmalaB.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\NirmalaS.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\NirmalaS.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ntailu.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ntailu.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ntailub.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ntailub.ttf
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\OCRAEXT.TTF
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\OCRAEXT.TTF
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\OLDENGL.TTF
+2019-06-18 21:36:26,414 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\OLDENGL.TTF
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ONYX.TTF
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ONYX.TTF
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\OUTLOOK.TTF
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\OUTLOOK.TTF
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\pala.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\pala.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\palab.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\palab.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\palabi.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\palabi.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\palai.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\palai.ttf
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PALSCRI.TTF
+2019-06-18 21:36:26,415 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PALSCRI.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PAPYRUS.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PAPYRUS.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PARCHM.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PARCHM.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PERBI___.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PERBI___.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PERB____.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PERB____.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PERI____.TTF
+2019-06-18 21:36:26,416 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PERI____.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PERTIBD.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PERTIBD.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PERTILI.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PERTILI.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PER_____.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PER_____.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\phagspa.ttf
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\phagspa.ttf
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\phagspab.ttf
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\phagspab.ttf
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PLAYBILL.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PLAYBILL.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\POORICH.TTF
+2019-06-18 21:36:26,417 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\POORICH.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\PRISTINA.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\PRISTINA.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\RAGE.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\RAGE.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\RAVIE.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\RAVIE.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\REFSAN.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\REFSAN.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\REFSPCL.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\REFSPCL.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ROCCB___.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ROCCB___.TTF
+2019-06-18 21:36:26,418 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ROCC____.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ROCC____.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ROCK.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ROCK.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ROCKB.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ROCKB.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ROCKBI.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ROCKBI.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ROCKEB.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ROCKEB.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ROCKI.TTF
+2019-06-18 21:36:26,419 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ROCKI.TTF
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\roman.fon
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\s8514fix.fon
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\s8514oem.fon
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\s8514sys.fon
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SCHLBKB.TTF
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SCHLBKB.TTF
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SCHLBKBI.TTF
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SCHLBKBI.TTF
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SCHLBKI.TTF
+2019-06-18 21:36:26,420 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SCHLBKI.TTF
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\script.fon
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SCRIPTBL.TTF
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SCRIPTBL.TTF
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segmdl2.ttf
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segmdl2.ttf
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SegoeMarker.ttf
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SegoeMarker.ttf
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoepr.ttf
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoepr.ttf
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoeprb.ttf
+2019-06-18 21:36:26,421 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoeprb.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoesc.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoesc.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoescb.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoescb.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoeui.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoeui.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoeuib.ttf
+2019-06-18 21:36:26,422 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoeuib.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoeuii.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoeuii.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoeuil.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoeuil.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoeuisl.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoeuisl.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\segoeuiz.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\segoeuiz.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguibl.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguibl.ttf
+2019-06-18 21:36:26,423 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguibli.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguibli.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguiemj.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguiemj.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguihis.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguihis.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguili.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguili.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguisb.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguisb.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguisbi.ttf
+2019-06-18 21:36:26,424 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguisbi.ttf
+2019-06-18 21:36:26,425 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguisli.ttf
+2019-06-18 21:36:26,425 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguisli.ttf
+2019-06-18 21:36:26,425 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seguisym.ttf
+2019-06-18 21:36:26,425 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\seguisym.ttf
+2019-06-18 21:36:26,425 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sere1255.fon
+2019-06-18 21:36:26,425 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sere1256.fon
+2019-06-18 21:36:26,425 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sere1257.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serf1255.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serf1256.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serf1257.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serife.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serifee.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serifeg.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serifer.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serifet.fon
+2019-06-18 21:36:26,426 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seriff.fon
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seriffe.fon
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seriffg.fon
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\seriffr.fon
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\serifft.fon
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SHOWG.TTF
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SHOWG.TTF
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\simsun.ttc
+2019-06-18 21:36:26,427 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\simsun.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\simsunb.ttf
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\simsunb.ttf
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\Sitka.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\Sitka.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SitkaB.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SitkaB.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SitkaI.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SitkaI.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SitkaZ.ttc
+2019-06-18 21:36:26,428 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SitkaZ.ttc
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SketchFlow Print.ttf
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SketchFlow Print.ttf
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smae1255.fon
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smae1256.fon
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smae1257.fon
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smaf1255.fon
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smaf1256.fon
+2019-06-18 21:36:26,429 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smaf1257.fon
+2019-06-18 21:36:26,430 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smalle.fon
+2019-06-18 21:36:26,430 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smallee.fon
+2019-06-18 21:36:26,430 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smalleg.fon
+2019-06-18 21:36:26,430 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smaller.fon
+2019-06-18 21:36:26,430 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smallet.fon
+2019-06-18 21:36:26,430 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smallf.fon
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smallfe.fon
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smallfg.fon
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smallfr.fon
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\smallft.fon
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SNAP____.TTF
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SNAP____.TTF
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SourceCodePro-Black.ttf
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SourceCodePro-Black.ttf
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SourceCodePro-Bold.ttf
+2019-06-18 21:36:26,431 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SourceCodePro-Bold.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SourceCodePro-ExtraLight.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SourceCodePro-ExtraLight.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SourceCodePro-Light.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SourceCodePro-Light.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SourceCodePro-Regular.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SourceCodePro-Regular.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\SourceCodePro-Semibold.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\SourceCodePro-Semibold.ttf
+2019-06-18 21:36:26,432 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssee1255.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssee1256.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssee1257.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssee874.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssef1255.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssef1256.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssef1257.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ssef874.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sserife.fon
+2019-06-18 21:36:26,433 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sserifee.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sserifeg.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sserifer.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sserifet.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sseriff.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sseriffe.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sseriffg.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sseriffr.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sserifft.fon
+2019-06-18 21:36:26,434 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\StaticCache.dat
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\STENCIL.TTF
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\STENCIL.TTF
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\svgafix.fon
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\svgasys.fon
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\sylfaen.ttf
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\sylfaen.ttf
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\symbol.ttf
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\symbol.ttf
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\tahoma.ttf
+2019-06-18 21:36:26,435 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\tahoma.ttf
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\tahomabd.ttf
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\tahomabd.ttf
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\taile.ttf
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\taile.ttf
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\taileb.ttf
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\taileb.ttf
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TCBI____.TTF
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TCBI____.TTF
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TCB_____.TTF
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TCB_____.TTF
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TCCB____.TTF
+2019-06-18 21:36:26,436 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TCCB____.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TCCEB.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TCCEB.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TCCM____.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TCCM____.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TCMI____.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TCMI____.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TCM_____.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TCM_____.TTF
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\teamviewer14.otf
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\teamviewer14.otf
+2019-06-18 21:36:26,437 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\TEMPSITC.TTF
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\TEMPSITC.TTF
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\times.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\times.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\timesbd.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\timesbd.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\timesbi.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\timesbi.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\timesi.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\timesi.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\trebuc.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\trebuc.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\trebucbd.ttf
+2019-06-18 21:36:26,438 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\trebucbd.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\trebucbi.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\trebucbi.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\trebucit.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\trebucit.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\verdana.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\verdana.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\verdanab.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\verdanab.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\verdanai.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\verdanai.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\verdanaz.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\verdanaz.ttf
+2019-06-18 21:36:26,439 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga737.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga775.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga850.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga852.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga855.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga857.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga860.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga861.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga863.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga865.fon
+2019-06-18 21:36:26,440 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga866.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga869.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga932.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga936.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga949.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vga950.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgaf1255.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgaf1256.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgaf1257.fon
+2019-06-18 21:36:26,441 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgaf874.fon
+2019-06-18 21:36:26,442 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgafix.fon
+2019-06-18 21:36:26,442 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgafixe.fon
+2019-06-18 21:36:26,442 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgafixg.fon
+2019-06-18 21:36:26,442 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgafixr.fon
+2019-06-18 21:36:26,442 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgafixt.fon
+2019-06-18 21:36:26,442 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgaoem.fon
+2019-06-18 21:36:26,442 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgas1255.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgas1256.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgas1257.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgas874.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgasys.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgasyse.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgasysg.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgasysr.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\vgasyst.fon
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\VINERITC.TTF
+2019-06-18 21:36:26,443 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\VINERITC.TTF
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\VIVALDII.TTF
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\VIVALDII.TTF
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\VLADIMIR.TTF
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\VLADIMIR.TTF
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\webdings.ttf
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\webdings.ttf
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\wingding.ttf
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\wingding.ttf
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\WINGDNG2.TTF
+2019-06-18 21:36:26,444 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\WINGDNG2.TTF
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\WINGDNG3.TTF
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\WINGDNG3.TTF
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\YuGothB.ttc
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\YuGothB.ttc
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\YuGothL.ttc
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\YuGothL.ttc
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\YuGothM.ttc
+2019-06-18 21:36:26,445 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\YuGothM.ttc
+2019-06-18 21:36:26,446 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\YuGothR.ttc
+2019-06-18 21:36:26,446 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\YuGothR.ttc
+2019-06-18 21:36:26,446 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ZillaSlab-Bold.otf
+2019-06-18 21:36:26,446 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ZillaSlab-Bold.otf
+2019-06-18 21:36:26,446 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile check C:\WINDOWS\FONTS\ZillaSlab-Light.otf
+2019-06-18 21:36:26,446 DEBUG [JavaFX Application Thread] org.apache.fontbox.util.autodetect.FontFileFinder: checkFontfile found C:\WINDOWS\FONTS\ZillaSlab-Light.otf
+2019-06-18 21:36:26,475 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded TimesNewRomanPSMT from C:\WINDOWS\FONTS\times.ttf
+2019-06-18 21:36:26,475 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded TimesNewRomanPS-BoldMT from C:\WINDOWS\FONTS\timesbd.ttf
+2019-06-18 21:36:26,476 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded TimesNewRomanPS-ItalicMT from C:\WINDOWS\FONTS\timesi.ttf
+2019-06-18 21:36:26,476 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded TimesNewRomanPS-BoldItalicMT from C:\WINDOWS\FONTS\timesbi.ttf
+2019-06-18 21:36:26,477 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded ArialMT from C:\WINDOWS\FONTS\arial.ttf
+2019-06-18 21:36:26,477 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded Arial-BoldMT from C:\WINDOWS\FONTS\arialbd.ttf
+2019-06-18 21:36:26,477 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded Arial-ItalicMT from C:\WINDOWS\FONTS\ariali.ttf
+2019-06-18 21:36:26,478 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded Arial-BoldItalicMT from C:\WINDOWS\FONTS\arialbi.ttf
+2019-06-18 21:36:26,478 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded CourierNewPSMT from C:\WINDOWS\FONTS\cour.ttf
+2019-06-18 21:36:26,478 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded CourierNewPS-BoldMT from C:\WINDOWS\FONTS\courbd.ttf
+2019-06-18 21:36:26,479 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded CourierNewPS-ItalicMT from C:\WINDOWS\FONTS\couri.ttf
+2019-06-18 21:36:26,479 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded CourierNewPS-BoldItalicMT from C:\WINDOWS\FONTS\courbi.ttf
+2019-06-18 21:36:26,480 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded SymbolMT from C:\WINDOWS\FONTS\symbol.ttf
+2019-06-18 21:36:26,482 DEBUG [JavaFX Application Thread] org.apache.pdfbox.pdmodel.font.FileSystemFontProvider: Loaded MS-Gothic from C:\WINDOWS\FONTS\msgothic.ttc
+2019-06-18 21:36:26,486 ERROR [JavaFX Application Thread] biz.wgc.fwplan.tools.PDFCreator: Error in create PDF 
+java.io.FileNotFoundException: D:\development\git\FWPlan\userdata\pdfs\plan-123_Site1.pdf (Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at biz.wgc.fwplan.tools.PDFCreator.createTextPage(PDFCreator.java:79)
+	at biz.wgc.fwplan.tools.PDFCreator.writePDF(PDFCreator.java:49)
+	at biz.wgc.fwplan.screens.dialog.PlanDetailDialog$1.handle(PlanDetailDialog.java:106)
+	at biz.wgc.fwplan.screens.dialog.PlanDetailDialog$1.handle(PlanDetailDialog.java:1)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$353(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._enterNestedEventLoopImpl(Native Method)
+	at com.sun.glass.ui.win.WinApplication._enterNestedEventLoop(WinApplication.java:204)
+	at com.sun.glass.ui.Application.enterNestedEventLoop(Application.java:511)
+	at com.sun.glass.ui.EventLoop.enter(EventLoop.java:107)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.enterNestedEventLoop(QuantumToolkit.java:583)
+	at javafx.stage.Stage.showAndWait(Stage.java:474)
+	at biz.wgc.fwplan.screens.PlanListScreen.openPlanDetailView(PlanListScreen.java:221)
+	at biz.wgc.fwplan.screens.PlanListScreen.access$0(PlanListScreen.java:215)
+	at biz.wgc.fwplan.screens.PlanListScreen$1.handle(PlanListScreen.java:60)
+	at biz.wgc.fwplan.screens.PlanListScreen$1.handle(PlanListScreen.java:1)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3470)
+	at javafx.scene.Scene$ClickGenerator.access$8100(Scene.java:3398)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3766)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$353(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-18 21:36:27,148 WARN  [Finalizer] org.apache.pdfbox.cos.COSDocument: Warning: You did not close a PDF Document

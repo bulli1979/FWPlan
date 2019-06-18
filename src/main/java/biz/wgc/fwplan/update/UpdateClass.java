@@ -16,6 +16,7 @@ import biz.wgc.fwplan.data.db.DBSettings;
 public class UpdateClass {
 	private static final double INIT = 0.9;
 	private static Logger logger = Logger.getLogger(UpdateClass.class);
+	private static final String UPDATE = "update-v-%s.txt";
 
 	public void chkForUpdates() {
 		logger.debug("checkForUpdates");
@@ -34,10 +35,8 @@ public class UpdateClass {
 	}
 
 	public void runUpdatesForVersion(double version) {
-		String path = "update" + "v" + Double.toString(version).replace(".", "-") + ".txt";
-		path = "sql.txt";
+		String path = String.format(UPDATE, Double.toString(version).replace(".", "-"));
 		Optional<List<String>> sqlList = getResourceFileAsList(path);
-
 		if (sqlList.isPresent()) {
 			DBConnector db = new DBConnector();
 			for (String sql : sqlList.get()) {
@@ -53,7 +52,7 @@ public class UpdateClass {
 			if (is != null) {
 				BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 				return Optional.ofNullable(reader.lines().collect(Collectors.toList()));
-			}else {
+			} else {
 				logger.warn("updateFile not found for " + path);
 			}
 		} catch (Exception e) {

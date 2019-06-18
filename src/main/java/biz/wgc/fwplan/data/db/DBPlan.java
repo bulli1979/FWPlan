@@ -37,7 +37,11 @@ public class DBPlan extends DBConnector {
 						.withWatherTransport2(resultSet.getString("wathertransport2"))
 						.withWatherTransport3(resultSet.getString("wathertransport3"))
 						.withWatherTransport4(resultSet.getString("wathertransport4"))
-						.withImportantContact(resultSet.getString("importantcontacts"))
+						.withWatherColor1(resultSet.getString("wathercolor1"))
+						.withWatherColor2(resultSet.getString("wathercolor2"))
+						.withWatherColor3(resultSet.getString("wathercolor3"))
+						.withWatherColor4(resultSet.getString("wathercolor4"))
+						.withImportantcontacts(resultSet.getString("importantcontacts"))
 						.withMap(resultSet.getString("maplink")).build());
 			}
 			resultSet.close();
@@ -70,10 +74,14 @@ public class DBPlan extends DBConnector {
 						.withAdress(resultSet.getString("adress"))
 						.withInstantAction(resultSet.getString("instantaction"))
 						.withWatherTransport1(resultSet.getString("wathertransport"))
-						.withWatherTransport2(resultSet.getString("wathertransport"))
-						.withWatherTransport3(resultSet.getString("wathertransport"))
-						.withWatherTransport4(resultSet.getString("wathertransport"))
-						.withImportantContact(resultSet.getString("importantcontacts"))
+						.withWatherTransport2(resultSet.getString("wathertransport2"))
+						.withWatherTransport3(resultSet.getString("wathertransport3"))
+						.withWatherTransport4(resultSet.getString("wathertransport4"))
+						.withWatherColor1(resultSet.getString("wathercolor1"))
+						.withWatherColor2(resultSet.getString("wathercolor2"))
+						.withWatherColor3(resultSet.getString("wathercolor3"))
+						.withWatherColor4(resultSet.getString("wathercolor4"))
+						.withImportantcontacts(resultSet.getString("importantcontacts"))
 						.withMap(resultSet.getString("maplink")).build());
 			}
 			resultSet.close();
@@ -86,7 +94,9 @@ public class DBPlan extends DBConnector {
 	}
 
 	public Plan insertPlan(Plan plan) {
-		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`,`adress`,`instantaction`,`wathertransport`,`wathertransport2`,`wathertransport3`,`wathertransport4`,`importantcontacts`,`maplink`) VALUES(?,?,?,?,?,?,?,?,?,?,?,?);";
+		String sql = "INSERT INTO plan (`id`,`title`,`description`,`plannumber`,`adress`,`instantaction`,"
+				+ "`wathertransport`,`wathertransport2`,`wathertransport3`,`wathertransport4`,"
+				+ "`wathercolor1`,`wathercolor2`,`wathercolor3`,`wathercolor4`,`importantcontacts`,`maplink`) VALUES(?,?,?,?,?,?,?,?,?,?,?,?);";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, plan.getId());
 			pstmt.setString(2, plan.getTitle());
@@ -98,8 +108,12 @@ public class DBPlan extends DBConnector {
 			pstmt.setString(8, plan.getWatherTransport2());
 			pstmt.setString(9, plan.getWatherTransport3());
 			pstmt.setString(10, plan.getWatherTransport4());
-			pstmt.setString(11, plan.getImportantContacts());
-			pstmt.setString(12, plan.getMap());
+			pstmt.setString(11, plan.getWatherColor1());
+			pstmt.setString(12, plan.getWatherColor2());
+			pstmt.setString(13, plan.getWatherColor3());
+			pstmt.setString(14, plan.getWatherColor4());
+			pstmt.setString(15, plan.getImportantContacts());
+			pstmt.setString(16, plan.getMap());
 
 			pstmt.executeUpdate();
 		} catch (Exception e) {
@@ -110,7 +124,10 @@ public class DBPlan extends DBConnector {
 	}
 
 	public Plan updatePlan(Plan plan) {
-		String sql = "UPDATE plan SET `title`=? ,`description`=?, `plannumber`=?, `adress`=?, `instantaction`=?, `wathertransport`=?,`wathertransport2`=?,`wathertransport3`=?,`wathertransport4`=?, `importantcontacts`=? ,`maplink`=?  WHERE id=?";
+		String sql = "UPDATE plan SET `title`=? ,`description`=?, `plannumber`=?, `adress`=?, `instantaction`=?, "
+				+ "`wathertransport`=?,`wathertransport2`=?,`wathertransport3`=?,`wathertransport4`=?, "
+				+ "`wathercolor1`=?,`wathercolor2`=?,`wathercolor3`=?,`wathercolor4`=?,"
+				+ "`importantcontacts`=? ,`maplink`=?  WHERE id=?";
 		try (Connection conn = this.connect(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			pstmt.setString(1, plan.getTitle());
 			pstmt.setString(2, plan.getDescription());
@@ -121,9 +138,13 @@ public class DBPlan extends DBConnector {
 			pstmt.setString(7, plan.getWatherTransport2());
 			pstmt.setString(8, plan.getWatherTransport3());
 			pstmt.setString(9, plan.getWatherTransport4());
-			pstmt.setString(10, plan.getImportantContacts());
-			pstmt.setString(11, plan.getMap());
-			pstmt.setString(12, plan.getId());
+			pstmt.setString(10, plan.getWatherColor1());
+			pstmt.setString(11, plan.getWatherColor2());
+			pstmt.setString(12, plan.getWatherColor3());
+			pstmt.setString(13, plan.getWatherColor4());
+			pstmt.setString(14, plan.getImportantContacts());
+			pstmt.setString(15, plan.getMap());
+			pstmt.setString(16, plan.getId());
 			pstmt.executeUpdate();
 		} catch (Exception e) {
 			System.out.println("error in update");

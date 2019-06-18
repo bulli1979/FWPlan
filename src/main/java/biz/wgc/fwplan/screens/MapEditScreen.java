@@ -29,7 +29,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 public class MapEditScreen implements ApplicationScreen {
-	
+
 	private static final int SCEENSITZE_RESERVE = 80;
 
 	private List<UserElement> userElements;
@@ -41,6 +41,7 @@ public class MapEditScreen implements ApplicationScreen {
 	private double x;
 	private double y;
 	private EditIcon icon;
+
 	public Pane get() {
 		this.root = new BorderPane();
 		try {
@@ -59,10 +60,10 @@ public class MapEditScreen implements ApplicationScreen {
 
 	private ScrollPane createMapHolder() throws IOException, MalformedURLException {
 		ScrollPane mapHolder = new ScrollPane();
-		int maxHeight = (int) Screen.getPrimary().getVisualBounds().getHeight()-SCEENSITZE_RESERVE;
-		int maxWidth = (int) Screen.getPrimary().getVisualBounds().getWidth()-SCEENSITZE_RESERVE;
+		int maxHeight = (int) Screen.getPrimary().getVisualBounds().getHeight() - SCEENSITZE_RESERVE;
+		int maxWidth = (int) Screen.getPrimary().getVisualBounds().getWidth() - SCEENSITZE_RESERVE;
 		mapHolder.setMaxWidth(maxWidth);
-		mapHolder.setMaxHeight(maxHeight);		
+		mapHolder.setMaxHeight(maxHeight);
 		ImageView mapImageView = ImagePaint.paintTempImage(userElements);
 		VBox vbox = new VBox();
 		vbox.getChildren().add(mapImageView);
@@ -72,42 +73,36 @@ public class MapEditScreen implements ApplicationScreen {
 		mapImageView.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
 			public void handle(MouseEvent event) {
-				switch(activeType) {
-					case ICON:
-						handleUserElementClick(event);
-						break;
-					case IMAGE:
-						openAddImageView(event);
-						ApplicationHandler.setScreen(ScreenObject.MAP_EDIT_SCREEN);
-						break;
-					default:
-						break;
+				switch (activeType) {
+				case ICON:
+					handleUserElementClick(event);
+					break;
+				case IMAGE:
+					openAddImageView(event);
+					ApplicationHandler.setScreen(ScreenObject.MAP_EDIT_SCREEN);
+					break;
+				default:
+					break;
 				}
 			}
 
-			
 		});
 		return mapHolder;
 	}
-	
+
 	private void handleUserElementClick(MouseEvent event) {
-		if(this.icon.getText()>0) {
+		if (this.icon.getText() > 0) {
 			openEditIconTextDialog(event);
-		}else {
+		} else {
 			userElements.add(createUserElement(event));
 		}
-		
+
 	}
-	
+
 	private UserElement createUserElement(MouseEvent event) {
-		UserElement userElement = new UserElement.Builder()
-				.setPlanId(ValueHolder.INSTANCE.getPlan().getId())
-				.setId(UUID.randomUUID().toString())
-				.withLeft(event.getX())
-				.withTop(event.getY())
-				.withType(activeType.getType())
-				.withImage(this.icon.getImage())
-				.build();
+		UserElement userElement = new UserElement.Builder().setPlanId(ValueHolder.INSTANCE.getPlan().getId())
+				.setId(UUID.randomUUID().toString()).withLeft(event.getX()).withTop(event.getY())
+				.withType(activeType.getType()).withImage(this.icon.getImage()).build();
 		DBUserElement.getInstance().insertElement(userElement);
 		return userElement;
 	}
@@ -117,12 +112,12 @@ public class MapEditScreen implements ApplicationScreen {
 			ScrollPane mapHolder = createMapHolder();
 			centerBox.getChildren().remove(1);
 			centerBox.getChildren().add(mapHolder);
-		}catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println("Error in mapHolder Click");
 			e.printStackTrace();
 		}
 	}
-	
+
 	private HBox createToolBox() {
 		HBox toolBox = new HBox();
 		MapEditIconButtons buttonCreator = new MapEditIconButtons();
@@ -130,10 +125,6 @@ public class MapEditScreen implements ApplicationScreen {
 		return toolBox;
 	}
 
-	
-
-	
-	
 	private void openEditIconTextDialog(MouseEvent event) {
 		iconTextDialog = new Stage();
 		Scene editIconText = new Scene(ScreenObject.EDIT_ICON_TEXT_DIALOG.screen.get());
@@ -145,7 +136,7 @@ public class MapEditScreen implements ApplicationScreen {
 		iconTextDialog.initModality(Modality.APPLICATION_MODAL);
 		iconTextDialog.showAndWait();
 	}
-	
+
 	private void openAddImageView(MouseEvent event) {
 		uploadDialog = new Stage();
 		Scene openFileUpload = new Scene(ScreenObject.IMAGE_UPLOAD_DIALOG.screen.get());
@@ -157,11 +148,11 @@ public class MapEditScreen implements ApplicationScreen {
 		uploadDialog.initModality(Modality.APPLICATION_MODAL);
 		uploadDialog.showAndWait();
 	}
-	
+
 	public void closeTextDialog() {
 		iconTextDialog.close();
 	}
-	
+
 	public void closeImageDialog() {
 		uploadDialog.close();
 	}
@@ -188,12 +179,12 @@ public class MapEditScreen implements ApplicationScreen {
 
 	public void setActiveIcon(EditIcon icon) {
 		this.icon = icon;
-		
+
 	}
 
 	public EditIcon getActiveIcon() {
 		return this.icon;
-		
+
 	}
-	
+
 }

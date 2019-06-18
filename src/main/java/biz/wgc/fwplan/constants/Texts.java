@@ -9,7 +9,9 @@ public class Texts {
 	public static final String ADRESS_TEXT = "Adresse";
 	public static final String INSTANT_ACTION_TEXT = "Sofortmassnahmen";
 	public static final String HOW_MANY_WATHER_TEXT = "Wieviele Wassertransporte";
-	public static final String WATHERTRANSPORT = "Wassertransport";
+	public static final String WATHERTRANSPORT = "Wassertransport %d";
+	public static final String WATHERCOLOR = "Schriftfarbe für %d";
+
 	public static final String SPACE = " ";
 	public static final int ONE = 1;
 	public static final int TWO = 2;
@@ -19,5 +21,6 @@ public class Texts {
 	public static final String SAVE_TEXT = "Speichern";
 	public static final String PLAN_SAVED_TEXT = "Einsatzplan Speicherung";
 	public static final String PLAN_SAVE_COMPLETE_TEXT = "Der Einsatzplan %s wurde erfolgreich gespeichert.";
-	public static final String WHATERID_TEXT = "watherTransport";
+	public static final String WHATERID_TEXT = "watherTransport%d";
+	public static final String WHATERID_COLOR = "watherTransportColor%d";
 }
