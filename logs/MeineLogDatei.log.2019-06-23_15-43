@@ -1,0 +1,4 @@
+2019-06-23 15:43:14,293 DEBUG [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: checkForUpdates
+2019-06-23 15:43:17,057 INFO  [JavaFX Application Thread] biz.wgc.fwplan.screens.CreateOrEditPlan: start getEditPlanScreen
+2019-06-23 15:43:17,066 INFO  [JavaFX Application Thread] biz.wgc.fwplan.screens.CreateOrEditPlan: getEditPlanScreen
+2019-06-23 15:43:54,339 DEBUG [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: checkForUpdates

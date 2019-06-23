@@ -10,8 +10,6 @@ import biz.wgc.fwplan.constants.ValueHolder;
 import biz.wgc.fwplan.data.Plan;
 import biz.wgc.fwplan.data.db.DBPlan;
 import biz.wgc.fwplan.tools.Tool;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
@@ -33,7 +31,7 @@ public class CreateOrEditPlan implements ApplicationScreen {
 	private static Logger logger = Logger.getLogger(CreateOrEditPlan.class);
 
 	private Plan editPlan = null;
-	private VBox vBox = new VBox();
+	private VBox gridBox = new VBox();
 	private final TextField PLANNUMBERTEXTFIELD = new TextField();
 	private final TextField TITLETEXTFIELD = new TextField();
 	private final TextArea DESCRIPTIONTEXTFIELD = new TextArea();
@@ -49,89 +47,14 @@ public class CreateOrEditPlan implements ApplicationScreen {
 	public Pane get() {
 		logger.info("start getEditPlanScreen");
 
-		this.vBox = new VBox();
+		this.gridBox = new VBox();
 		editPlan = ValueHolder.INSTANCE.getPlan();
 		BorderPane root = new BorderPane();
 		try {
-
-			GridPane grid = new GridPane();
-			prepareGrid(grid);
-			Integer rowCount = 0;
-			Text scenetitle = new Text(Texts.EDIT_OR_CREATE_TEXT);
-			scenetitle.setFont(Font.font(Texts.ARIAL_FONT, FontWeight.BOLD, 20));
-			grid.add(scenetitle, 0, rowCount, 2, 1);
-			rowCount += 2;
-			Label planNumber = new Label(Texts.PLANNUMBER_TEXT);
-			grid.add(planNumber, 0, rowCount);
-			grid.add(this.PLANNUMBERTEXTFIELD, 1, rowCount);
-			rowCount++;
-			Label title = new Label(Texts.TITLE_TEXT);
-			grid.add(title, 0, rowCount);
-			grid.add(this.TITLETEXTFIELD, 1, rowCount);
-			rowCount++;
-			Label description = new Label(Texts.DESCRIPTION_TEXT);
-			grid.add(description, 0, rowCount);
-
-			grid.add(this.DESCRIPTIONTEXTFIELD, 1, rowCount);
-			rowCount++;
-			Label adresse = new Label(Texts.ADRESS_TEXT);
-			grid.add(adresse, 0, rowCount);
-
-			grid.add(this.ADRESSETEXTFIELD, 1, rowCount);
-			rowCount++;
-
-			Label sofortmassnahmen = new Label(Texts.INSTANT_ACTION_TEXT);
-			grid.add(sofortmassnahmen, 0, rowCount);
-
-			grid.add(this.DIRECTSUPPORTFIELD, 1, rowCount);
-			rowCount++;
-			int countWatherTransport = Tool.INSTANCE.countWhaterTransports();
-			Label wassertransportCounterLabel = new Label(Texts.HOW_MANY_WATHER_TEXT);
-			grid.add(wassertransportCounterLabel, 0, rowCount);
-
-			this.WHATERTRANSPORTCOUNTER.getItems().add(1);
-			this.WHATERTRANSPORTCOUNTER.getItems().add(2);
-			this.WHATERTRANSPORTCOUNTER.getItems().add(3);
-			this.WHATERTRANSPORTCOUNTER.getItems().add(4);
-
-			this.WHATERTRANSPORTCOUNTER.setValue(countWatherTransport);
-			grid.add(WHATERTRANSPORTCOUNTER, 1, rowCount);
-			rowCount++;
-
-			this.WHATERTRANSPORTCOUNTER.setOnAction(event -> {
-				paintWatherTransport(WHATERTRANSPORTCOUNTER.getValue());
-			});
-			vBox.getChildren().add(grid);
-
-			paintWatherTransport(countWatherTransport);
-
-			rowCount = 0;
-			GridPane grid2 = new GridPane();
-			prepareGrid(grid2);
-			Label wichtigeKontakte = new Label(Texts.IMPORTANT_CONTACTS_TEXT);
-			grid2.add(wichtigeKontakte, 0, rowCount);
-
-			grid2.add(IMPORTENTCONTACTSCOUNTER, 1, rowCount);
-			rowCount++;
-			if (editPlan != null) {
-				PLANNUMBERTEXTFIELD.setText(editPlan.getPlanNumber());
-				TITLETEXTFIELD.setText(editPlan.getTitle());
-				DESCRIPTIONTEXTFIELD.setText(editPlan.getDescription());
-				ADRESSETEXTFIELD.setText(editPlan.getAdress());
-				DIRECTSUPPORTFIELD.setText(editPlan.getInstantAction());
-				IMPORTENTCONTACTSCOUNTER.setText(editPlan.getImportantContacts());
-			}
-
-			Button btnSave = new Button(Texts.SAVE_TEXT);
-			setSaveAction(btnSave);
-
-			HBox hbBtn = new HBox(10);
-			hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
-			hbBtn.getChildren().add(btnSave);
-			grid2.add(hbBtn, 1, rowCount);
-			vBox.getChildren().add(grid2);
+			this.gridBox.getChildren().addAll(createGridOne(), paintWatherTransport(), importantContactsPane(),createSaveButtonBox());
+			fillGrid();
 			ScrollPane scrollPane = new ScrollPane();
-			scrollPane.setContent(vBox);
+			scrollPane.setContent(gridBox);
 			root.setCenter(scrollPane);
 			logger.info("getEditPlanScreen");
 		} catch (Exception e) {
@@ -140,6 +63,85 @@ public class CreateOrEditPlan implements ApplicationScreen {
 		return root;
 	}
 
+	private HBox createSaveButtonBox() {
+		Button btnSave = new Button(Texts.SAVE_TEXT);
+		btnSave.getStyleClass().addAll("btn","primary");
+		setSaveAction(btnSave);
+		HBox hbBtn = new HBox(btnSave);
+		hbBtn.getStyleClass().add("editButtonBox");
+		return hbBtn;
+	}
+
+	private void fillGrid() {
+		if (editPlan != null) {
+			PLANNUMBERTEXTFIELD.setText(editPlan.getPlanNumber());
+			TITLETEXTFIELD.setText(editPlan.getTitle());
+			DESCRIPTIONTEXTFIELD.setText(editPlan.getDescription());
+			ADRESSETEXTFIELD.setText(editPlan.getAdress());
+			DIRECTSUPPORTFIELD.setText(editPlan.getInstantAction());
+			IMPORTENTCONTACTSCOUNTER.setText(editPlan.getImportantContacts());
+		}
+	}
+
+	private GridPane importantContactsPane() {
+		GridPane grid = new GridPane();
+		grid.getStyleClass().addAll("grid");
+		Label wichtigeKontakte = new Label(Texts.IMPORTANT_CONTACTS_TEXT);
+		grid.add(wichtigeKontakte, 0, 0);
+		grid.add(this.IMPORTENTCONTACTSCOUNTER, 1, 0);
+		return grid;
+	}
+
+	private GridPane createGridOne() {
+		GridPane grid = new GridPane();
+		grid.getStyleClass().addAll("grid");
+		Integer rowCount = 0;
+		Text scenetitle = new Text(Texts.EDIT_OR_CREATE_TEXT);
+		scenetitle.setFont(Font.font(Texts.ARIAL_FONT, FontWeight.BOLD, 20));
+		grid.add(scenetitle, 0, rowCount, 2, 1);
+		rowCount += 2;
+		Label planNumber = new Label(Texts.PLANNUMBER_TEXT);
+		grid.add(planNumber, 0, rowCount);
+		grid.add(this.PLANNUMBERTEXTFIELD, 1, rowCount);
+		rowCount++;
+		Label title = new Label(Texts.TITLE_TEXT);
+		grid.add(title, 0, rowCount);
+		grid.add(this.TITLETEXTFIELD, 1, rowCount);
+		rowCount++;
+		Label description = new Label(Texts.DESCRIPTION_TEXT);
+		grid.add(description, 0, rowCount);
+
+		grid.add(this.DESCRIPTIONTEXTFIELD, 1, rowCount);
+		rowCount++;
+		Label adresse = new Label(Texts.ADRESS_TEXT);
+		grid.add(adresse, 0, rowCount);
+
+		grid.add(this.ADRESSETEXTFIELD, 1, rowCount);
+		rowCount++;
+
+		Label sofortmassnahmen = new Label(Texts.INSTANT_ACTION_TEXT);
+		grid.add(sofortmassnahmen, 0, rowCount);
+		grid.add(this.DIRECTSUPPORTFIELD, 1, rowCount);
+		rowCount++;
+		int countWatherTransport = Tool.INSTANCE.countWhaterTransports();
+		Label wassertransportCounterLabel = new Label(Texts.HOW_MANY_WATHER_TEXT);
+		grid.add(wassertransportCounterLabel, 0, rowCount);
+
+		this.WHATERTRANSPORTCOUNTER.getItems().add(1);
+		this.WHATERTRANSPORTCOUNTER.getItems().add(2);
+		this.WHATERTRANSPORTCOUNTER.getItems().add(3);
+		this.WHATERTRANSPORTCOUNTER.getItems().add(4);
+		this.WHATERTRANSPORTCOUNTER.setValue(countWatherTransport);
+		grid.add(WHATERTRANSPORTCOUNTER, 1, rowCount);
+		rowCount++;
+
+		this.WHATERTRANSPORTCOUNTER.setOnAction(event -> {
+			this.gridBox.getChildren().remove(1);
+			this.gridBox.getChildren().add(1, this.paintWatherTransport());
+		});
+		return grid;
+	}
+	
 	private void setSaveAction(Button btnSave) {
 		btnSave.setOnAction(event -> {
 			Plan savePlan = new Plan.Builder().setId(editPlan != null ? editPlan.getId() : UUID.randomUUID().toString())
@@ -171,7 +173,7 @@ public class CreateOrEditPlan implements ApplicationScreen {
 
 	private String getWatherValue(int number) {
 		String whaterText = "";
-		TextArea area = (TextArea) vBox.getScene().lookup("#" + String.format(Texts.WHATERID_TEXT, number));
+		TextArea area = (TextArea) gridBox.getScene().lookup("#" + String.format(Texts.WHATERID_TEXT, number));
 		if (area != null) {
 			return area.getText();
 		}
@@ -181,7 +183,7 @@ public class CreateOrEditPlan implements ApplicationScreen {
 	private String getColorSelectValue(int number) {
 		String whaterText = "";
 		@SuppressWarnings("unchecked")
-		ComboBox<String> box = (ComboBox<String>) vBox.getScene()
+		ComboBox<String> box = (ComboBox<String>) gridBox.getScene()
 				.lookup("#" + String.format(Texts.WHATERID_COLOR, number));
 		if (box != null) {
 			return box.getValue();
@@ -189,22 +191,19 @@ public class CreateOrEditPlan implements ApplicationScreen {
 		return whaterText;
 	}
 
-	private void paintWatherTransport(int value) {
-		if (vBox.getChildren().size() == 3) {
-			vBox.getChildren().remove(1);
-		}
+	private GridPane paintWatherTransport() {
 		GridPane grid = new GridPane();
-		prepareGrid(grid);
+		grid.getStyleClass().addAll("grid");
 		int count = 0;
 		int number = 1;
-		while (number <= value) {
+		while (number <= WHATERTRANSPORTCOUNTER.getValue()) {
 			addWather(grid, number, count);
 			count++;
 			addWatherColorSelect(grid, number, count);
 			count++;
 			number++;
 		}
-		vBox.getChildren().add(1, grid);
+		return grid;
 	}
 
 	private void addWather(GridPane grid, int number, int count) {
@@ -260,12 +259,5 @@ public class CreateOrEditPlan implements ApplicationScreen {
 		}
 		grid.add(colorBox, 1, count);
 
-	}
-
-	private void prepareGrid(GridPane grid) {
-		grid.setAlignment(Pos.CENTER);
-		grid.setHgap(10);
-		grid.setVgap(10);
-		grid.setPadding(new Insets(25, 25, 25, 25));
 	}
 }
