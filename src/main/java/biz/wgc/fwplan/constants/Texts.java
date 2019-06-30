@@ -10,7 +10,7 @@ public class Texts {
 	public static final String INSTANT_ACTION_TEXT = "Sofortmassnahmen";
 	public static final String HOW_MANY_WATHER_TEXT = "Wieviele Wassertransporte";
 	public static final String WATHERTRANSPORT = "Wassertransport %d";
-	public static final String WATHERCOLOR = "Schriftfarbe für %d";
+	public static final String WATHERCOLOR = "Schriftfarbe fï¿½r %d";
 
 	public static final String SPACE = " ";
 	public static final int ONE = 1;
