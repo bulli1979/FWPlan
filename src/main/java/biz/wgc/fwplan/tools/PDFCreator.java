@@ -76,29 +76,29 @@ public class PDFCreator {
 	private static void createTextPage() throws IOException {
 		String path = ValueHolder.INSTANCE.getOutputPath() + "plan-" + ValueHolder.INSTANCE.getPlan().getPlanNumber()
 				+ "_Site1.pdf";
-		FileOutputStream outputStream = new FileOutputStream(path);
+		try(FileOutputStream outputStream = new FileOutputStream(path);){
 
-		WriterProperties writerProperties = new WriterProperties();
-		writerProperties.addXmpMetadata();
-
-		PdfWriter pdfWriter = new PdfWriter(outputStream, writerProperties);
-
-		PdfDocument pdfDoc = new PdfDocument(pdfWriter);
-		pdfDoc.getCatalog().setLang(new PdfString("de-CH"));
-		pdfDoc.setTagged();
-		pdfDoc.getCatalog().setViewerPreferences(new PdfViewerPreferences().setDisplayDocTitle(true));
-		ConverterProperties props = new ConverterProperties();
-		FontProvider fp = new FontProvider();
-		fp.addStandardPdfFonts();
-		props.setFontProvider(fp);
-		DefaultTagWorkerFactory tagWorkerFactory = new DefaultTagWorkerFactory();
-		props.setTagWorkerFactory(tagWorkerFactory);
-		try (FileInputStream fileInputStream = new FileInputStream(
-				new File(ValueHolder.INSTANCE.getHTMLPath() + "plan.html"))) {
-
-			HtmlConverter.convertToPdf(manipulateHTML(fileInputStream), pdfDoc, props);
+			WriterProperties writerProperties = new WriterProperties();
+			writerProperties.addXmpMetadata();
+	
+			PdfWriter pdfWriter = new PdfWriter(outputStream, writerProperties);
+	
+			PdfDocument pdfDoc = new PdfDocument(pdfWriter);
+			pdfDoc.getCatalog().setLang(new PdfString("de-CH"));
+			pdfDoc.setTagged();
+			pdfDoc.getCatalog().setViewerPreferences(new PdfViewerPreferences().setDisplayDocTitle(true));
+			ConverterProperties props = new ConverterProperties();
+			FontProvider fp = new FontProvider();
+			fp.addStandardPdfFonts();
+			props.setFontProvider(fp);
+			DefaultTagWorkerFactory tagWorkerFactory = new DefaultTagWorkerFactory();
+			props.setTagWorkerFactory(tagWorkerFactory);
+			try (FileInputStream fileInputStream = new FileInputStream(
+					new File(ValueHolder.INSTANCE.getHTMLPath() + "plan.html"))) {
+				HtmlConverter.convertToPdf(manipulateHTML(fileInputStream), pdfDoc, props);
+			}
+			pdfDoc.close();
 		}
-		pdfDoc.close();
 
 	}
 
