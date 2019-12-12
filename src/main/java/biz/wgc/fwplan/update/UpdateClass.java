@@ -49,8 +49,9 @@ public class UpdateClass {
 	public Optional<List<String>> getResourceFileAsList(String path) {
 		try (InputStream is = UpdateClass.class.getClassLoader().getResourceAsStream(path);){
 			if (is != null) {
-				BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-				return Optional.ofNullable(reader.lines().collect(Collectors.toList()));
+				try(BufferedReader reader = new BufferedReader(new InputStreamReader(is));){
+					return Optional.ofNullable(reader.lines().collect(Collectors.toList()));
+				}
 			} else {
 				logger.warn("updateFile not found for " + path);
 			}
