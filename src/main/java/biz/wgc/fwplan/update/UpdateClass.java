@@ -47,8 +47,7 @@ public class UpdateClass {
 	}
 
 	public Optional<List<String>> getResourceFileAsList(String path) {
-		try {
-			InputStream is = UpdateClass.class.getClassLoader().getResourceAsStream(path);
+		try (InputStream is = UpdateClass.class.getClassLoader().getResourceAsStream(path);){
 			if (is != null) {
 				BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 				return Optional.ofNullable(reader.lines().collect(Collectors.toList()));
@@ -59,7 +58,7 @@ public class UpdateClass {
 			logger.error("Error in update: " + path, e);
 
 		}
-		return Optional.ofNullable(null);
+		return Optional.empty();
 	}
 
 }
