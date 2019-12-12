@@ -1,0 +1,8 @@
+Alter Table plan add COLUMN "wathertransport2"	TEXT;
+Alter Table plan add COLUMN "wathertransport3"	TEXT;
+Alter Table plan add COLUMN "wathertransport4"	TEXT;
+Alter Table plan add COLUMN "wathercolor1"	TEXT;
+Alter Table plan add COLUMN "wathercolor2"	TEXT;
+Alter Table plan add COLUMN "wathercolor3"	TEXT;
+Alter Table plan add COLUMN "wathercolor4"	TEXT;
+CREATE TABLE "settings" ("version"	NUMERIC, "id"	INTEGER NOT NULL,PRIMARY KEY("id"));

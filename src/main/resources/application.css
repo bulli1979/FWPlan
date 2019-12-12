@@ -1,18 +1,126 @@
-.activeTool{
-	-fx-color: #ff0000 ;
+.activeTool {
+	-fx-color: #ff0000;
 }
 
-.mapView{
+.mapView {
 	-fx-padding: 10;
-    -fx-background-color: #CCFF99;
+	-fx-background-color: #CCFF99;
 }
 
-.red{
-	-fx-background-color : #ff0000;
+.red {
+	-fx-background-color: #ff0000;
 }
-.green{
-	-fx-background-color : #00ff00;
+
+.green {
+	-fx-background-color: #00ff00;
 }
-.transparent{
-	-fx-background-color:transparent;
+
+.transparent {
+	-fx-background-color: transparent;
+}
+
+.label {
+	-fx-pref-width:300px;	
+}
+.text-field {
+	-fx-background-color: -fx-text-box-border, -fx-background;
+	-fx-background-insets: 0, 1 1 1 1;
+	-fx-background-radius: 5;
+}
+
+.text-field:focused {
+	-fx-background-color: -fx-focus-color, -fx-background;
+	
+}
+
+.text-area {
+	-fx-background-color: -fx-text-box-border, -fx-background;
+	-fx-background-insets: 0, 1 1 1 1;
+	-fx-background-radius: 5;
+	
+}
+
+.text-area:focused {
+	-fx-background-color: -fx-focus-color, -fx-background;
+}
+.combo-box .list-cell {
+	-fx-background: white;
+	-fx-background-color: transparent;
+	-fx-text-fill: -fx-text-base-color;
+	-fx-padding: 3 3 2 10;
+	-fx-cell-size: 2.66667em;
+}
+
+.combo-box-popup .list-view {
+	-fx-background-color: white, white;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
+
+.combo-box-popup .list-view .list-cell {
+	-fx-padding: 4 0 4 5;
+	/* No alternate highlighting */
+	-fx-background-color: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+	{
+	-fx-background: -fx-accent;
+	-fx-background-color: -fx-selection-bar;
+	-fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+	-fx-background-color: white;
+	-fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box-base {
+	-fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
+	-fx-background-color: white, white, white, white;
+	-fx-background-radius: 5, 5, 4, 3;
+	-fx-background-insets: 0 0 -1 0, 0, 1, 2;
+	-fx-padding: 0;
+}
+
+.combo-box-base:hover {
+	-fx-color: -fx-hover-base;
+}
+
+.combo-box-base:showing {
+	-fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+	-fx-background-color: -fx-focus-color, -fx-outer-border,
+	-fx-inner-border, -fx-body-color;
+	-fx-background-radius: 6.4, 4, 5, 3;
+	-fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+	-fx-opacity: .4;
+}
+
+.grid {
+	-fx-alignment: top-left;
+	-fx-hpos: center;
+	-fx-hgap: 5;
+	-fx-vgap: 5;
+	-fx-padding: 10;
+}
+.editButtonBox{
+	-fx-alignment:top-right;
+	-fx-pref-width: 800px;
+}
+.btn{
+	-fx-text-alignment:center;
+	-fx-alignment:top-right;
+	-fx-stroke:0;
+}
+.primary{
+	-fx-background-color:#007bff;
+}
+.primary:hover{
+	-fx-background-color:#007bff;
 }

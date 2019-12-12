@@ -1,0 +1,3 @@
+2019-06-09 18:46:00,397 DEBUG [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: checkForUpdates
+2019-06-09 18:46:00,724 INFO  [JavaFX Application Thread] biz.wgc.fwplan.data.db.DBSettings: settings nicht gefunden initial Settings
+2019-06-09 18:46:00,724 WARN  [JavaFX Application Thread] biz.wgc.fwplan.update.UpdateClass: updateFile not found for updatev0-9.txt

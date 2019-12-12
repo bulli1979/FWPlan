@@ -4,8 +4,8 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import constants.IconProperties;
-import data.EditIcon;
+import biz.wgc.fwplan.constants.IconProperties;
+import biz.wgc.fwplan.data.EditIcon;
 
 public class ImagePropertiesTest {
 	@Test

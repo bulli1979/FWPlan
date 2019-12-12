@@ -4,8 +4,8 @@ import java.util.UUID;
 
 import org.junit.Test;
 
-import data.Plan;
-import data.db.DBPlan;
+import biz.wgc.fwplan.data.Plan;
+import biz.wgc.fwplan.data.db.DBPlan;
 
 
 public class DBPlanCRUDTest {
